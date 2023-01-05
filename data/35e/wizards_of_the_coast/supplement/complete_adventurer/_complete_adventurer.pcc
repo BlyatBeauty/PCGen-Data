@@ -1,0 +1,60 @@
+# CVS $Revision$ $Author$ -- Sun Dec  8 22:17:49 2013 -- reformated by prettylst.pl v1.50 (build 22352)
+CAMPAIGN:Complete Adventurer
+
+PRECAMPAIGN:1,INCLUDESBOOKTYPE=Core35e
+GAMEMODE:35e|Bahamut35e
+GENRE:Fantasy
+BOOKTYPE:Supplement
+SETTING:Fantasy
+TYPE:Wizards of the Coast.Supplement.Supplement
+STATUS:BETA
+PUBNAMELONG:Wizards of the Coast
+PUBNAMESHORT:WotC
+PUBNAMEWEB:www.wizards.com
+SOURCELONG:Complete Adventurer
+SOURCESHORT:CAd
+SOURCEDATE:2005-01
+RANK:200501
+SOURCEWEB:www.wizards.com
+ISOGL:NO
+ISLICENSED:NO
+COPYRIGHT:Wizards of the Coast
+# COVER should be cover_gameMode_pub_book.file
+COVER:../../../../_artwork/cover_35e_wotc_cad.jpg
+# LOGO should be logo_pub.file
+LOGO:../../../../_artwork/logo_wotc.png
+
+ABILITY:cad_abilities.lst
+ABILITYCATEGORY:cad_abilitycategories.lst
+ABILITY:cad_feats.lst
+
+CLASS:cad_classes.lst
+COMPANIONMOD:cad_companionmods.lst
+EQUIPMENT:cad_equip.lst
+EQUIPMOD:cad_equipmods.lst
+ABILITY:cad_feats.lst
+WEAPONPROF:cad_profs_weapon.lst
+RACE:cad_races.lst
+SKILL:cad_skills.lst
+SPELL:cad_spells.lst
+
+FORWARDREF:SKILL|Autohypnosis,Knowledge (Psionics),Psicraft
+
+HIDETYPE:SKILL|Craft (Poisonmaking)
+#
+# DONE
+#
+
+#Errata Applied
+
+INFOTEXT:Supports 6.4.1
+# ENTRY DATE: 2015-01 (Unknown)
+# LST MONKEY: Bahamut
+# RELEASE REVIEW #
+# BETA:
+# RELEASE:
+# Built for PCGen Version: 6.04.01
+# Updated to work with version: -
+# MINVER:6.4
+# MINDEVVER:6.04.1
+# COMMENTS:

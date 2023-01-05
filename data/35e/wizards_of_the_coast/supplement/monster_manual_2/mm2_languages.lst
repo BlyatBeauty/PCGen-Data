@@ -1,0 +1,12 @@
+# CVS $Revision: $ $Author: $ -- Thu Feb 12 11:10:07 2015 -- reformated by PCGen PrettyLST v6.04.01
+SOURCELONG:Monster Manual II	SOURCESHORT:MM2	SOURCEDATE:2002-09
+
+# Language		Type			Var. Min. Value
+Avolakian		TYPE:Spoken
+Boggles		TYPE:Spoken
+Clockwork		TYPE:Spoken
+Desmodu		TYPE:Desmodu	PREVARGTEQ:DesmoduLanguage,1
+Sloths		TYPE:Spoken
+Jermlaines		TYPE:Spoken
+Loxos			TYPE:Spoken
+Signal Language	TYPE:Phase Wasp	PREVARGTEQ:PhaseWaspLanguage,1

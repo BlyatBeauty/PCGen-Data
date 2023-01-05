@@ -1,0 +1,1731 @@
+#  Fri Nov 16 19:52:40 2018 -- reformated by PCGen PrettyLST v6.08.00
+# CVS $Revision: $ $Author: $ -- Fri Jan 29 20:50:52 2016 -- reformated by PCGen PrettyLST v6.06.00
+SOURCELONG:Inner Sea Races	SOURCESHORT:ISR	SOURCEWEB:http://paizo.com/products/btpy9g9v?Pathfinder-Campaign-Setting-Inner-Sea-Races	SOURCEDATE:2015-09
+# ORIGINAL ENTRY: Gwen T. (evilpixie87)
+# ORIGINAL ENTRY DATE: 14 May 2016
+
+
+# ==============================
+# RACE ABILITIES
+# ==============================
+
+# ------------------------------
+# Dwarf
+# ------------------------------
+
+###Block: Racial Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Dwarf ~ Ability Scores.MOD		SOURCEPAGE:p.236
+CATEGORY=Special Ability|Dwarf ~ Size.MOD				SOURCEPAGE:p.236
+CATEGORY=Special Ability|Dwarf ~ Speed.MOD			SOURCEPAGE:p.236
+CATEGORY=Special Ability|Dwarf ~ Vision.MOD			SOURCEPAGE:p.236
+CATEGORY=Special Ability|Dwarf ~ Defensive Training.MOD	SOURCEPAGE:p.236
+CATEGORY=Special Ability|Dwarf ~ Greed.MOD			SOURCEPAGE:p.236
+CATEGORY=Special Ability|Dwarf ~ Hatred.MOD			SOURCEPAGE:p.236
+CATEGORY=Special Ability|Dwarf ~ Hardy.MOD			SOURCEPAGE:p.236
+CATEGORY=Special Ability|Dwarf ~ Stability.MOD			SOURCEPAGE:p.236
+CATEGORY=Special Ability|Dwarf ~ Stonecunning.MOD		SOURCEPAGE:p.236
+CATEGORY=Special Ability|Dwarf ~ Weapon Familiarity.MOD	SOURCEPAGE:p.236
+CATEGORY=Special Ability|Dwarf ~ Languages.MOD			SOURCEPAGE:p.236
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key				Category of Ability		Type																			Multiple Requirements																													Desc is PI?		Description																																																																																				Ability					Save bonus					Bonus to skill									Cost		Source Page		Aspects																					FACT
+Lasting Grudge	KEY:Dwarf ~ Lasting Grudge	CATEGORY:Special Ability	TYPE:RacialTraits.Dwarf Racial Trait.SpecialQuality.Special Quality								PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Dwarf ~ Lasting Grudge],[!PREFACT:1,ABILITIES,Dwarf_ReplaceDefensiveTraining=true,Dwarf_ReplaceHatred=true]									DESC:Dwarves are notorious for their long-lasting grudges. Those who live up to this racial reputation gain a +1 racial bonus on attack rolls against any individual creature that has attacked them 1 day ago or longer.	DESC:This racial trait replaces defensive training and hatred.|!PREABILITY:1,CATEGORY=Special Ability,Dwarf ~ Lasting Grudge																																																			COST:0	SOURCEPAGE:p.210	ASPECT:CombatBonus|+1 racial bonus on attack rolls against any individual creature that has attacked 1 day ago or longer.		FACT:Dwarf_ReplaceDefensiveTraining|true	FACT:Dwarf_ReplaceHatred|true
+Siege Survivor	KEY:Dwarf ~ Siege Survivor	CATEGORY:Special Ability	TYPE:RacialTraits.Dwarf Racial Trait.SpecialQuality.Special Quality								PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Dwarf ~ Siege Survivor],[!PREFACT:1,ABILITIES,Dwarf_ReplaceGreed=true,Dwarf_ReplaceHardy=true,Dwarf_ReplaceHatred=true]							DESC:Dwarves who make their homes in the Sky Citadels are trained to outlast sieges and serve as vigilant guards. They gain Endurance as a bonus feat. In addition, during rounds in which they have not moved, they gain a +1 racial bonus on attack rolls against foes who also did not move since their last turn.	DESC:This racial trait replaces greed, hardy, and hatred.|!PREABILITY:1,CATEGORY=Special Ability,Dwarf ~ Siege Survivor														ABILITY:FEAT|AUTOMATIC|Endurance																		COST:0	SOURCEPAGE:p.210	ASPECT:CombatBonus|+1 racial bonus on attack rolls against foes who also did not move since their last turn.				FACT:Dwarf_ReplaceGreed|true	FACT:Dwarf_ReplaceHardy|true	FACT:Dwarf_ReplaceHatred|true
+Slag Child		KEY:Dwarf ~ Slag Child		CATEGORY:Special Ability	TYPE:RacialTraits.Dwarf Racial Trait.SpecialQuality.Special Quality.Applied Bonus						PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Dwarf ~ Slag Child],[!PREFACT:1,ABILITIES,Dwarf_ReplaceDefensiveTraining=true,Dwarf_ReplaceHatred=true]							DESCISPI:YES	DESC:Dwarves from dishonored families must append "-slag," "-slagsun," or "-slagdam" to their surnames to indicate their shameful status. These dwarves are commonly banished or ostracized; they are forced to eke out a living at the fringes of dwarven settlements or in bleak wilderness areas such as the Kodar Mountains. They gain a +2 racial bonus on Stealth and Survival checks.	DESC:This racial trait replaces defensive training and hatred.|!PREABILITY:1,CATEGORY=Special Ability,Dwarf ~ Slag Child													BONUS:SKILL|Stealth,Survival|2|TYPE=Racial				COST:0	SOURCEPAGE:p.210																							FACT:Dwarf_ReplaceDefensiveTraining|true	FACT:Dwarf_ReplaceHatred|true
+Spell Smasher	KEY:Dwarf ~ Spell Smasher	CATEGORY:Special Ability	TYPE:RacialTraits.Dwarf Racial Trait.SpecialQuality.Special Quality								PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Dwarf ~ Spell Smasher],[!PREFACT:1,ABILITIES,Dwarf_ReplaceDefensiveTraining=true,Dwarf_ReplaceHatred=true]										DESC:Dwarven families who are threatened by hostile magic-users, especially those who face duergar foes, train intently to thwart spellcasting. They gain a +1 racial bonus on attack rolls against creatures in the process of casting spells or spell-like abilities.	DESC:This racial trait replaces defensive training and hatred.|!PREABILITY:1,CATEGORY=Special Ability,Dwarf ~ Spell Smasher																																												COST:0	SOURCEPAGE:p.210	ASPECT:CombatBonus|+1 racial bonus on attack rolls against creatures in the process of casting spells or spell-like abilities.	FACT:Dwarf_ReplaceDefensiveTraining|true	FACT:Dwarf_ReplaceHatred|true
+Spiritual Support	KEY:Dwarf ~ Spiritual Support	CATEGORY:Special Ability	TYPE:RacialTraits.Dwarf Racial Trait.SpecialQuality.Special Quality								PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Dwarf ~ Spiritual Support],[!PREFACT:1,ABILITIES,Dwarf_ReplaceGreed=true,Dwarf_ReplaceHardy=true]											DESC:Dwarves greatly value loyalty in faith, and their gods readily reward them for it. They gain a +1 racial bonus to their caster levels when casting conjuration (healing) spells upon allies.	DESC:This racial trait replaces greed and hardy.|!PREABILITY:1,CATEGORY=Special Ability,Dwarf ~ Spiritual Support																																																									COST:0	SOURCEPAGE:p.210	ASPECT:CombatBonus|+1 racial bonus to caster levels when casting conjuration (healing) spells upon allies.					FACT:Dwarf_ReplaceGreed|true	FACT:Dwarf_ReplaceHardy|true
+Stoic Negotiator	KEY:Dwarf ~ Stoic Negotiator	CATEGORY:Special Ability	TYPE:RacialTraits.Dwarf Racial Trait.SpecialQuality.Special Quality.Applied Bonus						PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Dwarf ~ Stoic Negotiator],[!PREFACT:1,ABILITIES,Dwarf_ReplaceDefensiveTraining=true,Dwarf_ReplaceHatred=true,Dwarf_ReplaceStonecunning=true]	DESCISPI:YES	DESC:Some dwarves, especially those who hail from the town of Peddlegate in Druma, use their unwavering stubbornness to get what they want in negotiations and other business matters. They gain a +2 racial bonus on Bluff, Diplomacy, and Profession (merchant) checks.	DESC:This racial trait replaces defensive training, hatred, and stonecunning.|!PREABILITY:1,CATEGORY=Special Ability,Dwarf ~ Stoic Negotiator																													BONUS:SKILL|Bluff,Diplomacy,Profession (Merchant)|2|TYPE=Racial	COST:0	SOURCEPAGE:p.210																							FACT:Dwarf_ReplaceDefensiveTraining|true	FACT:Dwarf_ReplaceHatred|true	FACT:Dwarf_ReplaceStonecunning|true
+Unstoppable		KEY:Dwarf ~ Unstoppable		CATEGORY:Special Ability	TYPE:RacialTraits.Dwarf Racial Trait.SpecialQuality.Special Quality.Applied Bonus	TYPE:Replaces Dwarf Hardy	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Dwarf ~ Unstoppable],[!PREFACT:1,ABILITIES,Dwarf_ReplaceHardy=true]																DESC:Some dwarves train from a young age to outlast orcs on the battlefield. They gain Toughness as a bonus feat and a +1 racial bonus on Fortitude saves.	DESC:This racial trait replaces hardy.|!PREABILITY:1,CATEGORY=Special Ability,Dwarf ~ Unstoppable																																											ABILITY:FEAT|AUTOMATIC|Toughness	BONUS:SAVE|Fortitude|1|TYPE=Racial												COST:0	SOURCEPAGE:p.210																							FACT:Dwarf_ReplaceHardy|true
+
+
+# ------------------------------
+# Elf
+# ------------------------------
+
+###Block: Racial Traits
+# Ability Name							Source Page
+CATEGORY=Special Ability|Elf ~ Ability Scores.MOD	SOURCEPAGE:p.236
+CATEGORY=Special Ability|Elf ~ Size.MOD			SOURCEPAGE:p.236
+CATEGORY=Special Ability|Elf ~ Speed.MOD			SOURCEPAGE:p.236
+CATEGORY=Special Ability|Elf ~ Vision.MOD			SOURCEPAGE:p.236
+CATEGORY=Special Ability|Elf ~ Elven Immunities.MOD	SOURCEPAGE:p.236
+CATEGORY=Special Ability|Elf ~ Elven Magic.MOD		SOURCEPAGE:p.236
+CATEGORY=Special Ability|Elf ~ Keen Senses.MOD		SOURCEPAGE:p.236
+CATEGORY=Special Ability|Elf ~ Weapon Familiarity.MOD	SOURCEPAGE:p.236
+CATEGORY=Special Ability|Elf ~ Languages.MOD		SOURCEPAGE:p.236
+
+###Block: Alternate Racial Traits
+# Ability Name		Unique Key					Product Identity?	Category of Ability		Type														Multiple Requirements																									Desc is PI?		Description																																																																																																	Stackable?	Multiple?	Choose														Selections	Template														Auto Language	Ability																							Bonus to skill											Class Skill	Cost		Source Page		Aspects																									FACT
+Ageless Patience		KEY:Elf ~ Ageless Patience					CATEGORY:Special Ability	TYPE:RacialTraits.Elf Racial Trait.SpecialQuality.Special Quality				PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Elf ~ Ageless Patience],[!PREFACT:1,ABILITIES,Elf_ReplaceElvenMagic=true,Elf_ReplaceKeenSenses=true]				DESCISPI:YES	DESC:Some families of elves have been strongly influenced by rigidly honorable non-elven cultures, such as Forlorn elves raised in nations such as Taldor and the elves of Jinin influenced by Tian-Min travelers. This attitude, combined with elven longevity, produces elves of extraordinary patience, who can produce better results when taking their time than they could under time constraints. These elves gain a +2 racial bonus when taking 20 on skill checks.	DESC:This racial trait replaces elven magic and keen senses.|!PREABILITY:1,CATEGORY=Special Ability,Elf ~ Ageless Patience																																																																															COST:0	SOURCEPAGE:p.210	ASPECT:SkillBonus|+2 racial bonus when taking 20 on skill checks.																FACT:Elf_ReplaceElvenMagic|true	FACT:Elf_ReplaceKeenSenses|true
+Disinterested Observer	KEY:Elf ~ Disinterested Observer				CATEGORY:Special Ability	TYPE:RacialTraits.Elf Racial Trait.SpecialQuality.Special Quality				PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Elf ~ Disinterested Observer],[!PREFACT:1,ABILITIES,Elf_ReplaceElvenMagic=true,Elf_ReplaceWeaponFamiliarity=true]	DESCISPI:YES	DESC:Elves who frequently interact with shorterlived species, especially members who hail from Varisia, often come to rely on their ability to weight out such impatient races. These elves gain a +1 racial bonus on attack rolls and skill checks made as part of readied actions in combat.	DESC:This racial trait replaces the elven magic and weapon familiarity traits.|!PREABILITY:1,CATEGORY=Special Ability,Elf ~ Disinterested Observer																																																																																																								COST:0	SOURCEPAGE:p.210	ASPECT:CombatBonus|+1 racial bonus on attack rolls and skill checks made as part of readied actions in combat.								FACT:Elf_ReplaceElvenMagic|true	FACT:Elf_ReplaceWeaponFamiliarity|true
+Elven Arrogance		KEY:Elf ~ Elven Arrogance					CATEGORY:Special Ability	TYPE:RacialTraits.Elf Racial Trait.SpecialQuality.Special Quality				PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Elf ~ Elven Arrogance],[!PREFACT:1,ABILITIES,Elf_ReplaceLanguages=true]											DESC:Some elves are so convinced of elven superiority, or else otherwise so xenophobic, that they have difficulty seeing the point in communicating with "lesser" races. Their racial bonus on saving throws against enchantments increases by 1 (to +3) against such effects from non-elf humanoids, but they begin play speaking only Elven, and if they have high Intelligence scores, they can select bonus languages from only Azlanti, Celestial, Draconic, and Sylvan (or Senzar instead of Sylvan if they hail from Tian Xia).																																	TEMPLATE:Bonus Language ~ Azlanti|Bonus Language ~ Celestial|Bonus Language ~ Draconic	AUTO:LANG|Elven	ABILITY:Internal|AUTOMATIC|Elven Arrogance ~ Sylvan|!PREREGION:Tian Xia	ABILITY:Internal|AUTOMATIC|Elven Arrogance ~ Senzar|PREREGION:Tian Xia																COST:0	SOURCEPAGE:p.211																											FACT:Elf_ReplaceLanguages|true
+Human-Raised		KEY:Elf ~ Human-Raised						CATEGORY:Special Ability	TYPE:RacialTraits.Elf Racial Trait.SpecialQuality.Special Quality				PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Elf ~ Human-Raised],[!PREFACT:1,ABILITIES,Elf_ReplaceElvenMagic=true,Elf_ReplaceWeaponFamiliarity=true]						DESC:Forlorn--elves raised outside of elven communities--are accustomed to other races' brevity of life. Although they lose the opportunity to train in traditional elven arts, these elves pick up a bit of their adoptive parents' skills. They gain Skill Focus as a bonus feat.	DESC:This racial trait replaces elven magic and weapon familiarity.|!PREABILITY:1,CATEGORY=Special Ability,Elf ~ Human-Raised																																STACK:NO	MULT:YES	CHOOSE:SKILL|TYPE=Charisma|TYPE=Dexterity|TYPE=Intelligence|TYPE=Strength|TYPE=Wisdom																					ABILITY:FEAT|AUTOMATIC|Skill Focus (%LIST)																																COST:0	SOURCEPAGE:p.211																											FACT:Elf_ReplaceElvenMagic|true	FACT:Elf_ReplaceWeaponFamiliarity|true
+Memories Beyond Death	KEY:Elf ~ Memories Beyond Death				CATEGORY:Special Ability	TYPE:RacialTraits.Elf Racial Trait.SpecialQuality.Special Quality.Applied Bonus	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Elf ~ Memories Beyond Death],[!PREFACT:1,ABILITIES,Elf_ReplaceElvenImmunities=true,Elf_ReplaceElvenMagic=true]					DESC:Some elves are born with sensitive souls that absorb insight from others and from the spirits of the deceased. These elves gain a +2 racial bonus on saving throws against fear effects. They also choose two Knowledge skills and always treat those skills as class skills. If they take a class that grants either or both of those skills as class skills, they gain a +1 racial bonus on the overlapping skill or skills.	DESC:This racial trait replaces elven immunities and elven magic.|!PREABILITY:1,CATEGORY=Special Ability,Elf ~ Memories Beyond Death								MULT:YES	CHOOSE:SKILL|TYPE=Knowledge											SELECT:2																																											BONUS:SKILL|%LIST|1|TYPE=Racial								CSKILL:LIST	COST:0	SOURCEPAGE:p.211	ASPECT:SaveBonus|+2 vs. fear	ASPECT:SkillBonus|+1 racial bonus on skills from a class that overlap with choices from memories beyond death.			FACT:Elf_ReplaceElvenImmunities|true	FACT:Elf_ReplaceElvenMagic|true
+Overwhelming Magic	KEY:Elf ~ Overwhelming Magic					CATEGORY:Special Ability	TYPE:RacialTraits.Elf Racial Trait.SpecialQuality.Special Quality				PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Elf ~ Overwhelming Magic],[!PREFACT:1,ABILITIES,Elf_ReplaceElvenMagic=true,Elf_ReplaceWeaponFamiliarity=true]					DESC:Some elves obsess over the fundamentals of magic, training for decades to add layers of potent spellwork before they ever begin practicing true spells. This builds a foundation that makes their magic increasingly difficult to resist. These elves gain Spell Focus as a bonus feat.	DESC:This racial trait replaces elven magic and weapon familiarity.|!PREABILITY:1,CATEGORY=Special Ability,Elf ~ Overwhelming Magic																															MULT:YES	CHOOSE:SCHOOLS|ALL																																ABILITY:FEAT|AUTOMATIC|Spell Focus (%LIST)																																COST:0	SOURCEPAGE:p.211																											FACT:Elf_ReplaceElvenMagic|true	FACT:Elf_ReplaceWeaponFamiliarity|true
+Retreat Magic		KEY:Elf ~ Retreat Magic						CATEGORY:Special Ability	TYPE:RacialTraits.Elf Racial Trait.SpecialQuality.Special Quality.Elven Magic		PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Elf ~ Retreat Magic],[!PREFACT:1,ABILITIES,Elf_ReplaceElvenMagic=true]									DESCISPI:YES	DESC:Elves raised in the traditions of those who protected elven holdings before, during, and shortly after Earthfall specialize in magic that fools foes into misjudging elven numbers and locations. These elves gain a +1 racial bonus to their caster levels for the purpose of determining the range and duration of all conjuration and illusion spells that they cast.	DESC:This racial trait replaces elven magic.|!PREABILITY:1,CATEGORY=Special Ability,Elf ~ Retreat Magic																																																																																																		COST:0	SOURCEPAGE:p.211	ASPECT:CombatBonus|+1 racial bonus to their caster levels for the purpose of determining the range and duration of all conjuration and illusion spells.	FACT:Elf_ReplaceElvenMagic|true
+Sovyrian-Born		KEY:Elf ~ Sovyrian-Born			NAMEISPI:YES	CATEGORY:Special Ability	TYPE:RacialTraits.Elf Racial Trait.SpecialQuality.Special Quality.Applied Bonus	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Elf ~ Sovyrian-Born],[!PREFACT:1,ABILITIES,Elf_ReplaceElvenMagic=true,Elf_ReplaceKeenSenses=true]				DESCISPI:YES	DESC:Elves who come from the ancient elven civilization of Sovyrian are steeped in lore older than most civilizations. They gain a +2 racial bonus on Knowledge (history), Knowledge (local), and Spellcraft checks.	DESC:This racial trait replaces elven magic and keen senses.|!PREABILITY:1,CATEGORY=Special Ability,Elf ~ Sovyrian-Born																																																																																																										BONUS:SKILL|Knowledge (History),Knowledge (Local),Spellcraft|2|TYPE=Racial			COST:0	SOURCEPAGE:p.211																											FACT:Elf_ReplaceElvenMagic|true	FACT:Elf_ReplaceKeenSenses|true
+
+###Block:
+# Ability Name			Category of Ability	Template
+Elven Arrogance ~ Sylvan	CATEGORY:Internal		TEMPLATE:Bonus Language ~ Sylvan
+Elven Arrogance ~ Senzar	CATEGORY:Internal		TEMPLATE:Bonus Language ~ Senzar
+
+
+# ------------------------------
+# Gnome
+# ------------------------------
+
+###Block: Racial Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Gnome ~ Ability Scores.MOD		SOURCEPAGE:p.237
+CATEGORY=Special Ability|Gnome ~ Size.MOD				SOURCEPAGE:p.237
+CATEGORY=Special Ability|Gnome ~ Speed.MOD			SOURCEPAGE:p.237
+CATEGORY=Special Ability|Gnome ~ Vision.MOD			SOURCEPAGE:p.237
+CATEGORY=Special Ability|Gnome ~ Defensive Training.MOD	SOURCEPAGE:p.237
+CATEGORY=Special Ability|Gnome ~ Gnome Magic.MOD		SOURCEPAGE:p.237
+CATEGORY=Special Ability|Gnome ~ Hatred.MOD			SOURCEPAGE:p.237
+CATEGORY=Special Ability|Gnome ~ Illusion Resistance.MOD	SOURCEPAGE:p.237
+CATEGORY=Special Ability|Gnome ~ Keen Senses.MOD		SOURCEPAGE:p.237
+CATEGORY=Special Ability|Gnome ~ Obsessive.MOD			SOURCEPAGE:p.237
+CATEGORY=Special Ability|Gnome ~ Weapon Familiarity.MOD	SOURCEPAGE:p.237
+CATEGORY=Special Ability|Gnome ~ Languages.MOD			SOURCEPAGE:p.237
+
+###Block: Alternate Racial Traits
+# Ability Name		Unique Key					Category of Ability		Type														Multiple Requirements																													Define					Desc is PI?		Description																																																																																											Ability																										Bonus DC					Bonus to Situation								Bonus to skill							Modify VAR																							Cost		Source Page		Aspects																FACT
+Architectural Ingenuity	KEY:Gnome ~ Architectural Ingenuity	CATEGORY:Special Ability	TYPE:RacialTraits.Gnome Racial Trait.SpecialQuality.Special Quality.Applied Bonus	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Gnome ~ Architectural Ingenuity],[!PREFACT:1,ABILITIES,Gnome_ReplaceKeenSenses=true,Gnome_ReplaceObsessive=true]															DESC:Some gnomes demonstrate incredible talent for building and adjusting structures. These gnomes gain a +2 racial bonus on Knowledge (engineering) checks and on Craft and Perception checks related to structures (including structural traps).	DESC:This racial trait replaces keen senses and obsessive.|!PREABILITY:1,CATEGORY=Special Ability,Gnome ~ Architectural Ingenuity																																																															BONUS:SITUATION|Perception=related to structures|2|TYPE=Racial	BONUS:SKILL|Knowledge (Engineering)|2|TYPE=Racial																									COST:0	SOURCEPAGE:p.211	ASPECT:SkillBonus|+2 racial bonus on Craft checks related to structures (including structural traps).	FACT:Gnome_ReplaceKeenSenses|true	FACT:Gnome_ReplaceObsessive|true
+Dirty Trickster		KEY:Gnome ~ Dirty Trickster		CATEGORY:Special Ability	TYPE:RacialTraits.Gnome Racial Trait.SpecialQuality.Special Quality.Applied Bonus	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Gnome ~ Dirty Trickster],[!PREFACT:1,ABILITIES,Gnome_ReplaceDefensiveTraining=true,Gnome_ReplaceHatred=true,Gnome_ReplaceKeenSenses=true]	DEFINE:DirtyTricksterIntQualify|0				DESC:All gnomes love pranks, but some specialize in those improvised during battle. These gnomes gain a +2 racial bonus on dirty trick combat maneuvers. They need not meet the Intelligence requirement to select Combat Expertise, Improved Dirty Trick, and any feat with Improved Dirty Trick as a prerequisite.	DESC:This racial trait replaces defensive training, hatred, and keen senses.|!PREABILITY:1,CATEGORY=Special Ability,Gnome ~ Dirty Trickster																																																																						BONUS:VAR|DirtyTricksterIntQualify|1|TYPE=Boolean	BONUS:VAR|CMB_DirtyTrick,CMD_DirtyTrick|2|TYPE=Racial							COST:0	SOURCEPAGE:p.211																		FACT:Gnome_ReplaceHatred|true	FACT:Gnome_ReplaceKeenSenses|true
+Intrepid Settler		KEY:Gnome ~ Intrepid Settler		CATEGORY:Special Ability	TYPE:RacialTraits.Gnome Racial Trait.SpecialQuality.Special Quality.Applied Bonus	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Gnome ~ Intrepid Settler],[!PREFACT:1,ABILITIES,Gnome_ReplaceIllusionResistance=true,Gnome_ReplaceKeenSenses=true,Gnome_ReplaceObsessive=true]							DESCISPI:YES	DESC:Some gnomes add to the thrill of living by settling in precarious places such as the flotsam of Gogpodda or the treehouses of Omesta. These intrepid gnomes gain a +2 racial bonus on saving throws against fear effects and on Acrobatics, Climb, and Swim checks.	DESC:This racial trait replaces illusion resistance, keen senses, and obsessive.|!PREABILITY:1,CATEGORY=Special Ability,Gnome ~ Intrepid Settler																																																																			BONUS:SKILL|Acrobatics,Climb,Swim|2|TYPE=Racial																										COST:0	SOURCEPAGE:p.211	ASPECT:SaveBonus|+2 vs. fear													FACT:Gnome_ReplaceIllusionResistance|true	FACT:Gnome_ReplaceKeenSenses|true	FACT:Gnome_ReplaceObsessive|true
+Utilitarian Magic		KEY:Gnome ~ Utilitarian Magic		CATEGORY:Special Ability	TYPE:RacialTraits.Gnome Racial Trait.SpecialQuality.Special Quality.Applied Bonus	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Gnome ~ Vivacious],[!PREFACT:1,ABILITIES,Gnome_ReplaceGnomeMagic=true]																						DESC:Some gnomes develop practical magic to assist them with their obsessive projects. These gnomes add 1 to the DC of any saving throws against transmutation spells they cast. If their Intelligence score is 11 or higher, they also gain the following spell-like abilities: 1/day--mage hand, open/close, prestidigitation, and unseen servant. The DC for these spells is equal to 10 + the spell's level + the gnome's Intelligence modifier.	DESC:This racial trait replaces gnome magic.|!PREABILITY:1,CATEGORY=Special Ability,Gnome ~ Utilitarian Magic	ABILITY:Spell-Like Ability|AUTOMATIC|Racial SLA ~ Mage Hand|Racial SLA ~ Open/Close|Racial SLA ~ Prestidigitation|Racial SLA ~ Unseen Servant|PRESTAT:1,INT=11	BONUS:DC|SCHOOL.Transmutation|1																					BONUS:VAR|RacialSLA_MageHand_DCMod,RacialSLA_OpenClose_DCMod,RacialSLA_Prestidigitation_DCMod,RacialSLA_UnseenServant_DCMod|INT-CHA|TYPE=Base	COST:0	SOURCEPAGE:p.211																		FACT:Gnome_ReplaceGnomeMagic|true
+Vivacious			KEY:Gnome ~ Vivacious			CATEGORY:Special Ability	TYPE:RacialTraits.Gnome Racial Trait.SpecialQuality.Special Quality			PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Gnome ~ Utilitarian Magic],[!PREFACT:1,ABILITIES,Gnome_ReplaceGnomeMagic=true,Gnome_ReplaceKeenSenses=true]															DESC:Some gnomes retain a trace of the vitality of the First World. These gnomes recover 50%% more hit points (minimum 1) whenever they recover hit points from rest. Whenever they are healed of hit point damage by a spell, they heal an additional amount equal to 1/2 the spell's caster level (minimum 0). The extra healing does not apply to spells that grant fast healing or similar effects.	DESC:This racial trait replaces gnome magic and keen senses.|!PREABILITY:1,CATEGORY=Special Ability,Gnome ~ Vivacious																																																																																				COST:0	SOURCEPAGE:p.211																		FACT:Gnome_ReplaceGnomeMagic|true	FACT:Gnome_ReplaceKeenSenses|true
+Wright			KEY:Gnome ~ Wright			CATEGORY:Special Ability	TYPE:RacialTraits.Gnome Racial Trait.SpecialQuality.Special Quality			PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Gnome ~ Wright],[!PREFACT:1,ABILITIES,Gnome_ReplaceHatred=true,Gnome_ReplaceObsessive=true]																		DESC:Some gnomes prefer to use their natural talents with mechanisms to drive machines. These gnomes gain a +2 racial bonus on driving checks and on Craft checks to build or repair vehicles.	DESC:This racial trait replaces hatred and obsessive.|!PREABILITY:1,CATEGORY=Special Ability,Gnome ~ Wright																																																																																																																								COST:0	SOURCEPAGE:p.211	ASPECT:SkillBonus|+2 racial bonus on driving checks and on Craft checks to build or repair vehicles.	FACT:Gnome_ReplaceHatred|true	FACT:Gnome_ReplaceObsessive|true
+
+
+# ------------------------------
+# Half-Elf
+# ------------------------------
+
+###Block: Racial Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Half-Elf ~ Ability Scores.MOD	SOURCEPAGE:p.237
+CATEGORY=Special Ability|Half-Elf ~ Size.MOD			SOURCEPAGE:p.237
+CATEGORY=Special Ability|Half-Elf ~ Speed.MOD			SOURCEPAGE:p.237
+CATEGORY=Special Ability|Half-Elf ~ Vision.MOD			SOURCEPAGE:p.237
+CATEGORY=Special Ability|Half-Elf ~ Adaptability.MOD		SOURCEPAGE:p.237
+CATEGORY=Special Ability|Half-Elf ~ Elf Blood.MOD		SOURCEPAGE:p.237
+CATEGORY=Special Ability|Half-Elf ~ Elven Immunities.MOD	SOURCEPAGE:p.237
+CATEGORY=Special Ability|Half-Elf ~ Keen Senses.MOD		SOURCEPAGE:p.237
+CATEGORY=Special Ability|Half-Elf ~ Multitalented.MOD		SOURCEPAGE:p.237
+CATEGORY=Special Ability|Half-Elf ~ Languages.MOD		SOURCEPAGE:p.237
+
+###Block: Alternate Racial Traits
+# Ability Name		Unique Key						Category of Ability		Type																Multiple Requirements																																										Define						Desc is PI?		Description																																																																																																	Ability									Bonus Ability Pool			Bonus to Situation																					Bonus to skill									Modify VAR						Cost		Source Page		Aspects																																										FACT
+Elf-Scorned			KEY:Half-Elf ~ Elf-Scorned			CATEGORY:Special Ability	TYPE:RacialTraits.Half-Elf Racial Trait.SpecialAttack.Special Attack.Defensive.Applied Bonus	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Half-Elf ~ Elf-Scorned],[!PREFACT:1,ABILITIES,HalfElf_ReplaceElvenImmunities=true,HalfElf_ReplaceMultitalented=true]																		DEFINE:RacialDefensiveTrainingBonus|0	DESCISPI:YES	DESC:Many half-elves, especially half-drow and half-Ekujae, are rejected by their elven parents and feel nothing but hatred and fear toward their inhuman ancestors. They gain a +1 racial bonus on attack rolls and a +2 dodge bonus to AC against elves.	DESC:This racial trait replaces elven immunities and multitalented.|!PREABILITY:1,CATEGORY=Special Ability,Half-Elf ~ Elf-Scorned																																																																																						BONUS:VAR|RacialDefensiveTrainingBonus|2	COST:0	SOURCEPAGE:p.211	ASPECT:CombatBonus|+1 racial bonus on attack rolls and a +2 dodge bonus to AC against elves.	ASPECT:Ability Benefit|(+%1 dodge bonus to AC vs. elf humanoids)|RacialDefensiveTrainingBonus	ASPECT:StatBlockName|+1 on attack rolls against elf humanoids	FACT:HalfElf_ReplaceElvenImmunities|true	FACT:HalfElf_ReplaceMultitalented|true
+Eye for Opportunity	KEY:Half-Elf ~ Eye for Opportunity		CATEGORY:Special Ability	TYPE:RacialTraits.Half-Elf Racial Trait.SpecialQuality.Special Quality					PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Half-Elf ~ Eye for Opportunity],[!PREFACT:1,ABILITIES,HalfElf_ReplaceAdaptability=true,HalfElf_ReplaceKeenSenses=true]																												DESC:Constantly facing the rough edges of two societies, some half-elves develop a knack for finding overlooked opportunities. They gain a +1 racial bonus on attacks of opportunity.	DESC:This racial trait replaces adaptability and keen senses.|!PREABILITY:1,CATEGORY=Special Ability,Half-Elf ~ Eye for Opportunity																																																																																																								COST:0	SOURCEPAGE:p.211	ASPECT:CombatBonus|+1 racial bonus on attacks of opportunity.																																	FACT:HalfElf_ReplaceAdaptability|true	FACT:HalfElf_ReplaceKeenSenses|true
+Kindred-Raised		KEY:Half-Elf ~ Kindred-Raised			CATEGORY:Special Ability	TYPE:RacialTraits.Half-Elf Racial Trait.SpecialQuality.Special Quality.Applied Bonus		PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Half-Elf ~ Kindred-Raised],[!PREFACT:1,ABILITIES,HalfElf_ReplaceAbilityScores=true,HalfElf_ReplaceAdaptability=true,HalfElf_ReplaceElvenImmunities=true,HalfElf_ReplaceKeenSenses=true,HalfElf_ReplaceMultitalented=true]											DESC:While most think of people with one human and one elven parent when they think of half-elves, some half-elves are raised by two half-elven parents. Such half-elves feel less like outsiders, making them more confident, but less adaptable without the exposure to a human parent. They gain a +2 bonus to Charisma and one other ability score of their choice.	DESC:This racial trait replaces the half-elf's usual racial ability score modifiers, as well as adaptability, elven immunities, keen senses, and multitalented.|!PREABILITY:1,CATEGORY=Special Ability,Half-Elf ~ Kindred-Raised	ABILITY:Ability Bonus|AUTOMATIC|+2 Charisma			BONUS:ABILITYPOOL|Ability Bonus|1																																											COST:0	SOURCEPAGE:p.212																																												FACT:HalfElf_ReplaceAbilityScores|true	FACT:HalfElf_ReplaceAdaptability|true	FACT:HalfElf_ReplaceElvenImmunities|true	FACT:HalfElf_ReplaceKeenSenses|true	FACT:HalfElf_ReplaceMultitalented|true
+Reflexive Improvisation	KEY:Half-Elf ~ Reflexive Improvisation	CATEGORY:Special Ability	TYPE:RacialTraits.Half-Elf Racial Trait.SpecialQuality.Special Quality.Applied Bonus		PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Half-Elf ~ Reflexive Improvisation],[!PREFACT:1,ABILITIES,HalfElf_ReplaceAdaptability=true,HalfElf_ReplaceMultitalented=true]																										DESC:Half-elves raised among elves often stumble unprepared into each new stage of life because their elven relatives are unaccustomed to the speed of their maturation. They gain a +2 racial bonus on untrained skill checks.	DESC:This racial trait replaces adaptability and multitalented.|!PREABILITY:1,CATEGORY=Special Ability,Half-Elf ~ Reflexive Improvisation																																																																																																COST:0	SOURCEPAGE:p.212	ASPECT:SkillBonus|+2 racial bonus on untrained skill checks.																																	FACT:HalfElf_ReplaceAdaptability|true	FACT:HalfElf_ReplaceMultitalented|true
+Sea Legs			KEY:Half-Elf ~ Sea Legs				CATEGORY:Special Ability	TYPE:RacialTraits.Half-Elf Racial Trait.SpecialQuality.Special Quality.Applied Bonus		PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Half-Elf ~ Sea Legs],[!PREFACT:1,ABILITIES,HalfElf_ReplaceAdaptability=true]																																DESCISPI:YES	DESC:Many half-elves find their way onto the water early in their youth, whether they live with trader families in or near Kyonin, work as smugglers around Lake Encarthan or the Inner Sea, or plunder alongside pirates. These half-elves receive a +2 racial bonus on Swim checks, as well as a +4 racial bonus on Acrobatics checks to move on narrow or slippery surfaces, and on Climb checks on docks and ships.	DESC:This racial trait replaces adaptability.|!PREABILITY:1,CATEGORY=Special Ability,Half-Elf ~ Sea Legs																													BONUS:SITUATION|Acrobatics=to move on narrow or slippery surfaces|4|TYPE=Racial	BONUS:SITUATION|Climb=on docks and ships|4|TYPE=Racial	BONUS:SKILL|Swim|2|TYPE=Racial													COST:0	SOURCEPAGE:p.212																																												FACT:HalfElf_ReplaceAdaptability|true
+Sophisticate		KEY:Half-Elf ~ Sophisticate			CATEGORY:Special Ability	TYPE:RacialTraits.Half-Elf Racial Trait.SpecialQuality.Special Quality.Applied Bonus		PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Half-Elf ~ Sophisticate],[!PREFACT:1,ABILITIES,HalfElf_ReplaceElvenImmunities=true]																																	DESC:Half-elves who strive to embody the culture in which they live develop a keen instinct for the ebb and flow of fashions, fads, and political trends. They gain a +2 racial bonus on Knowledge (history) and Knowledge (local) checks and can use those skills untrained even for checks with a DC of 10 or more.	DESC:This racial trait replaces elven immunities.|!PREABILITY:1,CATEGORY=Special Ability,Half-Elf ~ Sophisticate																																																																				BONUS:SKILL|Knowledge (History),Knowledge (Local)|2|TYPE=Racial								COST:0	SOURCEPAGE:p.212	ASPECT:SkillBonus|You can use Knowledge (history) and Knowledge (local) untrained even for checks with a DC of 10 or more.																							FACT:HalfElf_ReplaceElvenImmunities|true
+Weapon Familiarity	KEY:Half-Elf ~ Weapon Familiarity		CATEGORY:Special Ability	TYPE:RacialTraits.Half-Elf Racial Trait.SpecialQuality.Special Quality					PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Half-Elf ~ Weapon Familiarity],[!PREFACT:1,ABILITIES,HalfElf_ReplaceAdaptability=true]																																	DESC:Half-elves raised among elves often feel pitied and mistrusted by their longer-lived kin, and yet they receive training in elf weapons. They gain the elf's weapon familiarity trait.	DESC:This racial trait replaces adaptability.|!PREABILITY:1,CATEGORY=Special Ability,Half-Elf ~ Weapon Familiarity																																															ABILITY:Elf Racial Trait|AUTOMATIC|Elf ~ Weapon Familiarity																																																	COST:0	SOURCEPAGE:p.212																																												FACT:HalfElf_ReplaceAdaptability|true
+
+
+# ------------------------------
+# Half-Orc
+# ------------------------------
+
+###Block: Racial Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Half-Orc ~ Ability Scores.MOD	SOURCEPAGE:p.237
+CATEGORY=Special Ability|Half-Orc ~ Size.MOD			SOURCEPAGE:p.237
+CATEGORY=Special Ability|Half-Orc ~ Speed.MOD			SOURCEPAGE:p.237
+CATEGORY=Special Ability|Half-Orc ~ Vision.MOD			SOURCEPAGE:p.237
+CATEGORY=Special Ability|Half-Orc ~ Intimidating.MOD		SOURCEPAGE:p.237
+CATEGORY=Special Ability|Half-Orc ~ Orc Blood.MOD		SOURCEPAGE:p.237
+CATEGORY=Special Ability|Half-Orc ~ Orc Ferocity.MOD		SOURCEPAGE:p.237
+CATEGORY=Special Ability|Half-Orc ~ Weapon Familiarity.MOD	SOURCEPAGE:p.237
+CATEGORY=Special Ability|Half-Orc ~ Languages.MOD		SOURCEPAGE:p.237
+
+###Block: Alternate Racial Traits
+# Ability Name		Unique Key						Category of Ability		Type															Multiple Requirements																																Description																																																																																																																					Stackable?	Multiple?	Choose				Ability											Bonus to Situation															Bonus to skill								Stat bonus								Modify VAR						Cost		Source Page		Aspects																																										FACT
+Divided Attention		KEY:Half-Orc ~ Divided Attention		CATEGORY:Special Ability	TYPE:RacialTraits.Half-Orc Racial Trait.SpecialQuality.Special Quality				PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Half-Orc ~ Divided Attention],[!PREFACT:1,ABILITIES,HalfOrc_ReplaceIntimidating=true,HalfOrc_ReplaceOrcFerocity=true]								DESC:Half-orcs must learn to divide their attention among multiple threats to stay alive, since both humans and orcs often attempt to put them in their place. Half-orcs gain a +1 dodge bonus to AC against foes who flank them.	DESC:This racial trait replaces intimidating and orc ferocity.|!PREABILITY:1,CATEGORY=Special Ability,Half-Orc ~ Divided Attention																																																																																																																												COST:0	SOURCEPAGE:p.212	ASPECT:CombatBonus|+1 dodge bonus to AC against flanking.																																		FACT:HalfOrc_ReplaceIntimidating|true	FACT:HalfOrc_ReplaceOrcFerocity|true
+Human-Raised		KEY:Half-Orc ~ Human-Raised			CATEGORY:Special Ability	TYPE:RacialTraits.Half-Orc Racial Trait.SpecialQuality.Special Quality				PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Half-Orc ~ Human-Raised],[!PREFACT:1,ABILITIES,HalfOrc_ReplaceOrcFerocity=true,HalfOrc_ReplaceWeaponFamiliarity=true]								DESC:Some half-orcs raised as humans lack their cousins' ferocity and training in orc weapons, but pick up a bit of their human parents' skills. They gain the human's skilled racial trait.	DESC:This racial trait replaces orc ferocity and weapon familiarity.|!PREABILITY:1,CATEGORY=Special Ability,Half-Orc ~ Human-Raised																																																																										ABILITY:Human Racial Trait|AUTOMATIC|Human ~ Skilled																																																COST:0	SOURCEPAGE:p.212																																												FACT:HalfOrc_ReplaceOrcFerocity|true	FACT:HalfOrc_ReplaceWeaponFamiliarity|true
+Orc Atavism			KEY:Half-Orc ~ Orc Atavism			CATEGORY:Special Ability	TYPE:RacialTraits.Half-Orc Racial Trait.SpecialQuality.Special Quality				PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Half-Orc ~ Orc Atavism],[!PREFACT:1,ABILITIES,HalfOrc_ReplaceAbilityScores=true,HalfOrc_ReplaceIntimidating=true,HalfOrc_ReplaceOrcFerocity=true]			DESC:Some half-orcs have much stronger orc blood than human blood. Such half-orcs count as only half-orcs and orcs (not also humans) for any effect related to race. They gain a +2 bonus to Strength and a -2 penalty to one mental ability score of their choice. Finally, they gain the ferocity universal monster ability.	DESC:This racial trait replaces the half-orc's usual racial ability score modifiers, as well as intimidating, orc blood, and orc ferocity.|!PREABILITY:1,CATEGORY=Special Ability,Half-Orc ~ Orc Atavism																															STACK:NO	MULT:YES	CHOOSE:PCSTAT|INT|WIS|CHA	ABILITY:Special Ability|AUTOMATIC|Universal Monster Rule ~ Ferocity																													BONUS:STAT|STR|2|TYPE=Racial	BONUS:STAT|%LIST|-2								COST:0	SOURCEPAGE:p.212																																												FACT:HalfOrc_ReplaceAbilityScores|true	FACT:HalfOrc_ReplaceIntimidating|true	FACT:HalfOrc_ReplaceOrcFerocity|true
+Overlooked Mastermind	KEY:Half-Orc ~ Overlooked Mastermind	CATEGORY:Special Ability	TYPE:RacialTraits.Half-Orc Racial Trait.SpecialQuality.Special Quality.Applied Bonus	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Half-Orc ~ Overlooked Mastermind],[!PREFACT:1,ABILITIES,HalfOrc_ReplaceIntimidating=true,HalfOrc_ReplaceOrcFerocity=true,HalfOrc_ReplaceWeaponFamiliarity=true]	DESC:Some half-orcs use half-orcs' brutish stereotypes to their advantage, causing others to underestimate their intelligence and scheming. Such half-orcs gain a +2 racial bonus on Bluff, Diplomacy, and Sense Motive checks. This bonus increases to +4 against other humanoids. They also receive a +2 racial bonus on Bluff checks to feign ignorance and Sense Motive checks to intercept secret messages, and this stacks with the above bonus.	DESC:This racial trait replaces intimidating, orc ferocity, and weapon familiarity.|!PREABILITY:1,CATEGORY=Special Ability,Half-Orc ~ Overlooked Mastermind																																								BONUS:SITUATION|Bluff=to feign ignorance,Sense Motive=to intercept secret messages|2|TYPE=Racial.STACK	BONUS:SKILL|Bluff,Diplomacy,Sense Motive|2|TYPE=Racial																	COST:0	SOURCEPAGE:p.212	ASPECT:SkillBonus|+2 bonus on Bluff, Diplomacy, and Sense Motive checks against other humanoids.																											FACT:HalfOrc_ReplaceIntimidating|true	FACT:HalfOrc_ReplaceOrcFerocity|true	FACT:HalfOrc_ReplaceWeaponFamiliarity|true
+Pariah			KEY:Half-Orc ~ Pariah				CATEGORY:Special Ability	TYPE:RacialTraits.Half-Orc Racial Trait.SpecialQuality.Special Quality.Applied Bonus	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Half-Orc ~ Pariah],[!PREFACT:1,ABILITIES,HalfOrc_ReplaceWeaponFamiliarity=true]														DESC:While many cultures discriminate against half-orcs, in some, particularly dwarven communities, half-orcs are complete social pariahs. It goes without saying that such a culture does not provide outlets for a half-orc to practice with traditional orc weapons. The few half-orcs who survive to adulthood in such harsh social climates are deeply scarred by their abusive treatment and find it hard to express and understand normal emotions. Such half-orcs gain a +2 racial bonus on saving throws against emotion and fear effects and a -2 penalty on Bluff, Diplomacy, and Sense Motive checks.	DESC:This racial trait replaces weapon familiarity.|!PREABILITY:1,CATEGORY=Special Ability,Half-Orc ~ Pariah																																								BONUS:SKILL|Bluff,Diplomacy,Sense Motive|-2																			COST:0	SOURCEPAGE:p.212	ASPECT:SaveBonus|+2 vs. emotion and fear effects																																			FACT:HalfOrc_ReplaceWeaponFamiliarity|true
+Sea Raider			KEY:Half-Orc ~ Sea Raider			CATEGORY:Special Ability	TYPE:RacialTraits.Half-Orc Racial Trait.SpecialAttack.Special Attack.Applied Bonus		PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Half-Orc ~ Sea Raider],[!PREFACT:1,ABILITIES,HalfOrc_ReplaceVision=true]															DESC:In the Lands of the Linnorm Kings and the Shackles, half-orcs frequently take up sailing as pirates, raiders, and fishers, where they are known as tenacious fighters. They gain a +2 racial bonus on Profession (sailor) checks and Craft checks to repair ships, and a +1 racial bonus on damage rolls against foes and objects in or on top of the water.	DESC:This racial trait replaces darkvision.|!PREABILITY:1,CATEGORY=Special Ability,Half-Orc ~ Sea Raider																																																																																	BONUS:SKILL|Profession (Sailor)|2|TYPE=Racial																			COST:0	SOURCEPAGE:p.212	ASPECT:SkillBonus|+2 racial bonus on Craft checks to repair ships.	ASPECT:CombatBonus|+1 racial bonus on damage rolls against foes and objects in or on top of the water.	ASPECT:StatBlockName|+1 on damage rolls against foes and objects in water	FACT:HalfOrc_ReplaceVision|true
+War-Leader			KEY:Half-Orc ~ War-Leader			CATEGORY:Special Ability	TYPE:RacialTraits.Half-Orc Racial Trait.SpecialQuality.Special Quality.Applied Bonus	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Half-Orc ~ War-Leader],[!PREFACT:1,ABILITIES,HalfOrc_ReplaceVision=true,HalfOrc_ReplaceOrcFerocity=true]										DESC:Some orcs seek out human mates in hopes of birthing intelligent leaders for their interminable war efforts. When nature and luck smile upon this endeavor and a half-orc child shows cunning, that child is raised with many harrowing opportunities to learn how to best lead on the battlefield. Such half-orcs gain a +2 bonus on Diplomacy and Profession (soldier) checks as well as to their Leadership score (for the purpose of the Leadership feat). Armies they control in mass combat gain a +1 bonus to Morale. (See Pathfinder RPG Ultimate Campaign.)	DESC:This racial trait replaces darkvision and orc ferocity.|!PREABILITY:1,CATEGORY=Special Ability,Half-Orc ~ War-Leader																																												BONUS:SKILL|Diplomacy,Profession (Soldier)|2|TYPE=Racial										BONUS:VAR|LeadershipScore|2|TYPE=Racial	COST:0	SOURCEPAGE:p.212	ASPECT:CombatBonus|Armies you control in mass combat gain a +1 bonus to Morale.																														FACT:HalfOrc_ReplaceVision|true	FACT:HalfOrc_ReplaceOrcFerocity|true
+
+
+# ------------------------------
+# Halfling
+# ------------------------------
+
+###Block: Racial Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Halfling ~ Ability Scores.MOD	SOURCEPAGE:p.238
+CATEGORY=Special Ability|Halfling ~ Size.MOD			SOURCEPAGE:p.238
+CATEGORY=Special Ability|Halfling ~ Speed.MOD			SOURCEPAGE:p.238
+CATEGORY=Special Ability|Halfling ~ Fearless.MOD		SOURCEPAGE:p.238
+CATEGORY=Special Ability|Halfling ~ Halfling Luck.MOD		SOURCEPAGE:p.238
+CATEGORY=Special Ability|Halfling ~ Keen Senses.MOD		SOURCEPAGE:p.238
+CATEGORY=Special Ability|Halfling ~ Sure-Footed.MOD		SOURCEPAGE:p.238
+CATEGORY=Special Ability|Halfling ~ Weapon Familiarity.MOD	SOURCEPAGE:p.238
+CATEGORY=Special Ability|Halfling ~ Languages.MOD		SOURCEPAGE:p.238
+
+###Block: Alternate Racial Traits
+# Ability Name		Unique Key					Category of Ability		Type															Multiple Requirements																															Define								Description																																																																																																				Multiple?	Choose								Ability									Caster level							Bonus DC						Save bonus				Bonus to skill					Modify VAR										Cost		Source Page		Aspects																																					FACT
+Caretaker			KEY:Halfling ~ Caretaker		CATEGORY:Special Ability	TYPE:RacialTraits.Halfling Racial Trait.SpecialQuality.Special Quality.Applied Bonus	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Halfling ~ Caretaker],[!PREFACT:1,ABILITIES,Halfling_ReplaceHalflingLuck=true,Halfling_ReplaceSureFooted=true,Halfling_ReplaceWeaponFamiliarity=true]	DEFINE:Companion_MasterRacialTrait_AbilityBonus|0	DESC:Humans often entrust halfling families with the care of children and animals, a task that has helped them develop keen insight. Such halflings gain a +2 racial bonus on Sense Motive checks. In addition, when they acquire an animal companion, bonded mount, cohort, or familiar, that creature gains a +2 bonus to one ability score of the character's choice.	DESC:This racial trait replaces halfling luck, sure-footed, and weapon familiarity.|!PREABILITY:1,CATEGORY=Special Ability,Halfling ~ Caretaker																																																											BONUS:SKILL|Sense Motive|2|TYPE=Racial	BONUS:VAR|Companion_MasterRacialTrait_AbilityBonus|1|TYPE=Boolean	COST:0	SOURCEPAGE:p.212																																							FACT:Halfling_ReplaceHalflingLuck|true	FACT:Halfling_ReplaceSureFooted|true	FACT:Halfling_ReplaceWeaponFamiliarity|true
+Driven Worker		KEY:Halfling ~ Driven Worker		CATEGORY:Special Ability	TYPE:RacialTraits.Halfling Racial Trait.SpecialQuality.Special Quality.Applied Bonus	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Halfling ~ Driven Worker],[!PREFACT:1,ABILITIES,Halfling_ReplaceSureFooted=true]																						DESC:Many halfling families have developed techniques to accomplish work faster and more efficiently, whether to contribute to the community or to please overbearing masters. These halflings gain a +4 racial bonus on checks with one Craft, Perform, or Profession skill.	DESC:This racial trait replaces sure-footed.|!PREABILITY:1,CATEGORY=Special Ability,Halfling ~ Driven Worker																																						MULT:YES	CHOOSE:SKILL|TYPE=Craft|TYPE=Perform|TYPE=Profession																																BONUS:SKILL|%LIST|4|TYPE=Racial													COST:0	SOURCEPAGE:p.213																																							FACT:Halfling_ReplaceSureFooted|true
+Human Shadow		KEY:Halfling ~ Human Shadow		CATEGORY:Special Ability	TYPE:RacialTraits.Halfling Racial Trait.SpecialQuality.Special Quality				PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Halfling ~ Human Shadow],[!PREFACT:1,ABILITIES,Halfling_ReplaceKeenSenses=true,Halfling_ReplaceSureFooted=true]																	DESC:Halflings seem to pop up wherever humans are found, in part because they actively support and move with human explorers, settlers, and travelers without drawing attention to themselves. These halflings can use Stealth to hide behind creatures at least one size category larger than themselves, without any other source of concealment or cover. As long as the halflings are within 30 feet of a human, they gain a +2 racial bonus on Sleight of Hand checks and Stealth checks.	DESC:This racial trait replaces keen senses and sure-footed.|!PREABILITY:1,CATEGORY=Special Ability,Halfling ~ Human Shadow																																																													COST:0	SOURCEPAGE:p.213	ASPECT:CombatBonus|You can use Stealth to hide behind creatures at least one size category larger than yourself.	ASPECT:SkillBonus|+2 racial bonus on Sleight of Hand checks and Stealth checks while within 30 feet of a human.	FACT:Halfling_ReplaceKeenSenses|true	FACT:Halfling_ReplaceSureFooted|true
+Secretive Survivor	KEY:Halfling ~ Secretive Survivor	CATEGORY:Special Ability	TYPE:RacialTraits.Halfling Racial Trait.SpecialQuality.Special Quality.Applied Bonus	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Halfling ~ Secretive Survivor],[!PREFACT:1,ABILITIES,Halfling_ReplaceSureFooted=true]																					DESC:Halflings from poor and desperate communities, most often in big cities, must take what they need without getting caught in order to survive. They gain a +2 racial bonus on Bluff and Stealth checks.	DESC:This racial trait replaces sure-footed.|!PREABILITY:1,CATEGORY=Special Ability,Halfling ~ Secretive Survivor																																																																																											BONUS:SKILL|Bluff,Stealth|2|TYPE=Racial												COST:0	SOURCEPAGE:p.213																																							FACT:Halfling_ReplaceSureFooted|true
+Skulker			KEY:Halfling ~ Skulker			CATEGORY:Special Ability	TYPE:RacialTraits.Halfling Racial Trait.SpecialQuality.Special Quality				PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Halfling ~ Skulker],[!PREFACT:1,ABILITIES,Halfling_ReplaceFearless=true,Halfling_ReplaceWeaponFamiliarity=true]																	DESC:Oppressed halflings train from a young age to take advantage of times when their oppressors ignore them. Such halflings gain a +1 racial bonus on attacks against foes who are denied their Dexterity bonus to AC.	DESC:This racial trait replaces fearless and weapon familiarity.|!PREABILITY:1,CATEGORY=Special Ability,Halfling ~ Skulker																																																																																																									COST:0	SOURCEPAGE:p.213	ASPECT:CombatBonus|+1 racial bonus on attacks against foes who are denied their Dexterity bonus to AC.																					FACT:Halfling_ReplaceFearless|true	FACT:Halfling_ReplaceWeaponFamiliarity|true
+Unfettered			KEY:Halfling ~ Unfettered		CATEGORY:Special Ability	TYPE:RacialTraits.Halfling Racial Trait.SpecialQuality.Special Quality.Applied Bonus	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Halfling ~ Unfettered],[!PREFACT:1,ABILITIES,Halfling_ReplaceHalflingLuck=true,Halfling_ReplaceKeenSenses=true]																	DESC:Former slips liberated from slavery train to ensure they will never be slaves again. They gain a +4 racial bonus on Escape Artist checks and a +2 racial bonus on saving throws against effects that cause the entangled condition, to CMD against grapples, and on combat maneuver checks to escape a grapple.	DESC:This racial trait replaces halfling luck and keen senses.|!PREABILITY:1,CATEGORY=Special Ability,Halfling ~ Unfettered																																																																							BONUS:SKILL|Escape Artist|4|TYPE=Racial	BONUS:VAR|CMD_Grapple|2|TYPE=Racial						COST:0	SOURCEPAGE:p.213	ASPECT:SaveBonus|+2 vs. entangled	ASPECT:CMBCircumstance|+2 to escape a grapple																									FACT:Halfling_ReplaceHalflingLuck|true	FACT:Halfling_ReplaceKeenSenses|true
+Unlucky Halfling		KEY:Halfling ~ Unlucky Halfling	CATEGORY:Special Ability	TYPE:RacialTraits.Halfling Racial Trait.SpecialQuality.Special Quality.Applied Bonus	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Halfling ~ Unlucky Halfling],[!PREFACT:1,ABILITIES,Halfling_ReplaceHalflingLuck=true]																					DESC:These halflings take a -1 penalty on saving throws but also gain a +1 racial bonus to the caster level and save DC of all curse spells and spell-like abilities. In addition, such halflings can use ill omen as a spell-like ability once per day.	DESC:This racial trait replaces halfling luck.|!PREABILITY:1,CATEGORY=Special Ability,Halfling ~ Unlucky Halfling																																																				ABILITY:Spell-Like Ability|AUTOMATIC|Racial SLA ~ Ill Omen	BONUS:CASTERLEVEL|DESCRIPTOR.Curse|1|TYPE=Racial	BONUS:DC|DESCRIPTOR.Curse|1|TYPE=Racial	BONUS:SAVE|ALL|-1|TYPE=Racial																			COST:0	SOURCEPAGE:p.213																																							FACT:Halfling_ReplaceHalflingLuck|true
+
+
+# ------------------------------
+# Human
+# ------------------------------
+
+###Block: Racial Traits
+# Ability Name							Source Page
+CATEGORY=Special Ability|Human ~ Ability Scores.MOD	SOURCEPAGE:p.238
+CATEGORY=Special Ability|Human ~ Size.MOD			SOURCEPAGE:p.238
+CATEGORY=Special Ability|Human ~ Speed.MOD		SOURCEPAGE:p.238
+CATEGORY=Special Ability|Human ~ Bonus Feat.MOD		SOURCEPAGE:p.238
+CATEGORY=Special Ability|Human ~ Skilled.MOD		SOURCEPAGE:p.238
+CATEGORY=Special Ability|Human ~ Languages.MOD		SOURCEPAGE:p.238
+
+###Block: Alternate Racial Traits
+# Ability Name		Unique Key					Category of Ability		Type												Required Ability							Multiple Requirements																			Desc is PI?		Description																																																																																																														Multiple?	Choose								Selections	Auto Weapon Prof		Ability							Save bonus				Bonus to Situation																																										Bonus to skill									Modify VAR								Cost		Source Page		Aspects																																		FACT						Information
+Awareness			KEY:Human ~ Awareness			CATEGORY:Special Ability	TYPE:RacialTraits.Human Racial Trait.SpecialQuality.Special Quality										PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Human ~ Awareness],[!PREFACT:1,ABILITIES,Human_ReplaceBonusFeat=true]						DESC:Humans raised within monastic traditions or communities that encourage mindfulness seem to shrug off many dangers more easily than other humans. They gain a +1 racial bonus on all saving throws and concentration checks.	DESC:This racial trait replaces humans' bonus feat.|!PREABILITY:1,CATEGORY=Special Ability,Human ~ Awareness																																																																																BONUS:SAVE|ALL|1|TYPE=Racial																																																																		COST:0	SOURCEPAGE:p.213	ASPECT:CombatBonus|+1 racial bonus on concentration checks.																										FACT:Human_ReplaceBonusFeat|true
+Comprehensive Education	KEY:Human ~ Comprehensive Education	CATEGORY:Special Ability	TYPE:RacialTraits.Human Racial Trait.SpecialQuality.Special Quality										PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Human ~ Comprehensive Education],[!PREFACT:1,ABILITIES,Human_ReplaceSkilled=true]				DESC:Humans raised with skilled teachers draw upon vast swathes of knowledge gained over centuries of civilization. They gain all Knowledge skills as class skills, and they gain a +1 racial bonus on skill checks for each Knowledge skill that they gain as a class skill from their class levels.	DESC:This racial trait replaces skilled.|!PREABILITY:1,CATEGORY=Special Ability,Human ~ Comprehensive Education																																																													ABILITY:Class Skill|AUTOMATIC|TYPE=Knowledge																																																																							COST:0	SOURCEPAGE:p.213	ASPECT:SkillBonus|+1 racial bonus on skill checks for each Knowledge skill that you gain as a class skill from class levels.															FACT:Human_ReplaceSkilled|true
+Industrious			KEY:Human ~ Industrious			CATEGORY:Special Ability	TYPE:RacialTraits.Human Racial Trait.SpecialQuality.Special Quality										PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Human ~ Industrious],[!PREFACT:1,ABILITIES,Human_ReplaceSkilled=true]			DESCISPI:YES	DESC:Humans are known in the Inner Sea for their drive and work ethic. Humans with this racial trait gain a +2 racial bonus on concentration checks and checks with their choice of one Craft or Profession skill.	DESC:This racial trait replaces skilled.|!PREABILITY:1,CATEGORY=Special Ability,Human ~ Industrious																																																											MULT:YES	CHOOSE:SKILL|TYPE=Craft|TYPE=Profession																																																																			BONUS:SKILL|%LIST|2|TYPE=Racial															COST:0	SOURCEPAGE:p.213	ASPECT:CombatBonus|+2 racial bonus on concentration checks.																										FACT:Human_ReplaceSkilled|true
+Innovative			KEY:Human ~ Innovative			CATEGORY:Special Ability	TYPE:RacialTraits.Human Racial Trait.SpecialQuality.Special Quality										PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Human ~ Innovative],[!PREFACT:1,ABILITIES,Human_ReplaceSkilled=true]			DESCISPI:YES	DESC:Humans have come to shape the face of Golarion because they are inveterate innovators. Humans with this racial trait gain a +2 racial bonus on Knowledge (arcana) and Spellcraft checks to independently research spells, create magic items they have never encountered before, and identify unique magical effects. They also gain a +2 racial bonus on Charisma-based skill checks to persuade others to adopt a new ideology or further the cause of discovery and progress.	DESC:This racial trait replaces skilled.|!PREABILITY:1,CATEGORY=Special Ability,Human ~ Innovative																																														BONUS:SITUATION|Knowledge (Arcana)=to identify unique magical effects,Knowledge (Arcana)=to independently research spells,Spellcraft=to create unknown magic items,Spellcraft=to identify unique magical effects,Spellcraft=to independently research spells|2|TYPE=Racial																					COST:0	SOURCEPAGE:p.213	ASPECT:SkillBonus|+2 racial bonus on Charisma-based skill checks to persuade others to adopt a new ideology or further the cause of discovery and progress.										FACT:Human_ReplaceSkilled|true
+Institutional Memory	KEY:Human ~ Institutional Memory	CATEGORY:Special Ability	TYPE:RacialTraits.Human Racial Trait.SpecialQuality.Special Quality										PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Human ~ Institutional Memory],[!PREFACT:1,ABILITIES,Human_ReplaceSkilled=true]				DESC:Humans rely on their institutions to remember the distant past and to preserve their own memories for the distant future. They gain a +4 racial bonus on Knowledge checks to answer questions about any organizations, guilds, or religions to which they belong, and they can attempt such skill checks untrained.	DESC:This racial trait replaces skilled.|!PREABILITY:1,CATEGORY=Special Ability,Human ~ Institutional Memory																																																																																																																																							COST:0	SOURCEPAGE:p.214	ASPECT:SkillBonus|+4 racial bonus on Knowledge checks to answer questions about any organizations, guilds, or religions to which you belong, and you can attempt such skill checks untrained.				FACT:Human_ReplaceSkilled|true
+Military Tradition	KEY:Human ~ Military Tradition	CATEGORY:Special Ability	TYPE:RacialTraits.Human Racial Trait.SpecialQuality.Special Quality										PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Human ~ Military Tradition],[!PREFACT:1,ABILITIES,Human_ReplaceBonusFeat=true]				DESC:Several human cultures raise all children (or all children of a certain social class) to serve in the military or defend themselves with force of arms. They gain proficiency with up to two martial or exotic weapons appropriate to their culture.	DESC:This racial trait replaces the bonus feat trait.|!PREABILITY:1,CATEGORY=Special Ability,Human ~ Military Tradition																																																		MULT:YES	CHOOSE:WEAPONPROFICIENCY|TYPE=Martial|TYPE=Exotic	SELECT:2	AUTO:WEAPONPROF|%LIST																																																																															COST:0	SOURCEPAGE:p.214																																				FACT:Human_ReplaceBonusFeat|true	INFO:WeaponProficiency|%1|LIST
+Practiced Hunter		KEY:Human ~ Practiced Hunter		CATEGORY:Special Ability	TYPE:RacialTraits.Human Racial Trait.SpecialQuality.Special Quality										PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Human ~ Practiced Hunter],[!PREFACT:1,ABILITIES,Human_ReplaceSkilled=true]					DESC:Members of some human cultures train from youth to find and follow the trails of vital game and at the same time hide the evidence of their own passage. These humans gain a +2 racial bonus on Stealth and Survival checks, and Stealth and Survival are always class skills for them.	DESC:This racial trait replaces skilled.|!PREABILITY:1,CATEGORY=Special Ability,Human ~ Practiced Hunter																																																															ABILITY:Class Skill|AUTOMATIC|Stealth|Survival																																																			BONUS:SKILL|Stealth,Survival|2|TYPE=Racial													COST:0	SOURCEPAGE:p.214																																				FACT:Human_ReplaceSkilled|true
+Self-Made Fate		KEY:Human ~ Self-Made Fate		CATEGORY:Special Ability	TYPE:RacialTraits.Human Racial Trait.SpecialQuality.Special Quality										PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Human ~ Self-Made Fate],[!PREFACT:1,ABILITIES,Human_ReplaceBonusFeat=true]		DESCISPI:YES	DESC:Some humans build nations that deny the importance of gods and divine magic, and those raised to avoid divine influence (mostly people of Bachuan, Druma, Rahadoum, or Touvette) develop a knack for defying divine magic. They gain a +2 racial bonus on saving throws against divine spells and spell-like abilities, as well as the spells and spell-like abilities of aeons, psychopomps, and outsiders with an alignment subtype.	DESC:This racial trait replaces the bonus feat trait.|!PREABILITY:1,CATEGORY=Special Ability,Human ~ Self-Made Fate																																																																																																										BONUS:VAR|SaveBonus_vs_DivineSpells|2|TYPE=Racial	COST:0	SOURCEPAGE:p.214	ASPECT:SaveBonus|+2 racial bonus on saving throws against divine spells and spell-like abilities, as well as the spells and spell-like abilities of aeons, psychopomps, and outsiders with an alignment subtype.	FACT:Human_ReplaceBonusFeat|true
+Social Ties			KEY:Human ~ Social Ties			CATEGORY:Special Ability	TYPE:RacialTraits.Human Racial Trait.SpecialQuality.Special Quality										PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Human ~ Social Ties],[!PREFACT:1,ABILITIES,Human_ReplaceSkilled=true]						DESC:Some human societies run on complex webs of favors and loyalties that canny members can intuitively exploit with relative ease. These humans gain a +2 racial bonus on Diplomacy checks, and on any skill checks to recruit members and teams for an organization. They also add a +1 racial bonus to their Leadership scores (if they gain the Leadership feat).	DESC:This racial trait replaces skilled.|!PREABILITY:1,CATEGORY=Special Ability,Human ~ Social Ties																																																																																																														BONUS:SKILL|Diplomacy|2|TYPE=Racial						BONUS:VAR|LeadershipScore|1|TYPE=Racial			COST:0	SOURCEPAGE:p.214	ASPECT:SkillBonus|+2 racial bonus on any skill checks to recruit members and teams for an organization.																		FACT:Human_ReplaceSkilled|true
+Tribalistic			KEY:Human ~ Tribalistic			CATEGORY:Special Ability	TYPE:RacialTraits.Human Racial Trait.SpecialQuality.Special Quality	PREABILITY:1,CATEGORY=Background,TYPE.HumanEthnicity	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Human ~ Tribalistic],[!PREFACT:1,ABILITIES,Human_ReplaceLanguages=true]					DESC:Many humans naturally form into cliques or tribes, and these humans work exceptionally well with those they view as fellow tribe members. Such humans gain a +2 racial bonus on attack rolls and skill checks to use the aid another action to aid humans of the same ethnicity. Humans with this racial trait must hail from an ethnicity that has its own language other than Common, and they only start with that language; if they have high Intelligence scores, they can select their bonus languages from among Common, Giant, Goblin, and Halfling.	DESC:This racial trait alters starting and bonus languages.|!PREABILITY:1,CATEGORY=Special Ability,Human ~ Tribalistic																																																																																																COST:0	SOURCEPAGE:p.214	ASPECT:CombatBonus|+2 racial bonus on attack rolls and skill checks to use the aid another action to aid humans of the same ethnicity.													FACT:Human_ReplaceLanguages|true
+Unstoppable Magic		KEY:Human ~ Unstoppable Magic		CATEGORY:Special Ability	TYPE:RacialTraits.Human Racial Trait.SpecialQuality.Special Quality										PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Human ~ Unstoppable Magic],[!PREFACT:1,ABILITIES,Human_ReplaceBonusFeat=true]	DESCISPI:YES	DESC:Humans from civilizations built upon advanced magic, such as Geb or Nex, are educated in a variety of ways to accomplish their magical goals. They gain a +2 racial bonus on caster level checks against spell resistance.	DESC:This racial trait replaces the bonus feat trait.|!PREABILITY:1,CATEGORY=Special Ability,Human ~ Unstoppable Magic																																																																																																																																																					COST:0	SOURCEPAGE:p.214	ASPECT:CombatBonus|+2 racial bonus on caster level checks against spell resistance.																						FACT:Human_ReplaceBonusFeat|true
+Wayfarer			KEY:Human ~ Wayfarer			CATEGORY:Special Ability	TYPE:RacialTraits.Human Racial Trait.SpecialQuality.Special Quality										PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Human ~ Wayfarer],[!PREFACT:1,ABILITIES,Human_ReplaceSkilled=true]			DESCISPI:YES	DESC:Humans maintain the largest trade networks on Golarion and the farthest-reaching civilizations, putting them in contact with a huge number of cultures. Humans with this racial trait gain a +2 racial bonus on Survival checks to avoid becoming lost, Knowledge (geography) checks, and Knowledge (local) checks. Whenever these humans gain a rank in Linguistics, they learn two languages rather than one.	DESC:This racial trait replaces skilled.|!PREABILITY:1,CATEGORY=Special Ability,Human ~ Wayfarer																																																									BONUS:SITUATION|Survival=to avoid becoming lost|TYPE=Racial																																				BONUS:SKILL|Knowledge (Geography),Knowledge (Local)|2|TYPE=Racial	BONUS:VAR|Linguisitcs_NumLanguages|1			COST:0	SOURCEPAGE:p.214																																				FACT:Human_ReplaceSkilled|true
+
+###Block:
+# Ability Name	Unique Key					Category of Ability		Type												Visible		Description																															Template																	Source Page
+Languages		KEY:Human ~ Tribalistic Languages	CATEGORY:Special Ability	TYPE:RacialTraits.Human Racial Trait.SpecialQuality.Racial Language	VISIBLE:DISPLAY	DESC:Tribalistic humans only start with their ethnic language; if they have high Intelligence scores, they can select their bonus languages from among Common, Giant, Goblin, and Halfling.	TEMPLATE:Bonus Language ~ Common|Bonus Language ~ Giant|Bonus Language ~ Goblin|Bonus Language ~ Halfling	SOURCEPAGE:p.214
+
+
+# ==============================
+# RACE ABILITIES - Other Races
+# ==============================
+
+# ------------------------------
+# Aasimar
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\aasimar\
+
+###Block: Racial Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Aasimar ~ Ability Scores.MOD		SOURCEPAGE:p.238
+CATEGORY=Special Ability|Aasimar ~ Type.MOD			SOURCEPAGE:p.238
+CATEGORY=Special Ability|Aasimar ~ Size.MOD			SOURCEPAGE:p.238
+CATEGORY=Special Ability|Aasimar ~ Speed.MOD			SOURCEPAGE:p.238
+CATEGORY=Special Ability|Aasimar ~ Vision.MOD			SOURCEPAGE:p.238
+CATEGORY=Special Ability|Aasimar ~ Skilled.MOD			SOURCEPAGE:p.238
+CATEGORY=Special Ability|Aasimar ~ Spell-Like Ability.MOD	SOURCEPAGE:p.238
+CATEGORY=Special Ability|Aasimar ~ Celestial Resistance.MOD	SOURCEPAGE:p.238
+CATEGORY=Special Ability|Aasimar ~ Languages.MOD		SOURCEPAGE:p.238
+
+###Block: Subrace Selection
+# Ability Name						Source Page
+CATEGORY=Special Ability|Aasimar ~ Default.MOD	SOURCEPAGE:p.238
+
+# ------------------------------
+# Aasimar ~ Agathion-Blooded
+# ------------------------------
+
+###Block: Subrace Selection
+# Ability Name								Source Page
+CATEGORY=Special Ability|Aasimar ~ Agathion-Blooded.MOD	SOURCEPAGE:p.238
+
+###Block: Replacement Racial Traits
+# Ability Name										Source Page
+CATEGORY=Special Ability|Agathion-Blooded ~ Ability Scores.MOD		SOURCEPAGE:p.238
+CATEGORY=Special Ability|Agathion-Blooded ~ Skilled.MOD			SOURCEPAGE:p.238
+CATEGORY=Special Ability|Agathion-Blooded ~ Spell-Like Ability.MOD	SOURCEPAGE:p.238
+
+# ------------------------------
+# Aasimar ~ Angel-Blooded
+# ------------------------------
+
+###Block: Subrace Selection
+# Ability Name							Source Page
+CATEGORY=Special Ability|Aasimar ~ Angel-Blooded.MOD	SOURCEPAGE:p.239
+
+###Block: Replacement Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Angel-Blooded ~ Ability Scores.MOD		SOURCEPAGE:p.239
+CATEGORY=Special Ability|Angel-Blooded ~ Skilled.MOD			SOURCEPAGE:p.239
+CATEGORY=Special Ability|Angel-Blooded ~ Spell-Like Ability.MOD	SOURCEPAGE:p.239
+
+# ------------------------------
+# Aasimar ~ Archon-Blooded
+# ------------------------------
+
+###Block: Subrace Selection
+# Ability Name							Source Page
+CATEGORY=Special Ability|Aasimar ~ Archon-Blooded.MOD	SOURCEPAGE:p.239
+
+###Block: Replacement Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Archon-Blooded ~ Ability Scores.MOD	SOURCEPAGE:p.239
+CATEGORY=Special Ability|Archon-Blooded ~ Skilled.MOD			SOURCEPAGE:p.239
+CATEGORY=Special Ability|Archon-Blooded ~ Spell-Like Ability.MOD	SOURCEPAGE:p.239
+
+# ------------------------------
+# Aasimar ~ Azata-Blooded
+# ------------------------------
+
+###Block: Subrace Selection
+# Ability Name							Source Page
+CATEGORY=Special Ability|Aasimar ~ Azata-Blooded.MOD	SOURCEPAGE:p.239
+
+###Block: Replacement Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Azata-Blooded ~ Ability Scores.MOD		SOURCEPAGE:p.239
+CATEGORY=Special Ability|Azata-Blooded ~ Skilled.MOD			SOURCEPAGE:p.239
+CATEGORY=Special Ability|Azata-Blooded ~ Spell-Like Ability.MOD	SOURCEPAGE:p.239
+
+# ------------------------------
+# Aasimar ~ Garuda-Blooded
+# ------------------------------
+
+###Block: Subrace Selection
+# Ability Name							Source Page
+CATEGORY=Special Ability|Aasimar ~ Garuda-Blooded.MOD	SOURCEPAGE:p.239
+
+###Block: Replacement Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Garuda-Blooded ~ Ability Scores.MOD	SOURCEPAGE:p.239
+CATEGORY=Special Ability|Garuda-Blooded ~ Skilled.MOD			SOURCEPAGE:p.239
+CATEGORY=Special Ability|Garuda-Blooded ~ Spell-Like Ability.MOD	SOURCEPAGE:p.239
+
+# ------------------------------
+# Aasimar ~ Peri-Blooded
+# ------------------------------
+
+###Block: Subrace Selection
+# Ability Name							Source Page
+CATEGORY=Special Ability|Aasimar ~ Peri-Blooded.MOD	SOURCEPAGE:p.239
+
+###Block: Replacement Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Peri-Blooded ~ Ability Scores.MOD		SOURCEPAGE:p.239
+CATEGORY=Special Ability|Peri-Blooded ~ Skilled.MOD			SOURCEPAGE:p.239
+CATEGORY=Special Ability|Peri-Blooded ~ Spell-Like Ability.MOD	SOURCEPAGE:p.239
+
+# ------------------------------
+# Aasimar ~ Alternate Racial Traits
+# ------------------------------
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key				Category of Ability		Type												Multiple Requirements																									Description																																																																																									Multiple?	Choose				Ability														Bonus to skill						Cost		Source Page		Aspects																							FACT
+Crusading Magic	KEY:Aasimar ~ Crusading Magic	CATEGORY:Special Ability	TYPE:RacialTraits.Aasimar Racial Trait.SpecialQuality.Special Quality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Aasimar ~ Crusading Magic],[!PREFACT:1,ABILITIES,Aasimar_ReplaceSkilled=true,Aasimar_ReplaceSpellLikeAbility=true]	DESC:Many aasimars feel obligated to train to defend the world against fiends such as the invaders from the Worldwound. These aasimars gain a +2 racial bonus on caster level checks to overcome spell resistance and on Knowledge (planes) checks.	DESC:This racial trait replaces the skilled and spell-like ability racial traits.|!PREABILITY:1,CATEGORY=Special Ability,Aasimar ~ Crusading Magic																																															BONUS:SKILL|Knowledge (Planes)|2|TYPE=Racial	COST:0	SOURCEPAGE:p.214	ASPECT:CombatBonus|+2 racial bonus on caster level checks to overcome spell resistance	ASPECT:RacialSkillModifier|+2 Knowledge (planes)	FACT:Aasimar_ReplaceSkilled|True	FACT:Aasimar_ReplaceSpellLikeAbility|True
+Lost Promise	KEY:Aasimar ~ Lost Promise	CATEGORY:Special Ability	TYPE:RacialTraits.Aasimar Racial Trait.SpecialQuality.Special Quality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Aasimar ~ Lost Promise],[!PREFACT:1,ABILITIES,Aasimar_ReplaceSpellLikeAbility=true]						DESC:While many view aasimars' beauty and celestial powers as a gift, in some communities an aasimar might be persecuted for being different and fall into darkness. The forces of evil delight in such a perversion of their celestial counterparts' gifts. As long as the aasimar retains an evil alignment, she gains the maw or claw tiefling alternate racial trait (Pathfinder RPG Advanced Race Guide 169).	DESC:This racial trait replaces the spell-like ability racial trait.|!PREABILITY:1,CATEGORY=Special Ability,Aasimar ~ Lost Promise	MULT:YES	CHOOSE:STRING|Bite|Claws	ABILITY:Tiefling Racial Trait|AUTOMATIC|Tiefling ~ Maw or Claw (%LIST)|PREALIGN:LE,NE,CE									COST:0	SOURCEPAGE:p.214																									FACT:Aasimar_ReplaceSpellLikeAbility|True
+
+
+# ------------------------------
+# Android
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\android\
+
+###Block: Racial Traits
+# Ability Name							Source Page
+CATEGORY=Special Ability|Android ~ Ability Scores.MOD	SOURCEPAGE:p.239
+CATEGORY=Special Ability|Android ~ Type.MOD		SOURCEPAGE:p.239
+CATEGORY=Special Ability|Android ~ Size.MOD		SOURCEPAGE:p.239
+CATEGORY=Special Ability|Android ~ Speed.MOD		SOURCEPAGE:p.239
+CATEGORY=Special Ability|Android ~ Vision.MOD		SOURCEPAGE:p.239
+CATEGORY=Special Ability|Android ~ Constructed.MOD	SOURCEPAGE:p.239
+CATEGORY=Special Ability|Android ~ Emotionless.MOD	SOURCEPAGE:p.239
+CATEGORY=Special Ability|Android ~ Nanite Surge.MOD	SOURCEPAGE:p.239
+CATEGORY=Special Ability|Android ~ Languages.MOD	SOURCEPAGE:p.239
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key					Category of Ability		Type															Multiple Requirements																				Description																																																																																																		Cost		Source Page		FACT
+Repairing Nanites	KEY:Android ~ Repairing Nanites	CATEGORY:Special Ability	TYPE:RacialTraits.Android Racial Trait.SpecialQuality.Special Quality.Special Ability	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Android ~ Repairing Nanites],[!PREFACT:1,ABILITIES,Android_ReplaceNaniteSurge=True]	DESC:Some androids cannot prompt their nanites to aid them in any endeavor, but instead find that their nanites stitch their wounds together. The first time each day that such an android has taken an amount of damage greater than or equal to %1 (twice her Hit Dice), the nanites automatically activate, without an action. Her circuitry-tattoos glow with light equivalent to that of a torch for 1 round and she heals %1 hit points (a number equal to twice her Hit Dice).|TL*2	DESC:This racial trait replaces nanite surge.|!PREABILITY:1,CATEGORY=Special Ability,Android ~ Repairing Nanites	COST:0	SOURCEPAGE:p.214	FACT:Android_ReplaceNaniteSurge|True
+
+
+# ------------------------------
+# Catfolk
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\catfolk\
+
+###Block: Racial Traits
+# Ability Name							Source Page
+CATEGORY=Special Ability|Catfolk ~ Ability Scores.MOD	SOURCEPAGE:p.239
+CATEGORY=Special Ability|Catfolk ~ Type.MOD		SOURCEPAGE:p.239
+CATEGORY=Special Ability|Catfolk ~ Size.MOD		SOURCEPAGE:p.239
+CATEGORY=Special Ability|Catfolk ~ Speed.MOD		SOURCEPAGE:p.239
+CATEGORY=Special Ability|Catfolk ~ Vision.MOD		SOURCEPAGE:p.239
+CATEGORY=Special Ability|Catfolk ~ Cat's Luck.MOD	SOURCEPAGE:p.239
+CATEGORY=Special Ability|Catfolk ~ Natural Hunter.MOD	SOURCEPAGE:p.239
+CATEGORY=Special Ability|Catfolk ~ Sprinter.MOD		SOURCEPAGE:p.239
+CATEGORY=Special Ability|Catfolk ~ Languages.MOD	SOURCEPAGE:p.239
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key				Category of Ability		Type												Multiple Requirements																							Desc is PI?		Description																																																																											Bonus to skill					Cost		Source Page		Aspects																							FACT
+Jungle Stalker	KEY:Catfolk ~ Jungle Stalker	CATEGORY:Special Ability	TYPE:RacialTraits.Catfolk Racial Trait.SpecialQuality.Special Quality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Catfolk ~ Jungle Stalker],[!PREFACT:1,ABILITIES,Catfolk_ReplaceCatsLuck=True,Catfolk_ReplaceSprinter=True]	DESCISPI:YES	DESC:Catfolk often live in deeply forested terrain, such as the Valashmai Jungle, and they have become naturally sure-footed to maintain their hunting prowess in these dangerous environments. Such catfolk gain a +2 racial bonus on Acrobatics checks and can ignore the first square of difficult terrain caused by foliage each round.  DESC:This racial trait replaces cat’s luck and sprinter.|!PREABILITY:1,CATEGORY=Special Ability,Catfolk ~ Jungle Stalker	BONUS:SKILL|Acrobatics|2|TYPE=Racial	COST:0	SOURCEPAGE:p.214	ASPECT:CombatBonus|You can ignore the first square of difficult terrain caused by foliage each round.	ASPECT:RacialSkillModifier|+2 Acrobatics	FACT:Catfolk_ReplaceCatsLuck|True	FACT:Catfolk_ReplaceSprinter|True
+
+
+# ------------------------------
+# Changeling
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\changeling\
+
+###Block: Racial Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Changeling ~ Ability Scores.MOD	SOURCEPAGE:p.240
+CATEGORY=Special Ability|Changeling ~ Type.MOD			SOURCEPAGE:p.240
+CATEGORY=Special Ability|Changeling ~ Size.MOD			SOURCEPAGE:p.240
+CATEGORY=Special Ability|Changeling ~ Speed.MOD			SOURCEPAGE:p.240
+CATEGORY=Special Ability|Changeling ~ Vision.MOD		SOURCEPAGE:p.240
+CATEGORY=Special Ability|Changeling ~ Hag Racial Trait.MOD	SOURCEPAGE:p.240
+CATEGORY=Special Ability|Changeling ~ Claws.MOD			SOURCEPAGE:p.240
+CATEGORY=Special Ability|Changeling ~ Natural Armor.MOD	SOURCEPAGE:p.240
+CATEGORY=Special Ability|Changeling ~ Languages.MOD		SOURCEPAGE:p.240
+
+###Block: Hag Racial Trait Abilities
+# Ability Name										Source Page
+CATEGORY=Special Ability|Changeling ~ Green Hag Green Widow.MOD		SOURCEPAGE:p.240
+CATEGORY=Special Ability|Changeling ~ Annis Hag Hulking Changeling.MOD	SOURCEPAGE:p.240
+CATEGORY=Special Ability|Changeling ~ Sea Hag Sea Lungs.MOD			SOURCEPAGE:p.240
+
+###Block: Hag Racial Trait Abilities
+# Ability Name			Unique Key							Output Name				Category of Ability		Type														Description																													Combat bonus					Bonus to Situation										Modify VAR												Source Page		Aspects
+Crawling Skin (Blood Hag)	KEY:Changeling ~ Blood Hag Crawling Skin		OUTPUTNAME:Crawling Skin	CATEGORY:Special Ability	TYPE:RacialTraits.Hag Racial Trait.SpecialQuality.Special Quality.Applied Bonus	DESC:The changeling gains a +2 bonus on Disguise checks made to look like specific individuals.																						BONUS:SITUATION|Disguise=to look like specific individuals|2|TYPE=Racial														SOURCEPAGE:p.240	ASPECT:RacialSkillModifier|+2 Disguise to look like specific individuals
+Dead Eyes (Mute Hag)		KEY:Changeling ~ Mute Hag Dead Eyes			OUTPUTNAME:Dead Eyes		CATEGORY:Special Ability	TYPE:RacialTraits.Hag Racial Trait.SpecialQuality.Special Quality.Applied Bonus	DESC:One of the changeling’s eyes is a solid, dead black (with no whites even at its edges); this gives her a +2 bonus on all saves against gaze attacks and visual illusions.																					BONUS:VAR|SaveBonus_vs_GazeAttacks,SaveBonus_vs_VisualIllusions|2|TYPE=Racial	SOURCEPAGE:p.240	ASPECT:SaveBonus|+2 bonus on all saves against gaze attacks and visual illusions.
+Frostlaced Flesh (Winter Hag)	KEY:Changeling ~ Winter Hag Frostlaced Flesh	OUTPUTNAME:Frostlaced Flesh	CATEGORY:Special Ability	TYPE:RacialTraits.Hag Racial Trait.SpecialQuality.Special Quality.Applied Bonus	DESC:The changeling leaves no tracks in snow, and gains a +2 racial bonus on all saves versus cold effects.																																	BONUS:VAR|SaveBonus_vs_ColdEffects|2|TYPE=Racial					SOURCEPAGE:p.240	ASPECT:SaveBonus|+2 racial bonus on all saves versus cold effects.
+Into the Wind (Storm Hag)	KEY:Changeling ~ Storm Hag Into the Wind		OUTPUTNAME:Into the Wind	CATEGORY:Special Ability	TYPE:RacialTraits.Hag Racial Trait.SpecialQuality.Special Quality.Applied Bonus	DESC:The changeling gains a +1 racial bonus on ranged damage rolls.																			BONUS:COMBAT|DAMAGE.Ranged|1|TYPE=Racial																											SOURCEPAGE:p.240
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key				Category of Ability		Type															Multiple Requirements																				Description																																																																																			Multiple?	Choose								Ability													Cost		Source Page		FACT
+Hag Magic		KEY:Changeling ~ Hag Magic	CATEGORY:Special Ability	TYPE:RacialTraits.Changeling Racial Trait.SpecialQuality.Special Quality			PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Changeling ~ Hag Magic],[!PREFACT:1,ABILITIES,Changeling_ReplaceNaturalArmor=True]		DESC:Some changelings have an innate talent for magic. They can choose one 1st- or 0-level spell from the witch spell list that does not have a material component costing more than 1 gp. They can use the chosen spell as a spell-like ability once per day if it is a 1st-level spell or three times per day if it is a 0-level spell (caster level equal to the changeling's character level).	DESC:This racial trait replaces natural armor.|!PREABILITY:1,CATEGORY=Special Ability,Changeling ~ Hag Magic	MULT:YES	CHOOSE:SPELLS|CLASSLIST=Witch[LEVELMIN=0;LEVELMAX=1]															COST:0	SOURCEPAGE:p.214	FACT:Changeling_ReplaceNaturalArmor|True
+Witchborn		KEY:Changeling ~ Witchborn	CATEGORY:Special Ability	TYPE:RacialTraits.Changeling Racial Trait.SpecialQuality.Special Quality.Applied Bonus	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Changeling ~ Witchborn],[!PREFACT:1,ABILITIES,Changeling_ReplaceAbilityScores=True]	DESC:Most changelings are talented witches. They gain a +2 bonus to Intelligence and Charisma instead of a +2 bonus to Wisdom and Charisma.	DESC:This racial trait alters the changeling's racial ability score modifiers.|!PREABILITY:1,CATEGORY=Special Ability,Changeling ~ Witchborn																																																ABILITY:Changeling Racial Trait|AUTOMATIC|Witchborn ~ Changeling ~ Ability Scores	COST:0	SOURCEPAGE:p.215	FACT:Changeling_ReplaceAbilityScores|True
+
+###Block: Replacement Racial Traits
+# Ability Name						Unique Key							Category of Ability		Type														Visible		Required Fact								Description							Stat bonus										Source Page
++2 Intelligence, +2 Charisma, -2 Constitution	KEY:Witchborn ~ Changeling ~ Ability Scores	CATEGORY:Special Ability	TYPE:RacialTraits.Changeling Racial Trait.SpecialQuality.Racial Ability Scores	VISIBLE:DISPLAY	PREFACT:1,ABILITIES,Changeling_ReplaceAbilityScores=True	DESC:Most changelings are talented witches.	BONUS:STAT|INT,CHA|2|TYPE=Racial	BONUS:STAT|CON|-2|TYPE=Racial	SOURCEPAGE:p.215
+
+
+# ------------------------------
+# Dhampir
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\dhampir\
+
+###Block: Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Dhampir ~ Ability Scores.MOD			SOURCEPAGE:p.240
+CATEGORY=Special Ability|Dhampir ~ Type.MOD				SOURCEPAGE:p.240
+CATEGORY=Special Ability|Dhampir ~ Size.MOD				SOURCEPAGE:p.240
+CATEGORY=Special Ability|Dhampir ~ Speed.MOD				SOURCEPAGE:p.240
+CATEGORY=Special Ability|Dhampir ~ Vision.MOD				SOURCEPAGE:p.240
+CATEGORY=Special Ability|Dhampir ~ Skilled.MOD				SOURCEPAGE:p.240
+CATEGORY=Special Ability|Dhampir ~ Undead Resistance.MOD		SOURCEPAGE:p.240
+CATEGORY=Special Ability|Dhampir ~ Weakness.MOD				SOURCEPAGE:p.240
+CATEGORY=Special Ability|Dhampir ~ Negative Energy Affinity.MOD	SOURCEPAGE:p.240
+CATEGORY=Special Ability|Dhampir ~ Spell-Like Ability.MOD		SOURCEPAGE:p.240
+CATEGORY=Special Ability|Dhampir ~ Resist Level Drain.MOD		SOURCEPAGE:p.240
+CATEGORY=Special Ability|Dhampir ~ Languages.MOD			SOURCEPAGE:p.240
+
+###Block: Subrace Selection
+# Ability Name						Source Page
+CATEGORY=Special Ability|Dhampir ~ Default.MOD	SOURCEPAGE:p.240
+
+# ------------------------------
+# Dhampir ~ Jiang-shi-Born
+# ------------------------------
+
+###Block: Subrace Selection
+# Ability Name							Source Page
+CATEGORY=Special Ability|Dhampir ~ Jiang-shi-Born.MOD	SOURCEPAGE:p.241
+
+###Block: Replacement Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Jiang-shi-Born ~ Ability Scores.MOD	SOURCEPAGE:p.241
+CATEGORY=Special Ability|Jiang-shi-Born ~ Skilled.MOD			SOURCEPAGE:p.241
+CATEGORY=Special Ability|Jiang-shi-Born ~ Spell-Like Ability.MOD	SOURCEPAGE:p.241
+CATEGORY=Special Ability|Jiang-shi-Born ~ Weakness.MOD		SOURCEPAGE:p.241
+
+# ------------------------------
+# Dhampir ~ Moroi-Born
+# ------------------------------
+
+###Block: Subrace Selection
+# Ability Name							Source Page
+CATEGORY=Special Ability|Dhampir ~ Moroi-Born.MOD	SOURCEPAGE:p.241
+
+###Block: Replacement Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Moroi-Born ~ Ability Scores.MOD		SOURCEPAGE:p.241
+CATEGORY=Special Ability|Moroi-Born ~ Skilled.MOD			SOURCEPAGE:p.241
+CATEGORY=Special Ability|Moroi-Born ~ Spell-Like Ability.MOD	SOURCEPAGE:p.241
+CATEGORY=Special Ability|Moroi-Born ~ Weakness.MOD			SOURCEPAGE:p.241
+
+# ------------------------------
+# Dhampir ~ Nosferatu-Born
+# ------------------------------
+
+###Block: Subrace Selection
+# Ability Name							Source Page
+CATEGORY=Special Ability|Dhampir ~ Nosferatu-Born.MOD	SOURCEPAGE:p.241
+
+###Block: Replacement Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Nosferatu-Born ~ Ability Scores.MOD	SOURCEPAGE:p.241
+CATEGORY=Special Ability|Nosferatu-Born ~ Skilled.MOD			SOURCEPAGE:p.241
+CATEGORY=Special Ability|Nosferatu-Born ~ Spell-Like Ability.MOD	SOURCEPAGE:p.241
+CATEGORY=Special Ability|Nosferatu-Born ~ Weakness.MOD		SOURCEPAGE:p.241
+
+# ------------------------------
+# Dhampir ~ Vetala-Born
+# ------------------------------
+
+###Block: Subrace Selection
+# Ability Name							Source Page
+CATEGORY=Special Ability|Dhampir ~ Vetala-Born.MOD	SOURCEPAGE:p.241
+
+###Block: Replacement Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Vetala-Born ~ Ability Scores.MOD		SOURCEPAGE:p.241
+CATEGORY=Special Ability|Vetala-Born ~ Skilled.MOD			SOURCEPAGE:p.241
+CATEGORY=Special Ability|Vetala-Born ~ Spell-Like Ability.MOD	SOURCEPAGE:p.241
+CATEGORY=Special Ability|Vetala-Born ~ Weakness.MOD			SOURCEPAGE:p.241
+
+# ------------------------------
+# Dhampir ~ Alternate Racial Traits
+# ------------------------------
+
+###Block: Alternate Racial Traits
+# Ability Name			Unique Key						Category of Ability		Type												Multiple Requirements																						Description																																																											Ability													Cost		Source Page		Aspects																				FACT
+Heir to Undying Nobility	KEY:Dhampir ~ Heir to Undying Nobility	CATEGORY:Special Ability	TYPE:RacialTraits.Dhampir Racial Trait.SpecialQuality.Special Quality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Dhampir ~ Heir to Undying Nobility],[!PREFACT:1,ABILITIES,Dhampir_ReplaceSpellLikeAbility=True]	DESC:Descended from undead nobility, perhaps from Geb, Nidal, or Ustalav, some dhampirs inherit a bit of their ancestors' ability to control living beings. They can use command and charm person each once per day.	DESC:This racial trait replaces the spell-like ability racial trait.|!PREABILITY:1,CATEGORY=Special Ability,Dhampir ~ Heir to Undying Nobility	ABILITY:Spell-Like Ability|AUTOMATIC|Racial SLA ~ Command|Racial SLA ~ Charm Person	COST:0	SOURCEPAGE:p.215																						FACT:Dhampir_ReplaceSpellLikeAbility|True
+Vampire Hunter			KEY:Dhampir ~ Vampire Hunter			CATEGORY:Special Ability	TYPE:RacialTraits.Dhampir Racial Trait.SpecialAttack.Special Attack	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Dhampir ~ Vampire Hunter],[!PREFACT:1,ABILITIES,Dhampir_ReplaceSkilled=True]					DESC:Some dhampirs bear a deep hatred for their undead progenitors and their kin that can never be fully quenched. They gain a +1 bonus on attack rolls against vampires.	DESC:This racial trait replaces manipulative.|!PREABILITY:1,CATEGORY=Special Ability,Dhampir ~ Vampire Hunter																											COST:0	SOURCEPAGE:p.215	ASPECT:CombatBonus|+1 bonus on attack rolls against vampires.	ASPECT:StatBlockName|+1 on attack rolls against vampires	FACT:Dhampir_ReplaceSkilled|True
+
+
+# ------------------------------
+# Drow
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\drow\
+
+###Block: Racial Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Drow ~ Ability Scores.MOD		SOURCEPAGE:p.241
+CATEGORY=Special Ability|Drow ~ Type.MOD				SOURCEPAGE:p.241
+CATEGORY=Special Ability|Drow ~ Size.MOD				SOURCEPAGE:p.241
+CATEGORY=Special Ability|Drow ~ Speed.MOD				SOURCEPAGE:p.241
+CATEGORY=Special Ability|Drow ~ Vision.MOD			SOURCEPAGE:p.241
+CATEGORY=Special Ability|Drow ~ Drow Immunities.MOD		SOURCEPAGE:p.241
+CATEGORY=Special Ability|Drow ~ Keen Senses.MOD			SOURCEPAGE:p.241
+CATEGORY=Special Ability|Drow ~ Spell Resistance.MOD		SOURCEPAGE:p.241
+CATEGORY=Special Ability|Drow ~ Spell-Like Abilities.MOD	SOURCEPAGE:p.241
+CATEGORY=Special Ability|Drow ~ Light Blindness.MOD		SOURCEPAGE:p.241
+CATEGORY=Special Ability|Drow ~ Poison Use.MOD			SOURCEPAGE:p.241
+CATEGORY=Special Ability|Drow ~ Weapon Familiarity.MOD	SOURCEPAGE:p.241
+CATEGORY=Special Ability|Drow ~ Languages.MOD			SOURCEPAGE:p.241
+
+###Block: Alternate Racial Traits
+# Ability Name		Unique Key				Category of Ability		Type											Multiple Requirements																												Description																																																							Cost		Source Page		Aspects																					FACT
+Defensive Training	KEY:Drow ~ Defensive Training	CATEGORY:Special Ability	TYPE:RacialTraits.Drow Racial Trait.SpecialQuality.Defensive	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Drow ~ Defensive Training],[!PREFACT:1,ABILITIES,Drow_ReplaceDrowImmunities=True,Drow_ReplaceKeenSenses=True,Drow_ReplacePoisonUse=True]	DESC:Many drow cities are frequently beset by attacks from aberrations, prompting the residents train themselves to defend against them. Drow gain a +4 dodge bonus to AC against aberrations.	DESC:This racial trait replaces drow immunities, keen senses, and poison use.|!PREABILITY:1,CATEGORY=Special Ability,Drow ~ Defensive Training	COST:0	SOURCEPAGE:p.215	ASPECT:CombatBonus|+4 dodge bonus to AC against aberrations.	ASPECT:Ability Benefit|(+4 dodge bonus to AC vs. aberrations)	FACT:Drow_ReplaceDrowImmunities|True	FACT:Drow_ReplaceKeenSenses|True	FACT:Drow_ReplacePoisonUse|True
+
+
+# ------------------------------
+# Duergar
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\duergar\
+
+###Block: Racial Traits
+# Ability Name											Source Page
+CATEGORY=Special Ability|Duergar ~ Ability Scores.MOD					SOURCEPAGE:p.186
+CATEGORY=Special Ability|Duergar ~ Type.MOD						SOURCEPAGE:p.186
+CATEGORY=Special Ability|Duergar ~ Size.MOD						SOURCEPAGE:p.186
+CATEGORY=Special Ability|Duergar ~ Speed.MOD						SOURCEPAGE:p.186
+CATEGORY=Special Ability|Duergar ~ Vision.MOD						SOURCEPAGE:p.186
+CATEGORY=Special Ability|Duergar ~ Duergar Immunities.MOD				SOURCEPAGE:p.186
+CATEGORY=Special Ability|Duergar ~ Stability.MOD					SOURCEPAGE:p.186
+CATEGORY=Special Ability|Duergar ~ Spell-Like Abilities.MOD				SOURCEPAGE:p.186
+CATEGORY=Special Ability|Duergar ~ Light Sensitivity.MOD				SOURCEPAGE:p.186
+CATEGORY=Special Ability|Duergar ~ Languages.MOD					SOURCEPAGE:p.186
+CATEGORY=Special Ability|Duergar ~ Spell-Like Ability ~ Enlarge Person.MOD	SOURCEPAGE:p.186
+CATEGORY=Special Ability|Duergar ~ Spell-Like Ability ~ Invisibility.MOD	SOURCEPAGE:p.186
+
+###Block: Alternate Racial Traits
+# Ability Name		Unique Key					Category of Ability		Type									Multiple Requirements																				Desc is PI?		Description																																																																											Ability										Modify VAR																Cost		Source Page		FACT
+Magical Taskmaster	KEY:Duergar ~ Magical Taskmaster	CATEGORY:Special Ability	TYPE:RacialTraits.Duergar Racial Trait.SpecialQuality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Duergar ~ Magical Taskmaster],[!PREFACT:1,ABILITIES,Duergar_ReplaceSLAInvisibility=True]	DESCISPI:YES	DESC:Some duergar demonstrate magic of a more insidious kind than the rest of their kin, a difference that is often taken to be a sign of Droskar's blessing. They can use charm person once per day as a spell-like ability. The save DC is equal to 10 + 1/2 duergar's Hit Dice + duergar's Wisdom modifier.	DESC:This racial trait replaces the invisibility spell-like ability racial trait.|!PREABILITY:1,CATEGORY=Special Ability,Duergar ~ Magical Taskmaster	ABILITY:Spell-Like Ability|AUTOMATIC|Racial SLA ~ Charm Person	BONUS:VAR|RacialSLA_CharmPerson_DCMod|WIS-CHA	BONUS:VAR|RacialSLA_CharmPerson_DC|floor(TL/2)-1	COST:0	SOURCEPAGE:p.215	FACT:Duergar_ReplaceSLAInvisibility|True
+
+
+# ------------------------------
+# Elf, Aquatic
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\aquatic_elf\
+
+###Block: Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Aquatic Elf ~ Ability Scores.MOD		SOURCEPAGE:p.242
+CATEGORY=Special Ability|Aquatic Elf ~ Type.MOD				SOURCEPAGE:p.242
+CATEGORY=Special Ability|Aquatic Elf ~ Size.MOD				SOURCEPAGE:p.242
+CATEGORY=Special Ability|Aquatic Elf ~ Speed.MOD			SOURCEPAGE:p.242
+CATEGORY=Special Ability|Aquatic Elf ~ Vision.MOD			SOURCEPAGE:p.242
+CATEGORY=Special Ability|Aquatic Elf ~ Swim Speed.MOD			SOURCEPAGE:p.242
+CATEGORY=Special Ability|Aquatic Elf ~ Amphibious.MOD			SOURCEPAGE:p.242
+CATEGORY=Special Ability|Aquatic Elf ~ Elven Immunities.MOD		SOURCEPAGE:p.242
+CATEGORY=Special Ability|Aquatic Elf ~ Elven Magic.MOD		SOURCEPAGE:p.242
+CATEGORY=Special Ability|Aquatic Elf ~ Keen Senses.MOD		SOURCEPAGE:p.242
+CATEGORY=Special Ability|Aquatic Elf ~ Weapon Familiarity.MOD	SOURCEPAGE:p.242
+CATEGORY=Special Ability|Aquatic Elf ~ Languages.MOD			SOURCEPAGE:p.242
+
+
+# ------------------------------
+# Fetchling
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\fetchling\
+
+###Block: Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Fetchling ~ Ability Scores.MOD		SOURCEPAGE:p.242
+CATEGORY=Special Ability|Fetchling ~ Type.MOD				SOURCEPAGE:p.242
+CATEGORY=Special Ability|Fetchling ~ Size.MOD				SOURCEPAGE:p.242
+CATEGORY=Special Ability|Fetchling ~ Speed.MOD				SOURCEPAGE:p.242
+CATEGORY=Special Ability|Fetchling ~ Vision.MOD				SOURCEPAGE:p.242
+CATEGORY=Special Ability|Fetchling ~ Low-Light Vision.MOD		SOURCEPAGE:p.242
+CATEGORY=Special Ability|Fetchling ~ Skilled.MOD			SOURCEPAGE:p.242
+CATEGORY=Special Ability|Fetchling ~ Shadow Blending.MOD		SOURCEPAGE:p.242
+CATEGORY=Special Ability|Fetchling ~ Shadowy Resistance.MOD		SOURCEPAGE:p.242
+CATEGORY=Special Ability|Fetchling ~ Spell-Like Abilities.MOD	SOURCEPAGE:p.242
+CATEGORY=Special Ability|Fetchling ~ Languages.MOD			SOURCEPAGE:p.242
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key				Category of Ability		Type															Multiple Requirements																			Desc is PI?		Description																																																									Bonus to skill					Cost		Source Page		Aspects								FACT
+Shadow Agent	KEY:Fetchling ~ Shadow Agent	CATEGORY:Special Ability	TYPE:RacialTraits.Fetchling Racial Trait.SpecialQuality.Special Quality.Applied Bonus	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Fetchling ~ Shadow Agent],[!PREFACT:1,ABILITIES,Fetchling_ReplaceSkilled=True]	DESCISPI:YES	DESC:Families of fetchlings in Shadow Absalom and Nidal make their livings serving as agents, diplomats, and spies mediating between humans and the powers of the Plane of Shadow. They gain a +2 racial bonus on Bluff and Diplomacy checks.	DESC:This racial trait replaces skilled.|!PREABILITY:1,CATEGORY=Special Ability,Fetchling ~ Shadow Agent	BONUS:SKILL|Bluff,Diplomacy|2|TYPE=Racial	COST:0	SOURCEPAGE:p.215	ASPECT:RacialSkillModifier|+2 Bluff, +2 Diplomacy	FACT:Fetchling_ReplaceSkilled|True
+
+
+# ------------------------------
+# Gathlain
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\gathlain\
+
+###Block: Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Gathlain ~ Ability Scores.MOD		SOURCEPAGE:p.243
+CATEGORY=Special Ability|Gathlain ~ Type.MOD				SOURCEPAGE:p.243
+CATEGORY=Special Ability|Gathlain ~ Size.MOD				SOURCEPAGE:p.243
+CATEGORY=Special Ability|Gathlain ~ Speed.MOD				SOURCEPAGE:p.243
+CATEGORY=Special Ability|Gathlain ~ Vision.MOD				SOURCEPAGE:p.243
+CATEGORY=Special Ability|Gathlain ~ Natural Armor.MOD			SOURCEPAGE:p.243
+CATEGORY=Special Ability|Gathlain ~ Spell-Like Abilities.MOD	SOURCEPAGE:p.243
+CATEGORY=Special Ability|Gathlain ~ Languages.MOD			SOURCEPAGE:p.243
+
+###Block: Alternate Racial Traits
+# Ability Name		Unique Key					Category of Ability		Type															Multiple Requirements																					Desc is PI?		Description																																																																																					Cost		Source Page		Aspects								FACT
+Nimbus of Vitality	KEY:Gathlain ~ Nimbus of Vitality	CATEGORY:Special Ability	TYPE:RacialTraits.Gathlain Racial Trait.SpecialQuality.Special Quality.Special Ability	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Gathlain ~ Nimbus of Vitality],[!PREFACT:1,ABILITIES,Gathlain_ReplaceSpellLikeAbilities=True]	DESCISPI:YES	DESC:Gathlains sometimes retain a powerful connection to the First World, which allows them to channel life-giving energy. As a standard action once per day, they can surround themselves in an aura that affects them as faerie fire and grants fast healing 2. The nimbus lasts for %1 rounds (3 rounds plus 1 additional round per 2 character levels the gathlain possesses).|3+TL/2	DESC:This racial trait replaces the spell-like ability racial trait.|PREABILITY:1,CATEGORY=Special Ability,Gathlain ~ Nimbus of Vitality	COST:0	SOURCEPAGE:p.215	ASPECT:CheckType|Uses per Day	ASPECT:CheckCount|%1|1	FACT:Gathlain_ReplaceSpellLikeAbilities|True
+
+
+# ------------------------------
+# Geniekin
+# ------------------------------
+
+###Block: Alternate Racial Traits
+# Ability Name							Unique Key				Category of Ability		Type									Multiple Requirements																						Description																																																																																																																					Template												Ability														Cost		Source Page		FACT
+Mostly Human							KEY:Geneiekin ~ Mostly Human	CATEGORY:Special Ability	TYPE:RacialTraits.SpecialQuality.Special Quality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Geneiekin ~ Mostly Human],[!PREFACT:1,ABILITIES,Ifrit_ReplaceType=True,Ifrit_ReplaceLanguages=True]	DESC:A few ifrits, oreads, sulis, sylphs, and undines have appearances much closer to those of their human ancestors; in fact, they may not even realize their true race. Such geniekin appear to be human, save perhaps minor features like unusual eye color, and they count as humanoid (human) as well as outsider (native) for all purposes (such as humanoid-affecting spells such as charm person or enlarge person). These geniekin do not automatically gain their associated elemental language (but may select it as a bonus language if their Intelligence is high enough).	DESC:This ability alters the geniekin's type, subtype, and languages.|!PREABILITY:1,CATEGORY=Special Ability,Geniekin ~ Mostly Human	TEMPLATE:Outsider|Native|Racial Heritage ~ Humanoid|Racial Heritage ~ Human																COST:0	SOURCEPAGE:p.215
+CATEGORY=Special Ability|Geneiekin ~ Mostly Human.MOD											TYPE:Ifrit Racial Trait																																																																																																																																																																		ABILITY:Ifrit Racial Trait|AUTOMATIC|Mostly Human ~ Ifrit ~ Languages|PRERACE:1,Ifrit						FACT:Ifrit_ReplaceType|True	FACT:Ifrit_ReplaceLanguages|True
+CATEGORY=Special Ability|Geneiekin ~ Mostly Human.MOD											TYPE:Oread Racial Trait																																																																																																																																																																		ABILITY:Oread Racial Trait|AUTOMATIC|Mostly Human ~ Oread ~ Languages|PRERACE:1,Oread						FACT:Oread_ReplaceType|True	FACT:Oread_ReplaceLanguages|True
+CATEGORY=Special Ability|Geneiekin ~ Mostly Human.MOD											TYPE:Sylph Racial Trait																																																																																																																																																																		ABILITY:Sylph Racial Trait|AUTOMATIC|Mostly Human ~ Sylph ~ Languages|PRERACE:1,Sylph						FACT:Sylph_ReplaceType|True	FACT:Sylph_ReplaceLanguages|True
+CATEGORY=Special Ability|Geneiekin ~ Mostly Human.MOD											TYPE:Undine Racial Trait																																																																																																																																																																	ABILITY:Undine Racial Trait|AUTOMATIC|Mostly Human ~ Undine ~ Languages|PRERACE:1,Undine						FACT:Undine_ReplaceType|True	FACT:Undine_ReplaceLanguages|True
+CATEGORY=Special Ability|Geneiekin ~ Mostly Human.MOD											TYPE:Suli Racial Trait																																																																																																																																																																		ABILITY:Suli Racial Trait|AUTOMATIC|Mostly Human ~ Suli ~ Languages|PRERACE:1,Suli							FACT:Suli_ReplaceType|True	FACT:Suli_ReplaceLanguages|True
+
+###Block: Replacement Racial Traits
+# Ability Name	Unique Key						Category of Ability		Type												Visible		Required Fact							Description																																		Template																																					Auto Language	Source Page
+Languages		KEY:Mostly Human ~ Ifrit ~ Languages	CATEGORY:Special Ability	TYPE:RacialTraits.Ifrit Racial Trait.SpecialQuality.Racial Language	VISIBLE:DISPLAY	PREFACT:1,ABILITIES,Ifrit_ReplaceLanguages=True		DESC:Mostly human ifrits begin play speaking Common. Ifrits with high Intelligence scores can choose from the following languages: Aquan, Auran, Dwarven, Elven, Gnome, Halfling, Ignan, and Terran.			TEMPLATE:Bonus Language ~ Aquan|Bonus Language ~ Auran|Bonus Language ~ Dwarven|Bonus Language ~ Elven|Bonus Language ~ Gnome|Bonus Language ~ Halfling|Bonus Language ~ Ignan|Bonus Language ~ Terran					AUTO:LANG|Common	SOURCEPAGE:p.215
+Languages		KEY:Mostly Human ~ Oread ~ Languages	CATEGORY:Special Ability	TYPE:RacialTraits.Oread Racial Trait.SpecialQuality.Racial Language	VISIBLE:DISPLAY	PREFACT:1,ABILITIES,Oread_ReplaceLanguages=True		DESC:Mostly human oreads begin play speaking Common. Oreads with high Intelligence scores can choose from the following languages: Aquan, Auran, Dwarven, Elven, Gnome, Halfling, Ignan, Terran, and Undercommon.	TEMPLATE:Bonus Language ~ Aquan|Bonus Language ~ Auran|Bonus Language ~ Dwarven|Bonus Language ~ Elven|Bonus Language ~ Gnome|Bonus Language ~ Halfling|Bonus Language ~ Ignan|Bonus Language ~ Terran|Bonus Language ~ Undercommon	AUTO:LANG|Common	SOURCEPAGE:p.215
+Languages		KEY:Mostly Human ~ Sylph ~ Languages	CATEGORY:Special Ability	TYPE:RacialTraits.Sylph Racial Trait.SpecialQuality.Racial Language	VISIBLE:DISPLAY	PREFACT:1,ABILITIES,Sylph_ReplaceLanguages=True		DESC:Mostly human sylphs begin play speaking Common. Sylphs with high Intelligence scores can choose from the following languages: Aquan, Auran, Dwarven, Elven, Gnome, Halfling, Ignan, and Terran.			TEMPLATE:Bonus Language ~ Aquan|Bonus Language ~ Auran|Bonus Language ~ Dwarven|Bonus Language ~ Elven|Bonus Language ~ Gnome|Bonus Language ~ Halfling|Bonus Language ~ Ignan|Bonus Language ~ Terran					AUTO:LANG|Common	SOURCEPAGE:p.215
+Languages		KEY:Mostly Human ~ Undine ~ Languages	CATEGORY:Special Ability	TYPE:RacialTraits.Undine Racial Trait.SpecialQuality.Racial Language	VISIBLE:DISPLAY	PREFACT:1,ABILITIES,Undine_ReplaceLanguages=True	DESC:Mostly human undines begin play speaking Common. Undines with high Intelligence scores can choose from the following languages: Aquan, Auran, Dwarven, Elven, Gnome, Halfling, Ignan, and Terran.		TEMPLATE:Bonus Language ~ Aquan|Bonus Language ~ Auran|Bonus Language ~ Dwarven|Bonus Language ~ Elven|Bonus Language ~ Gnome|Bonus Language ~ Halfling|Bonus Language ~ Ignan|Bonus Language ~ Terran					AUTO:LANG|Common	SOURCEPAGE:p.215
+Languages		KEY:Mostly Human ~ Suli ~ Languages		CATEGORY:Special Ability	TYPE:RacialTraits.Suli Racial Trait.SpecialQuality.Racial Language	VISIBLE:DISPLAY	PREFACT:1,ABILITIES,Suli_ReplaceLanguages=True		DESC:Mostly human sulis begin play speaking Common. Sulis with high Intelligence scores can choose from the following languages: Aquan, Auran, Draconic, Ignan, and Terran.							TEMPLATE:Bonus Language ~ Aquan|Bonus Language ~ Auran|Bonus Language ~ Draconic|Bonus Language ~ Ignan|Bonus Language ~ Terran																	AUTO:LANG|Common	SOURCEPAGE:p.215
+
+
+# ------------------------------
+# Ghoran
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\ghoran\
+
+###Block: Racial Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Ghoran ~ Ability Scores.MOD		SOURCEPAGE:p.243
+CATEGORY=Special Ability|Ghoran ~ Type.MOD			SOURCEPAGE:p.243
+CATEGORY=Special Ability|Ghoran ~ Size.MOD			SOURCEPAGE:p.243
+CATEGORY=Special Ability|Ghoran ~ Speed.MOD			SOURCEPAGE:p.243
+CATEGORY=Special Ability|Ghoran ~ +2 Natural Armor.MOD	SOURCEPAGE:p.243
+CATEGORY=Special Ability|Ghoran ~ Delicious.MOD			SOURCEPAGE:p.243
+CATEGORY=Special Ability|Ghoran ~ Natural Magic.MOD		SOURCEPAGE:p.243
+CATEGORY=Special Ability|Ghoran ~ Seed.MOD			SOURCEPAGE:p.243
+CATEGORY=Special Ability|Ghoran ~ Light Dependent.MOD		SOURCEPAGE:p.243
+CATEGORY=Special Ability|Ghoran ~ Past-Life Knowledge.MOD	SOURCEPAGE:p.243
+CATEGORY=Special Ability|Ghoran ~ Languages.MOD			SOURCEPAGE:p.243
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key			Category of Ability		Type															Multiple Requirements																								Description																																																																				Cost		Source Page		Aspects																																																	FACT
+Disgusting		KEY:Ghoran ~ Disgusting	CATEGORY:Special Ability	TYPE:RacialTraits.Ghoran Racial Trait.SpecialQuality.Special Quality.Special Ability	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Ghoran ~ Disgusting],[!PREFACT:1,ABILITIES,Ghoran_ReplaceDelicious=True,Ghoran_ReplacePastLifeKnowledge=True]	DESC:Some ghorans' link to their past lives becomes corrupted, causing their taste to become particularly disgusting. Such ghorans gain a +2 racial bonus on Escape Artist and combat maneuver checks to escape a grapple against any creature that has a bite attack with the grab ability.	DESC:This racial trait replaces delicious and past-life knowledge.|!PREABILITY:1,CATEGORY=Special Ability,Ghoran ~ Disgusting	COST:0	SOURCEPAGE:p.215	ASPECT:CombatBonus|+2 racial bonus on combat maneuver checks to escape a grapple against any creature that has a bite attack with the grab ability.	ASPECT:SkillBonus|+2 racial bonus on Escape Artist checks to escape a grapple against any creature that has a bite attack with the grab ability.	FACT:Ghoran_ReplaceDelicious|True	FACT:Ghoran_ReplacePastLifeKnowledge|True
+
+
+# ------------------------------
+# Gillman
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\gillman\
+
+###Block: Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Gillman ~ Ability Scores.MOD			SOURCEPAGE:p.243
+CATEGORY=Special Ability|Gillman ~ Type.MOD				SOURCEPAGE:p.243
+CATEGORY=Special Ability|Gillman ~ Size.MOD				SOURCEPAGE:p.243
+CATEGORY=Special Ability|Gillman ~ Speed.MOD				SOURCEPAGE:p.243
+CATEGORY=Special Ability|Gillman ~ Amphibious.MOD			SOURCEPAGE:p.243
+CATEGORY=Special Ability|Gillman ~ Enchantment Resistance.MOD	SOURCEPAGE:p.243
+CATEGORY=Special Ability|Gillman ~ Servitor.MOD				SOURCEPAGE:p.243
+CATEGORY=Special Ability|Gillman ~ Water Dependent.MOD		SOURCEPAGE:p.243
+CATEGORY=Special Ability|Gillman ~ Languages.MOD			SOURCEPAGE:p.243
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key				Category of Ability		Type												Multiple Requirements																										Description																																																								Modify VAR							Vision			Cost		Source Page		FACT
+Deep Gillman	KEY:Gillman ~ Deep Gillman	CATEGORY:Special Ability	TYPE:RacialTraits.Gillman Racial Trait.SpecialQuality.Special Quality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Gillman ~ Deep Gillman],[!PREFACT:1,ABILITIES,Gillman_ReplaceAmphibious=True,Gillman_ReplaceEnchantmentResistance=True]	DESC:Some gillmen live in the deeper ocean and almost never visit the land above the sea. Such gillmen gain darkvision to a range of 60 feet and resist cold 5, in order to survive the lightless depths.	DESC:This racial trait replaces amphibious and enchantment resistance.|!PREABILITY:1,CATEGORY=Special Ability,Gillmen ~ Deep Gillman	BONUS:VAR|ColdResistanceBonus|5|TYPE=Resistance	VISION:Darkvision (60)	COST:0	SOURCEPAGE:p.215	FACT:Gillman_ReplaceAmphibious|True	FACT:Gillman_ReplaceEnchantmentResistance|True
+
+
+# ------------------------------
+# Goblin
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\goblin\
+
+###Block: Racial Traits
+# Ability Name							Source Page
+CATEGORY=Special Ability|Goblin ~ Ability Scores.MOD	SOURCEPAGE:p.244
+CATEGORY=Special Ability|Goblin ~ Type.MOD		SOURCEPAGE:p.244
+CATEGORY=Special Ability|Goblin ~ Size.MOD		SOURCEPAGE:p.244
+CATEGORY=Special Ability|Goblin ~ Speed.MOD		SOURCEPAGE:p.244
+CATEGORY=Special Ability|Goblin ~ Vision.MOD		SOURCEPAGE:p.244
+CATEGORY=Special Ability|Goblin ~ Skilled.MOD		SOURCEPAGE:p.244
+CATEGORY=Special Ability|Goblin ~ Languages.MOD		SOURCEPAGE:p.244
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key				Category of Ability		Type												Multiple Requirements																		Description																																																																																									Ability									Cost		Source Page		Aspects																																						FACT
+Junk Tinker		KEY:Goblin ~ Junk Tinker	CATEGORY:Special Ability	TYPE:RacialTraits.Goblin Racial Trait.SpecialQuality.Special Quality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Goblin ~ Junk Tinker],[!PREFACT:1,ABILITIES,Goblin_ReplaceSkilled=True]	DESC:Goblins use ramshackle equipment and vehicles that seem like they should never function. Goblins gain a +2 racial bonus on driving checks and on Craft checks to build or repair weapons or vehicles without the proper tools. They can make the attempt with any material that can hold the right shape for a few uses, but normally unfit materials produce items with the fragile quality.	DESC:This racial trait alters skilled, replacing the racial bonus on Stealth checks.|!PREABILITY:1,CATEGORY=Special Ability,Goblin ~ Junk Tinker	ABILITY:Goblin Racial Trait|AUTOMATIC|Junk Tinker ~ Skilled	COST:0	SOURCEPAGE:p.215	ASPECT:SkillBonus|+2 racial bonus on driving checks and on Craft checks to build or repair weapons or vehicles without the proper tools.	ASPECT:RacialSkillModifier|+2 Craft to build or repair weapons or vehicles without proper tools	FACT:Goblin_ReplaceSkilled|True
+
+###Block: Replacement Racial Traits
+# Ability Name	Unique Key				Category of Ability		Type									Description						Bonus to skill				Source, Long Desc.	Source, Short Desc.	Source URI													Source Page		Source Pub. Date		Aspects
+Skilled		KEY:Junk Tinker ~ Skilled	CATEGORY:Special Ability	TYPE:RacialTraits.Goblin Racial Trait.SpecialQuality	DESC:+4 racial bonus on Ride checks.	BONUS:SKILL|Ride|4|TYPE=Racial	SOURCELONG:Bestiary	SOURCESHORT:B1		SOURCEWEB:http://paizo.com/store/downloads/pathfinder/pathfinderRPG/v5748btpy8auu	SOURCEPAGE:p.156	SOURCEDATE:2009-10	ASPECT:RacialSkillModifier|+4 Ride
+
+
+# ------------------------------
+# Goblin, Monkey
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\monkey_goblin\
+
+###Block: Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Monkey Goblin ~ Ability Scores.MOD		SOURCEPAGE:p.244
+CATEGORY=Special Ability|Monkey Goblin ~ Type.MOD			SOURCEPAGE:p.244
+CATEGORY=Special Ability|Monkey Goblin ~ Size.MOD			SOURCEPAGE:p.244
+CATEGORY=Special Ability|Monkey Goblin ~ Speed.MOD			SOURCEPAGE:p.244
+CATEGORY=Special Ability|Monkey Goblin ~ Vision.MOD			SOURCEPAGE:p.244
+CATEGORY=Special Ability|Monkey Goblin ~ Acrobatic.MOD		SOURCEPAGE:p.244
+CATEGORY=Special Ability|Monkey Goblin ~ Fearless.MOD			SOURCEPAGE:p.244
+CATEGORY=Special Ability|Monkey Goblin ~ Natural Climber.MOD	SOURCEPAGE:p.244
+CATEGORY=Special Ability|Monkey Goblin ~ Prehensile Tail.MOD	SOURCEPAGE:p.244
+CATEGORY=Special Ability|Monkey Goblin ~ Languages.MOD		SOURCEPAGE:p.244
+
+
+# ------------------------------
+# Grippli
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\grippli\
+
+###Block: Racial Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Grippli ~ Ability Scores.MOD		SOURCEPAGE:p.244
+CATEGORY=Special Ability|Grippli ~ Type.MOD			SOURCEPAGE:p.244
+CATEGORY=Special Ability|Grippli ~ Size.MOD			SOURCEPAGE:p.244
+CATEGORY=Special Ability|Grippli ~ Speed.MOD			SOURCEPAGE:p.244
+CATEGORY=Special Ability|Grippli ~ Vision.MOD			SOURCEPAGE:p.244
+CATEGORY=Special Ability|Grippli ~ Natural Climber.MOD	SOURCEPAGE:p.244
+CATEGORY=Special Ability|Grippli ~ Camouflage.MOD		SOURCEPAGE:p.244
+CATEGORY=Special Ability|Grippli ~ Swamp Stride.MOD		SOURCEPAGE:p.244
+CATEGORY=Special Ability|Grippli ~ Weapon Familiarity.MOD	SOURCEPAGE:p.244
+CATEGORY=Special Ability|Grippli ~ Languages.MOD		SOURCEPAGE:p.244
+
+###Block: Alternate Racial Traits
+# Ability Name		Unique Key					Category of Ability		Type														Multiple Requirements																										Define						Desc is PI?		Description																																																																								Modify VAR						Cost		Source Page		Aspects																																									FACT
+Defensive Training	KEY:Grippli ~ Defensive Training	CATEGORY:Special Ability	TYPE:RacialTraits.Grippli Racial Trait.SpecialQuality.Special Quality.Defensive	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Grippli ~ Defensive Training],[!PREFACT:1,ABILITIES,Grippli_ReplaceSwampStride=True,Grippli_ReplaceWeaponFamiliarity=True]	DEFINE:RacialDefensiveTrainingBonus|0	DESCISPI:YES	DESC:Gripplis of Golarion, common in the Valashmai Jungle, often live in close proximity to very large animals and dangerous creatures they must learn to avoid in order to survive. They gain a +%1 dodge bonus to AC against Large or larger animals and magical beasts.|RacialDefensiveTrainingBonus	DESC:This racial trait replaces swamp stride and weapon familiarity.|!PREABILITY:1,CATEGORY=Special Ability,Grippli ~ Defensive Training	BONUS:VAR|RacialDefensiveTrainingBonus|2	COST:0	SOURCEPAGE:p.215	ASPECT:CombatBonus|+%1 dodge bonus to AC against Large or larger animals and magical beasts.|RacialDefensiveTrainingBonus	ASPECT:Ability Benefit|(+%1 dodge bonus to AC vs. Large or larger animals and magical beasts)|RacialDefensiveTrainingBonus	FACT:Grippli_ReplaceSwampStride|True	FACT:Grippli_ReplaceWeaponFamiliarity|True
+
+
+# ------------------------------
+# Hobgoblin
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\hobgoblin\
+
+###Block: Racial Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Hobgoblin ~ Ability Scores.MOD	SOURCEPAGE:p.244
+CATEGORY=Special Ability|Hobgoblin ~ Type.MOD			SOURCEPAGE:p.244
+CATEGORY=Special Ability|Hobgoblin ~ Size.MOD			SOURCEPAGE:p.244
+CATEGORY=Special Ability|Hobgoblin ~ Speed.MOD			SOURCEPAGE:p.244
+CATEGORY=Special Ability|Hobgoblin ~ Vision.MOD			SOURCEPAGE:p.244
+CATEGORY=Special Ability|Hobgoblin ~ Sneaky.MOD			SOURCEPAGE:p.244
+CATEGORY=Special Ability|Hobgoblin ~ Languages.MOD		SOURCEPAGE:p.244
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key				Category of Ability		Type												Multiple Requirements																			Desc is PI?		Description																																																																Ability								Bonus to skill						Cost		Source Page		Aspects									FACT
+Authoritative	KEY:Hobgoblin ~ Authoritative	CATEGORY:Special Ability	TYPE:RacialTraits.Hobgoblin Racial Trait.SpecialQuality.Special Quality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Hobgoblin ~ Authoritative],[!PREFACT:1,ABILITIES,Hobgoblin_ReplaceSneaky=True]	DESCISPI:YES	DESC:Hobgoblins raised in the unusually open and stable nation of Kaoling or among the slave-drivers of Isger's Chitterwood often develop a knack for controlling others. They gain a +2 racial bonus on Diplomacy and Intimidate checks. Both skills are always class skills for them.	DESC:This racial trait replaces sneaky.|!PREABILITY:1,CATEGORY=Special Ability,Hobgoblin ~ Authoritative	ABILITY:Class Skill|AUTOMATIC|Diplomacy|Intimidate	BONUS:SKILL|Diplomacy,Intimidate|2|TYPE=Racial	COST:0	SOURCEPAGE:p.215	ASPECT:RacialSkillModifier|+2 Diplomacy, +2 Intimidate	FACT:Hobgoblin_ReplaceSneaky|True
+
+
+# ------------------------------
+# Ifrit
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\ifrit\
+
+###Block: Racial Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Ifrit ~ Ability Scores.MOD		SOURCEPAGE:p.245
+CATEGORY=Special Ability|Ifrit ~ Type.MOD				SOURCEPAGE:p.245
+CATEGORY=Special Ability|Ifrit ~ Size.MOD				SOURCEPAGE:p.245
+CATEGORY=Special Ability|Ifrit ~ Speed.MOD			SOURCEPAGE:p.245
+CATEGORY=Special Ability|Ifrit ~ Vision.MOD			SOURCEPAGE:p.245
+CATEGORY=Special Ability|Ifrit ~ Spell-Like Ability.MOD	SOURCEPAGE:p.245
+CATEGORY=Special Ability|Ifrit ~ Energy Resistance.MOD	SOURCEPAGE:p.245
+CATEGORY=Special Ability|Ifrit ~ Fire Affinity.MOD		SOURCEPAGE:p.245
+CATEGORY=Special Ability|Ifrit ~ Languages.MOD			SOURCEPAGE:p.245
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key				Category of Ability		Type											Multiple Requirements																									Desc is PI?		Description																																																																										Cost		Source Page		Aspects												FACT
+Brazen Flame	KEY:Ifrit ~ Brazen Flame	CATEGORY:Special Ability	TYPE:RacialTraits.Ifrit Racial Trait.SpecialAttack.Special Attack	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Ifrit ~ Brazen Flame],[!PREFACT:1,ABILITIES,Ifrit_ReplaceEnergyResistance=True,Ifrit_ReplaceSpellLikeAbility=True]	DESCISPI:Yes	DESC:An unusual number of ifrits hail from the Brazen Peaks area, home to the remains of Xotani the Firebleeder, and their flames infuse their weapons in mortal combat, rather than protect them or grant spells. An ifrit with this racial trait deals 1 point of fire damage with its melee attacks.	DESC:This racial trait replaces the energy resistance and spell-like ability traits.|!PREABILITY:1,CATEGORY=Special Ability,Ifrit ~ Brazen Flame	COST:0	SOURCEPAGE:p.215	ASPECT:CombatBonus|You deal 1 point of fire damage with your melee attacks.	FACT:Ifrit_ReplaceEnergyResistance|True	FACT:Ifrit_ReplaceSpellLikeAbility|True
+
+
+# ------------------------------
+# Kasatha
+# ------------------------------
+
+###Block: Racial Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Kasatha ~ Ability Scores.MOD		SOURCEPAGE:p.245
+CATEGORY=Special Ability|Kasatha ~ Type.MOD			SOURCEPAGE:p.245
+CATEGORY=Special Ability|Kasatha ~ Size.MOD			SOURCEPAGE:p.245
+CATEGORY=Special Ability|Kasatha ~ Speed.MOD			SOURCEPAGE:p.245
+CATEGORY=Special Ability|Kasatha ~ Defensive Training.MOD	SOURCEPAGE:p.245
+CATEGORY=Special Ability|Kasatha ~ Desert Runner.MOD		SOURCEPAGE:p.245
+CATEGORY=Special Ability|Kasatha ~ Desert Stride.MOD		SOURCEPAGE:p.245
+CATEGORY=Special Ability|Kasatha ~ Jumper.MOD			SOURCEPAGE:p.245
+CATEGORY=Special Ability|Kasatha ~ Multi-Armed.MOD		SOURCEPAGE:p.245
+CATEGORY=Special Ability|Kasatha ~ Stalker.MOD			SOURCEPAGE:p.245
+CATEGORY=Special Ability|Kasatha ~ Languages.MOD		SOURCEPAGE:p.245
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key			Category of Ability		Type												Multiple Requirements																						Description																																																			Ability						Bonus to skill				Cost		Source Page		Aspects						FACT
+Stealthy		KEY:Kasatha ~ Stealthy	CATEGORY:Special Ability	TYPE:RacialTraits.Kasatha Racial Trait.SpecialQuality.Special Quality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Kasatha ~ Stealthy],[!PREFACT:1,ABILITIES,Kasatha_ReplaceJumper=True,Kasatha_ReplaceStalker=True]	DESC:Kasatha living on Golarion must often take great pains to hide their existence from others. Such kasathas gain a +2 racial bonus on Stealth checks. Stealth is always a class skill for them.	DESC:This racial trait replaces jumper and stalker.|!PREABILITY:1,CATEGORY=Special Ability,Kasatha ~ Stealthy	ABILITY:Class Skill|AUTOMATIC|Stealth	BONUS:SKILL|Stealth|2|TYPE=Racial	COST:0	SOURCEPAGE:p.215	ASPECT:RacialSkillModifier|+2 Stealth	FACT:Kasatha_ReplaceJumper|True	FACT:Kasatha_ReplaceStalker|True
+
+
+# ------------------------------
+# Kitsune
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\kitsune\
+
+###Block: Racial Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Kitsune ~ Ability Scores.MOD		SOURCEPAGE:p.245
+CATEGORY=Special Ability|Kitsune ~ Type.MOD			SOURCEPAGE:p.245
+CATEGORY=Special Ability|Kitsune ~ Size.MOD			SOURCEPAGE:p.245
+CATEGORY=Special Ability|Kitsune ~ Speed.MOD			SOURCEPAGE:p.245
+CATEGORY=Special Ability|Kitsune ~ Vision.MOD			SOURCEPAGE:p.245
+CATEGORY=Special Ability|Kitsune ~ Change Shape.MOD		SOURCEPAGE:p.245
+CATEGORY=Special Ability|Kitsune ~ Agile.MOD			SOURCEPAGE:p.245
+CATEGORY=Special Ability|Kitsune ~ Kitsune Magic.MOD		SOURCEPAGE:p.245
+CATEGORY=Special Ability|Kitsune ~ Natural Weapons.MOD	SOURCEPAGE:p.245
+CATEGORY=Special Ability|Kitsune ~ Languages.MOD		SOURCEPAGE:p.245
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key				Category of Ability		Type												Multiple Requirements																			Description																																																				Bonus to skill					Cost		Source Page		Aspects								FACT
+Duplicitous		KEY:Kitsune ~ Duplicitous	CATEGORY:Special Ability	TYPE:RacialTraits.Kitsune Racial Trait.SpecialQuality.Special Quality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Kitsune ~ Duplicitous],[!PREFACT:1,ABILITIES,Kitsune_ReplaceKitsuneMagic=True]	DESC:Many kitsune prefer to avoid the attention they often attract from human neighbors and attempt to convince all around them that they are human. They gain a +2 racial bonus on Bluff and Disguise checks.	DESC:This racial trait replaces kitsune magic.|!PREABILITY:1,CATEGORY=Special Ability,Kitsune ~ Duplicitous	BONUS:SKILL|Bluff,Disguise|2|TYPE=Racial	COST:0	SOURCEPAGE:p.215	ASPECT:RacialSkillModifier|+2 Bluff, +2 Disguise	FACT:Kitsune_ReplaceKitsuneMagic|True
+
+
+# ------------------------------
+# Kobold
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\kobold\
+
+###Block: Racial Traits
+# Ability Name							Source Page
+CATEGORY=Special Ability|Kobold ~ Ability Scores.MOD	SOURCEPAGE:p.245
+CATEGORY=Special Ability|Kobold ~ Type.MOD		SOURCEPAGE:p.245
+CATEGORY=Special Ability|Kobold ~ Size.MOD		SOURCEPAGE:p.246
+CATEGORY=Special Ability|Kobold ~ Speed.MOD		SOURCEPAGE:p.246
+CATEGORY=Special Ability|Kobold ~ Vision.MOD		SOURCEPAGE:p.246
+CATEGORY=Special Ability|Kobold ~ Armor.MOD		SOURCEPAGE:p.246
+CATEGORY=Special Ability|Kobold ~ Crafty.MOD		SOURCEPAGE:p.246
+CATEGORY=Special Ability|Kobold ~ Weakness.MOD		SOURCEPAGE:p.246
+CATEGORY=Special Ability|Kobold ~ Languages.MOD		SOURCEPAGE:p.246
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key				Category of Ability		Type												Multiple Requirements																		Description																																													Ability																														Cost		Source Page		FACT
+Dragon Affinity	KEY:Kobold ~ Dragon Affinity	CATEGORY:Special Ability	TYPE:RacialTraits.Kobold Racial Trait.SpecialQuality.Special Quality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Kobold ~ Dragon Affinity],[!PREFACT:1,ABILITIES,Kobold_ReplaceArmor=True]	DESC:Kobold sorcerers with the draconic bloodline or kobold bloodline treat their Charisma scores as 2 points higher for all sorcerer spells and class abilities.	DESC:This racial trait replaces the armor trait.|!PREABILITY:1,CATEGORY=Special Ability,Kobold ~ Dragon Affinity	ABILITY:Internal|AUTOMATIC|Affinity Sorcerer Bonus|PREMULT:2,[PRECLASS:1,Sorcerer=1],[PREABILITY:1,CATEGORY=Special Ability,Sorcerer Bloodline ~ Draconic,Sorcerer Bloodline ~ Kobold]	COST:0	SOURCEPAGE:p.216	FACT:Kobold_ReplaceArmor|True
+
+
+# ------------------------------
+# Lashunta
+# ------------------------------
+
+###Block: Racial Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Lashunta ~ Ability Scores.MOD	SOURCEPAGE:p.10
+CATEGORY=Special Ability|Lashunta ~ Type.MOD			SOURCEPAGE:p.10
+CATEGORY=Special Ability|Lashunta ~ Size.MOD			SOURCEPAGE:p.10
+CATEGORY=Special Ability|Lashunta ~ Speed.MOD			SOURCEPAGE:p.10
+CATEGORY=Special Ability|Lashunta ~ Sexual Dimorphism.MOD	SOURCEPAGE:p.10
+CATEGORY=Special Ability|Lashunta ~ Lashunta Magic.MOD	SOURCEPAGE:p.10
+CATEGORY=Special Ability|Lashunta ~ Knowledgeable.MOD		SOURCEPAGE:p.10
+CATEGORY=Special Ability|Lashunta ~ Limited Telepathy.MOD	SOURCEPAGE:p.10
+CATEGORY=Special Ability|Lashunta ~ Languages.MOD		SOURCEPAGE:p.10
+
+###Block: Alternate Racial Traits
+# Ability Name		Unique Key					Category of Ability		Type												Multiple Requirements																					Description																																																																																									Cost		Source Page		FACT
+Insidious Telepathy	KEY:Lashunta ~ Insidious Telepathy	CATEGORY:Special Ability	TYPE:RacialTraits.Lashunta Racial Trait.SpecialQuality.Special Quality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Lashunta ~ Insidious Telepathy],[!PREFACT:1,ABILITIES,Lashunta_ReplaceLashuntaMagic=True]	DESC:Some lashunta have a knack for manipulating the minds of those they communicate with telepathically. They gain a +1 racial bonus on Charisma-based skill checks to influence any creature with whom they are telepathically communicating. If a lashunta telepathically issues a command to a charmed or dominated creature, she gains a +1 racial bonus on Charisma checks to compel the creature to follow that order.	DESC:This racial trait replaces lashunta magic.|!PREABILITY:1,CATEGORY=Special Ability,Lashunta ~ Insidious Telepathy	COST:0	SOURCEPAGE:p.216	FACT:Lashunta_ReplaceLashuntaMagic|True
+
+
+# ------------------------------
+# Merfolk
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\merfolk\
+
+###Block: Racial Traits
+# Ability Name							Source Page
+CATEGORY=Special Ability|Merfolk ~ Ability Scores.MOD	SOURCEPAGE:p.246
+CATEGORY=Special Ability|Merfolk ~ Type.MOD		SOURCEPAGE:p.246
+CATEGORY=Special Ability|Merfolk ~ Size.MOD		SOURCEPAGE:p.246
+CATEGORY=Special Ability|Merfolk ~ Speed.MOD		SOURCEPAGE:p.246
+CATEGORY=Special Ability|Merfolk ~ Vision.MOD		SOURCEPAGE:p.246
+CATEGORY=Special Ability|Merfolk ~ Amphibious.MOD	SOURCEPAGE:p.246
+CATEGORY=Special Ability|Merfolk ~ Armor.MOD		SOURCEPAGE:p.246
+CATEGORY=Special Ability|Merfolk ~ Legless.MOD		SOURCEPAGE:p.246
+CATEGORY=Special Ability|Merfolk ~ Languages.MOD	SOURCEPAGE:p.246
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key				Category of Ability		Type												Multiple Requirements																						Description																																																																																																																	Ability																																									Bonus DC				Modify VAR												Cost		Source Page		FACT
+Secret Magic	KEY:Merfolk ~ Secret Magic	CATEGORY:Special Ability	TYPE:RacialTraits.Merfolk Racial Trait.SpecialQuality.Special Quality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Merfolk ~ Secret Magic],[!PREFACT:1,ABILITIES,Merfolk_ReplaceArmor=True,Merfolk_ReplaceSpeed=True]	DESC:Merfolk sometimes manifest magical powers they are unwilling to explain to non-merfolk, leading scholars to speculate that the magic originates from the merfolk's rumored eldritch patrons. Such merfolk have only a 40-foot swim speed, but they add +1 to the DC of any enchantment spells they cast, and if they have a Charisma score of 13 or higher, they gain the ability to cast the following spell-like abilities: At will--speak with animals (aquatic animals only); 1/day--fins to feet (self only), hydraulic push.	DESC:This racial trait replaces the armor racial trait and alters the merfolk's movement speed.|!PREABILITY:1,CATEGORY=Special Ability,Merfolk ~ Secret Magic	ABILITY:Merfolk Racial Trait|AUTOMATIC|Secret Magic ~ Merfolk ~ Speed	ABILITY:Spell-Like Ability|AUTOMATIC|Racial SLA ~ Speak with Animals (aquatic animals only)|Racial SLA ~ Fins to Feet (self only)|Racial SLA ~ Hydraulic Push|PRESTAT:1,CHA=13	BONUS:DC|SCHOOL.Enchantment|1	BONUS:VAR|RacialSLA_SpeakWithAnimalsAquaticAnimalsOnly_AtWill|1|TYPE=Boolean	COST:0	SOURCEPAGE:p.216	FACT:Merfolk_ReplaceArmor|True	FACT:Merfolk_ReplaceSpeed|True
+
+###Block: Replacement Racial Trait
+# Ability Name	Unique Key					Category of Ability		Type												Visible		Required Fact						Description														Move				Source Page
+Slow Speed		KEY:Secret Magic ~ Merfolk ~ Speed	CATEGORY:Special Ability	TYPE:RacialTraits.Merfolk Racial Trait.SpecialQuality.Racial Speed	VISIBLE:DISPLAY	PREFACT:1,ABILITIES,Merfolk_ReplaceSpeed=True	DESC:Merfolk with secret magic have a base speed of 5 feet and a swim speed of 40 feet.	MOVE:Walk,5,Swim,40	SOURCEPAGE:p.216
+
+
+# ------------------------------
+# Nagaji
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\nagaji\
+
+###Block: Racial Traits
+# Ability Name							Source Page
+CATEGORY=Special Ability|Nagaji ~ Ability Scores.MOD	SOURCEPAGE:p.246
+CATEGORY=Special Ability|Nagaji ~ Type.MOD		SOURCEPAGE:p.246
+CATEGORY=Special Ability|Nagaji ~ Size.MOD		SOURCEPAGE:p.246
+CATEGORY=Special Ability|Nagaji ~ Speed.MOD		SOURCEPAGE:p.246
+CATEGORY=Special Ability|Nagaji ~ Vision.MOD		SOURCEPAGE:p.246
+CATEGORY=Special Ability|Nagaji ~ Armored Scales.MOD	SOURCEPAGE:p.246
+CATEGORY=Special Ability|Nagaji ~ Resistant.MOD		SOURCEPAGE:p.246
+CATEGORY=Special Ability|Nagaji ~ Serpent's Sense.MOD	SOURCEPAGE:p.246
+CATEGORY=Special Ability|Nagaji ~ Languages.MOD		SOURCEPAGE:p.246
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key				Category of Ability		Type												Multiple Requirements																			Description																																																					Caster level																Cost		Source Page		FACT
+Serpent Affinity	KEY:Nagaji ~ Serpent Affinity	CATEGORY:Special Ability	TYPE:RacialTraits.Nagaji Racial Trait.SpecialQuality.Special Quality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Nagaji ~ Serpent Affinity],[!PREFACT:1,ABILITIES,Nagaji_ReplaceResistant=True]	DESC:Nagaji clerics with this racial trait and the Scalykind domain (Pathfinder Campaign Setting: The Inner Sea World Guide) use their domain powers and spells at +1 caster level. This increase is a racial bonus.	DESC:This racial trait replaces resistant.|!PREABILITY:1,CATEGORY=Special Ability,Nagaji ~ Serpent Affinity	BONUS:CASTERLEVEL|DOMAIN.Scalykind|1|TYPE=Racial|PREMULT:2,[PRECLASS:1,Cleric=1],[PREDOMAIN:1,Scalykind]	COST:0	SOURCEPAGE:p.216	FACT:Nagaji_ReplaceResistant|True
+
+
+# ------------------------------
+# Orc
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\orc\
+
+###Block: Racial Traits
+# Ability Name							Source Page
+CATEGORY=Special Ability|Orc ~ Ability Scores.MOD	SOURCEPAGE:p.246
+CATEGORY=Special Ability|Orc ~ Type.MOD			SOURCEPAGE:p.246
+CATEGORY=Special Ability|Orc ~ Size.MOD			SOURCEPAGE:p.246
+CATEGORY=Special Ability|Orc ~ Speed.MOD			SOURCEPAGE:p.247
+CATEGORY=Special Ability|Orc ~ Vision.MOD			SOURCEPAGE:p.247
+CATEGORY=Special Ability|Orc ~ Light Sensitivity.MOD	SOURCEPAGE:p.247
+CATEGORY=Special Ability|Orc ~ Ferocity.MOD		SOURCEPAGE:p.247
+CATEGORY=Special Ability|Orc ~ Weapon Familiarity.MOD	SOURCEPAGE:p.247
+CATEGORY=Special Ability|Orc ~ Languages.MOD		SOURCEPAGE:p.247
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key				Category of Ability		Type														Multiple Requirements																		Description																																																		Bonus to Situation																	Cost		Source Page		Aspects													FACT
+Reckless Climber	KEY:Orc ~ Reckless Climber	CATEGORY:Special Ability	TYPE:RacialTraits.Orc Racial Trait.SpecialQuality.Special Quality.Applied Bonus	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Orc ~ Reckless Climber],[!PREFACT:1,ABILITIES,Orc_ReplaceFerocity=True]	DESC:Mountain-dwelling orcs thrive on taking insane risks to defeat foes and show up rivals. They gain a +4 racial bonus on Climb checks without rope and on Acrobatics checks to maintain balance.	DESC:This racial trait replaces ferocity.|!PREABILITY:1,CATEGORY=Special Ability,Orc ~ Reckless Climber	BONUS:SITUATION|Climb=without rope|+4|TYPE=Racial	BONUS:SITUATION|Acrobatics=to maintain balance|+4|TYPE=Racial	COST:0	SOURCEPAGE:p.216	ASPECT:RacialSkillModifier|+4 Climb without rope, +4 Acrobatics to maintain balance	FACT:Orc_ReplaceFerocity|True
+
+
+# ------------------------------
+# Oread
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\oread\
+
+###Block: Racial Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Oread ~ Ability Scores.MOD		SOURCEPAGE:p.247
+CATEGORY=Special Ability|Oread ~ Type.MOD				SOURCEPAGE:p.247
+CATEGORY=Special Ability|Oread ~ Size.MOD				SOURCEPAGE:p.247
+CATEGORY=Special Ability|Oread ~ Speed.MOD			SOURCEPAGE:p.247
+CATEGORY=Special Ability|Oread ~ Vision.MOD			SOURCEPAGE:p.247
+CATEGORY=Special Ability|Oread ~ Spell-Like Ability.MOD	SOURCEPAGE:p.247
+CATEGORY=Special Ability|Oread ~ Energy Resistance.MOD	SOURCEPAGE:p.247
+CATEGORY=Special Ability|Oread ~ Earth Affinity.MOD		SOURCEPAGE:p.247
+CATEGORY=Special Ability|Oread ~ Languages.MOD			SOURCEPAGE:p.247
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key			Category of Ability		Type														Multiple Requirements																							Description																																																																															Ability										Bonus to skill									Cost		Source Page		Aspects																							FACT
+Isolated		KEY:Oread ~ Isolated	CATEGORY:Special Ability	TYPE:RacialTraits.Oread Racial Trait.SpecialQuality.Special Quality.Applied Bonus	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Oread ~ Isolated],[!PREFACT:1,ABILITIES,Oread_ReplaceEnergyResistance=True,Oread_ReplaceLanguages=True]	DESC:Many oreads are loners and raise their families in isolated groups, either in deep caverns or high mountains. They gain a +2 racial bonus on Perception checks and Knowledge (dungeoneering) checks, and they can use Knowledge (dungeoneering) untrained. They begin play speaking only Terran, rather than Common and Terran.	DESC:This racial trait replaces energy resistance and alters the oread's starting languages.|!PREABILITY:1,CATEGORY=Special Ability,Oread ~ Isolated	ABILITY:Oread Racial Trait|AUTOMATIC|Isolated ~ Oread ~ Languages	BONUS:SKILL|Perception,Knowledge (Dungeoneering)|2|TYPE=Racial	COST:0	SOURCEPAGE:p.216	ASPECT:SkillBonus|You can use Knowledge (dungeoneering) untrained.	ASPECT:RacialSkillModifier|+2 Perception, +2 Knowledge (dungeoneering)	FACT:Oread_ReplaceEnergyResistance|True	FACT:Oread_ReplaceLanguages|True
+
+###Block: Replacement Racial Traits
+# Ability Name	Unique Key					Category of Ability		Type												Visible		Description																																		Template																																	Auto Language	Source Page
+Languages		KEY:Isolated ~ Oread ~ Languages	CATEGORY:Special Ability	TYPE:RacialTraits.Oread Racial Trait.SpecialQuality.Racial Language	VISIBLE:DISPLAY	DESC:Isolated oreads begin play speaking Terran. Oreads with high Intelligence scores can choose any of the following bonus languages: Aquan, Auran, Dwarven, Elven, Gnome, Halfling, Ignan, and Undercommon.	TEMPLATE:Bonus Language ~ Aquan|Bonus Language ~ Auran|Bonus Language ~ Dwarven|Bonus Language ~ Elven|Bonus Language ~ Gnome|Bonus Language ~ Halfling|Bonus Language ~ Ignan|Bonus Language ~ Undercommon	AUTO:LANG|Terran	SOURCEPAGE:p.216
+
+
+# ------------------------------
+# Ratfolk
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\ratfolk\
+
+###Block: Racial Traits
+# Ability Name							Source Page
+CATEGORY=Special Ability|Ratfolk ~ Ability Scores.MOD	SOURCEPAGE:p.247
+CATEGORY=Special Ability|Ratfolk ~ Type.MOD		SOURCEPAGE:p.247
+CATEGORY=Special Ability|Ratfolk ~ Size.MOD		SOURCEPAGE:p.247
+CATEGORY=Special Ability|Ratfolk ~ Speed.MOD		SOURCEPAGE:p.247
+CATEGORY=Special Ability|Ratfolk ~ Vision.MOD		SOURCEPAGE:p.247
+CATEGORY=Special Ability|Ratfolk ~ Rodent Empathy.MOD	SOURCEPAGE:p.247
+CATEGORY=Special Ability|Ratfolk ~ Swarming.MOD		SOURCEPAGE:p.247
+CATEGORY=Special Ability|Ratfolk ~ Tinker.MOD		SOURCEPAGE:p.247
+CATEGORY=Special Ability|Ratfolk ~ Languages.MOD	SOURCEPAGE:p.247
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key				Category of Ability		Type												Multiple Requirements																		Desc is PI?		Description																																														Bonus to skill									Cost		Source Page		Aspects												FACT
+Market Dweller	KEY:Ratfolk ~ Market Dweller	CATEGORY:Special Ability	TYPE:RacialTraits.Ratfolk Racial Trait.SpecialQuality.Special Quality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Ratfolk ~ Market Dweller],[!PREFACT:1,ABILITIES,Ratfolk_ReplaceTinker=True]	DESCISPI:YES	DESC:Some ratfolk, especially those of Deepmarket, are practiced at taking advantage of foes. They gain a +2 racial bonus on Bluff, Sense Motive, and Sleight of Hand checks.	DESC:This racial trait replaces tinker.|!PREABILITY:1,CATEGORY=Special Ability,Ratfolk ~ Market Dweller	BONUS:SKILL|Bluff,Sense Motive,Sleight of Hand|2|TYPE=Racial	COST:0	SOURCEPAGE:p.216	ASPECT:RacialSkillModifier|+2 Bluff, +2 Sense Motive, +2 Sleight of Hand	FACT:Ratfolk_ReplaceTinker|True
+
+
+# ------------------------------
+# Samsaran
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\samsaran\
+
+###Block: Racial Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Samsaran ~ Ability Scores.MOD	SOURCEPAGE:p.247
+CATEGORY=Special Ability|Samsaran ~ Type.MOD			SOURCEPAGE:p.247
+CATEGORY=Special Ability|Samsaran ~ Size.MOD			SOURCEPAGE:p.247
+CATEGORY=Special Ability|Samsaran ~ Speed.MOD			SOURCEPAGE:p.247
+CATEGORY=Special Ability|Samsaran ~ Vision.MOD			SOURCEPAGE:p.247
+CATEGORY=Special Ability|Samsaran ~ Lifebound.MOD		SOURCEPAGE:p.247
+CATEGORY=Special Ability|Samsaran ~ Samsaran Magic.MOD	SOURCEPAGE:p.247
+CATEGORY=Special Ability|Samsaran ~ Shards of the Past.MOD	SOURCEPAGE:p.247
+CATEGORY=Special Ability|Samsaran ~ Languages.MOD		SOURCEPAGE:p.247
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key				Category of Ability		Type												Multiple Requirements																			Desc is PI?		Description																																																								Cost		Source Page		Aspects																																FACT
+Mountaineer		KEY:Samsaran ~ Mountaineer	CATEGORY:Special Ability	TYPE:RacialTraits.Samsaran Racial Trait.SpecialQuality.Special Quality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Samsaran ~ Mountaineer],[!PREFACT:1,ABILITIES,Samsaran_ReplaceLifebound=True]	DESCISPI:YES	DESC:Samsarans, often from Zi Ha, who live their lives in the mountains are immune to altitude sickness and do not lose their Dexterity bonus to AC when making Climb checks or Acrobatics checks to cross narrow or slippery surfaces.	DESC:This racial trait replaces lifebound.|!PREABILITY:1,CATEGORY=Special Ability,Samsaran ~ Mountaineer	COST:0	SOURCEPAGE:p.216	ASPECT:SaveBonus|Immune to altitude sickness.	ASPECT:SkillBonus|You do not lose your Dexterity bonus to AC when making Climb checks or Acrobatics checks to cross narrow or slippery surfaces.	FACT:Samsaran_ReplaceLifebound|True
+
+
+# ------------------------------
+# Skinwalker
+# ------------------------------
+
+# This race is found in skinwalker_abilities_race_arg.lst
+###Block: Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Skinwalker ~ Ability Scores.MOD		SOURCEPAGE:p.248
+CATEGORY=Special Ability|Skinwalker ~ Type.MOD				SOURCEPAGE:p.248
+CATEGORY=Special Ability|Skinwalker ~ Size.MOD				SOURCEPAGE:p.248
+CATEGORY=Special Ability|Skinwalker ~ Speed.MOD				SOURCEPAGE:p.248
+CATEGORY=Special Ability|Skinwalker ~ Vision.MOD			SOURCEPAGE:p.248
+CATEGORY=Special Ability|Skinwalker ~ Animal-Minded.MOD		SOURCEPAGE:p.248
+CATEGORY=Special Ability|Skinwalker ~ Change Shape.MOD		SOURCEPAGE:p.248
+CATEGORY=Special Ability|Skinwalker ~ Spell-Like Ability.MOD	SOURCEPAGE:p.248
+CATEGORY=Special Ability|Skinwalker ~ Languages.MOD			SOURCEPAGE:p.248
+
+
+# ------------------------------
+# Skinwalker ~ Werebat-Kin
+# ------------------------------
+
+###Block: Subrace Selection
+# Ability Name							Source Page
+CATEGORY=Special Ability|Skinwalker ~ Werebat-Kin.MOD	SOURCEPAGE:p.248
+
+###Block: Replacement Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Werebat-Kin ~ Ability Scores.MOD		SOURCEPAGE:p.248
+CATEGORY=Special Ability|Werebat-Kin ~ Animal-Minded.MOD		SOURCEPAGE:p.248
+CATEGORY=Special Ability|Werebat-Kin ~ Change Shape.MOD		SOURCEPAGE:p.248
+CATEGORY=Special Ability|Werebat-Kin ~ Spell-Like Ability.MOD	SOURCEPAGE:p.248
+
+
+# ------------------------------
+# Skinwalker ~ Werebear-Kin
+# ------------------------------
+
+###Block: Subrace Selection
+# Ability Name								Source Page
+CATEGORY=Special Ability|Skinwalker ~ Werebear-Kin.MOD	SOURCEPAGE:p.248
+
+###Block: Replacement Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Werebear-Kin ~ Ability Scores.MOD		SOURCEPAGE:p.248
+CATEGORY=Special Ability|Werebear-Kin ~ Animal-Minded.MOD		SOURCEPAGE:p.248
+CATEGORY=Special Ability|Werebear-Kin ~ Change Shape.MOD		SOURCEPAGE:p.248
+CATEGORY=Special Ability|Werebear-Kin ~ Spell-Like Ability.MOD	SOURCEPAGE:p.248
+
+
+# ------------------------------
+# Skinwalker ~ Wereboar-Kin
+# ------------------------------
+
+###Block: Subrace Selection
+# Ability Name								Source Page
+CATEGORY=Special Ability|Skinwalker ~ Wereboar-Kin.MOD	SOURCEPAGE:p.248
+
+###Block: Replacement Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Wereboar-Kin ~ Ability Scores.MOD		SOURCEPAGE:p.248
+CATEGORY=Special Ability|Wereboar-Kin ~ Animal-Minded.MOD		SOURCEPAGE:p.248
+CATEGORY=Special Ability|Wereboar-Kin ~ Change Shape.MOD		SOURCEPAGE:p.248
+CATEGORY=Special Ability|Wereboar-Kin ~ Spell-Like Ability.MOD	SOURCEPAGE:p.248
+
+
+# ------------------------------
+# Skinwalker ~ Werecrocodile-Kin
+# ------------------------------
+
+###Block: Subrace Selection
+# Ability Name								Source Page
+CATEGORY=Special Ability|Skinwalker ~ Werecrocodile-Kin.MOD	SOURCEPAGE:p.249
+
+###Block: Replacement Racial Traits
+# Ability Name										Source Page
+CATEGORY=Special Ability|Werecrocodile-Kin ~ Ability Scores.MOD		SOURCEPAGE:p.249
+CATEGORY=Special Ability|Werecrocodile-Kin ~ Animal-Minded.MOD		SOURCEPAGE:p.249
+CATEGORY=Special Ability|Werecrocodile-Kin ~ Change Shape.MOD		SOURCEPAGE:p.249
+CATEGORY=Special Ability|Werecrocodile-Kin ~ Spell-Like Ability.MOD	SOURCEPAGE:p.249
+
+
+# ------------------------------
+# Skinwalker ~ Wererat-Kin
+# ------------------------------
+
+###Block: Subrace Selection
+# Ability Name							Source Page
+CATEGORY=Special Ability|Skinwalker ~ Wererat-Kin.MOD	SOURCEPAGE:p.249
+
+###Block: Replacement Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Wererat-Kin ~ Ability Scores.MOD		SOURCEPAGE:p.249
+CATEGORY=Special Ability|Wererat-Kin ~ Animal-Minded.MOD		SOURCEPAGE:p.249
+CATEGORY=Special Ability|Wererat-Kin ~ Change Shape.MOD		SOURCEPAGE:p.249
+CATEGORY=Special Ability|Wererat-Kin ~ Spell-Like Ability.MOD	SOURCEPAGE:p.249
+
+
+# ------------------------------
+# Skinwalker ~ Wereshark-Kin
+# ------------------------------
+
+###Block: Subrace Selection
+# Ability Name								Source Page
+CATEGORY=Special Ability|Skinwalker ~ Wereshark-Kin.MOD	SOURCEPAGE:p.249
+
+###Block: Replacement Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Wereshark-Kin ~ Ability Scores.MOD		SOURCEPAGE:p.249
+CATEGORY=Special Ability|Wereshark-Kin ~ Animal-Minded.MOD		SOURCEPAGE:p.249
+CATEGORY=Special Ability|Wereshark-Kin ~ Change Shape.MOD		SOURCEPAGE:p.249
+CATEGORY=Special Ability|Wereshark-Kin ~ Spell-Like Ability.MOD	SOURCEPAGE:p.249
+
+# ------------------------------
+# Skinwalker ~ Weretiger-Kin
+# ------------------------------
+
+###Block: Subrace Selection
+# Ability Name								Source Page
+CATEGORY=Special Ability|Skinwalker ~ Weretiger-Kin.MOD	SOURCEPAGE:p.249
+
+###Block: Replacement Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Weretiger-Kin ~ Ability Scores.MOD		SOURCEPAGE:p.249
+CATEGORY=Special Ability|Weretiger-Kin ~ Animal-Minded.MOD		SOURCEPAGE:p.249
+CATEGORY=Special Ability|Weretiger-Kin ~ Change Shape.MOD		SOURCEPAGE:p.249
+CATEGORY=Special Ability|Weretiger-Kin ~ Spell-Like Ability.MOD	SOURCEPAGE:p.249
+
+# ------------------------------
+# Skinwalker ~ Skinwalker ~ Werewolf-Kin
+# ------------------------------
+
+###Block: Subrace Selection
+# Ability Name								Source Page
+CATEGORY=Special Ability|Skinwalker ~ Werewolf-Kin.MOD	SOURCEPAGE:p.249
+
+###Block: Replacement Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Werewolf-Kin ~ Ability Scores.MOD		SOURCEPAGE:p.249
+CATEGORY=Special Ability|Werewolf-Kin ~ Animal-Minded.MOD		SOURCEPAGE:p.249
+CATEGORY=Special Ability|Werewolf-Kin ~ Change Shape.MOD		SOURCEPAGE:p.249
+CATEGORY=Special Ability|Werewolf-Kin ~ Spell-Like Ability.MOD	SOURCEPAGE:p.249
+
+
+# ------------------------------
+# Skinwalker ~ Alternate Racial Traits
+# ------------------------------
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key				Category of Ability		Type													Multiple Requirements																										Description																																																																					Ability																					Cost		Source Page		FACT
+Beast Talker	KEY:Skinwalker ~ Beast Talker	CATEGORY:Special Ability	TYPE:RacialTraits.Skinwalker Racial Trait.SpecialQuality.Special Quality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Skinwalker ~ Beast Talker],[!PREFACT:1,ABILITIES,Skinwalker_ReplaceChangeShape=True,Skinwalker_ReplaceSpellLikeAbility=True]	DESC:Some skinwalkers' ability to communicate with animals is stronger than their ability to transform. Such skinwalkers can only use their change shape ability once per day for 1 minute per level, but they can use their speak with animals spell-like ability at will.	DESC:This racial trait alters the change shape and spell-like ability racial traits.|!PREABILITY:1,CATEGORY=Special Ability,Skinwalker ~ Beast Talker	ABILITY:Skinwalker Racial Trait|AUTOMATIC|Beast Talker ~ Skinwalker ~ Change Shape|Beast Talker ~ Skinwalker ~ Spell-Like Ability	COST:0	SOURCEPAGE:p.216	FACT:Skinwalker_ReplaceChangeShape|True	FACT:Skinwalker_ReplaceSpellLikeAbility|True
+
+###Block: Replacement Racial Traits
+# Ability Name		Unique Key								Category of Ability		Type																	Required Ability									Required Fact								Description																																																																																																																							Ability														Modify VAR																				Source Page		Aspects
+Change Shape		KEY:Beast Talker ~ Skinwalker ~ Change Shape		CATEGORY:Special Ability	TYPE:RacialTraits.Skinwalker Racial Trait.SpecialQuality.Special Quality.Special Ability.Supernatural	PREABILITY:1,CATEGORY=Special Ability,Skinwalker ~ Beast Talker	PREFACT:1,ABILITIES,Skinwalker_ReplaceChangeShape=True	DESC:Once per day, a beast talker skinwalker can change shape to a bestial form as a standard action. In bestial form, a skinwalker gains a +2 racial bonus to his choice of Strength, Dexterity, or Constitution. While in this form, a skinwalker also takes on an animalistic feature that provides a special effect. Each time a skinwalker assumes bestial form, he can choose to gain two claw attacks that each deal 1d4 points of damage, 60 foot darkvision, or a +1 natural armor bonus. These benefits last for %1 minutes (1 minute per level). The skinwalker may return to his humanoid form as a swift action. A skinwalker must first return to his humanoid form before changing to bestial form again to change benefits.	ABILITY:Skinwalker Racial Trait|AUTOMATIC|TYPE=Skinwalker Change Shape Default																							SOURCEPAGE:p.216	ASPECT:CheckType|Uses per Day	ASPECT:CheckCount|%1|1
+Spell-Like Ability	KEY:Beast Talker ~ Skinwalker ~ Spell-Like Ability	CATEGORY:Special Ability	TYPE:RacialTraits.Skinwalker Racial Trait.SpecialQuality								PREABILITY:1,CATEGORY=Special Ability,Skinwalker ~ Beast Talker	PREFACT:1,ABILITIES,Skinwalker_ReplaceSpellLikeAbility=True	DESC:A skinwalker with a Wisdom score of 11 or higher can use speak with animals at will as a spell-like ability, using his Wisdom modifier to determine his concentration checks. The caster level for this ability is equal to the skinwalker's character level.																																																																													ABILITY:Spell-Like Ability|AUTOMATIC|Racial SLA ~ Speak with Animals|PRESTAT:1,WIS=11	BONUS:VAR|RacialSLA_SpeakWithAnimals_DCMod|WIS-CHA|TYPE=Base	BONUS:VAR|RacialSLA_SpeakWithAnimals_AtWill|1|TYPE=Boolean	SOURCEPAGE:p.216
+
+
+# ------------------------------
+# Strix
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\strix\
+
+###Block: Racial Traits
+# Ability Name							Source Page
+CATEGORY=Special Ability|Strix ~ Ability Scores.MOD	SOURCEPAGE:p.249
+CATEGORY=Special Ability|Strix ~ Type.MOD			SOURCEPAGE:p.249
+CATEGORY=Special Ability|Strix ~ Size.MOD			SOURCEPAGE:p.249
+CATEGORY=Special Ability|Strix ~ Speed.MOD		SOURCEPAGE:p.249
+CATEGORY=Special Ability|Strix ~ Flight.MOD		SOURCEPAGE:p.249
+CATEGORY=Special Ability|Strix ~ Low-Light Vision.MOD	SOURCEPAGE:p.249
+CATEGORY=Special Ability|Strix ~ Darkvision.MOD		SOURCEPAGE:p.249
+CATEGORY=Special Ability|Strix ~ Hatred.MOD		SOURCEPAGE:p.249
+CATEGORY=Special Ability|Strix ~ Nocturnal.MOD		SOURCEPAGE:p.249
+CATEGORY=Special Ability|Strix ~ Suspicious.MOD		SOURCEPAGE:p.249
+CATEGORY=Special Ability|Strix ~ Languages.MOD		SOURCEPAGE:p.249
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key				Category of Ability		Type														Multiple Requirements																							Description																																																																								Cost		Source Page		Aspects																										FACT
+Cautious Brawler	KEY:Strix ~ Cautious Brawler	CATEGORY:Special Ability	TYPE:RacialTraits.Strix Racial Trait.SpecialQuality.Special Quality.Special Ability	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Strix ~ Cautious Brawler],[!PREFACT:1,ABILITIES,Strix_ReplaceHatred=True,Strix_ReplaceSuspicious=True]	DESC:Because strix are careful to avoid injuring other strix even when they fight with each other, they develop a talent for fighting without causing lasting harm. They gain a +1 racial bonus on damage rolls when dealing nonlethal damage and take no attack penalty when dealing nonlethal damage with a lethal weapon.	DESC:This racial trait replaces hatred and suspicious.|!PREABILITY:1,CATEGORY=Special Ability,Strix ~ Cautious Brawler	COST:0	SOURCEPAGE:p.216	ASPECT:CombatBonus|+1 racial bonus on damage rolls when dealing nonlethal damage and take no attack penalty when dealing nonlethal damage with a lethal weapon.	FACT:Strix_ReplaceHatred|True	FACT:Strix_ReplaceSuspicious|True
+
+
+# ------------------------------
+# Suli
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\suli\
+
+###Block: Racial Traits
+# Ability Name							Source Page
+CATEGORY=Special Ability|Suli ~ Ability Scores.MOD	SOURCEPAGE:p.250
+CATEGORY=Special Ability|Suli ~ Type.MOD			SOURCEPAGE:p.250
+CATEGORY=Special Ability|Suli ~ Size.MOD			SOURCEPAGE:p.250
+CATEGORY=Special Ability|Suli ~ Speed.MOD			SOURCEPAGE:p.250
+CATEGORY=Special Ability|Suli ~ Vision.MOD		SOURCEPAGE:p.250
+CATEGORY=Special Ability|Suli ~ Negotiator.MOD		SOURCEPAGE:p.250
+CATEGORY=Special Ability|Suli ~ Elemental Assault.MOD	SOURCEPAGE:p.250
+CATEGORY=Special Ability|Suli ~ Energy Resistance.MOD	SOURCEPAGE:p.250
+CATEGORY=Special Ability|Suli ~ Languages.MOD		SOURCEPAGE:p.250
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key				Category of Ability		Type												Multiple Requirements																							Desc is PI?		Description																																																														Modify VAR								Cost		Source Page		Aspects
+Trusted Mediator	KEY:Suli ~ Trusted Mediator	CATEGORY:Special Ability	TYPE:RacialTraits.Suli Racial Trait.SpecialQuality.Special Quality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Suli ~ Trusted Mediator],[!PREFACT:1,ABILITIES,Suli_ReplaceEnergyResistance=True,Suli_ReplaceVision=True]	DESCISPI:YES	DESC:Sulis are renowned in Thuvia and beyond as impartial mediators, and they learn to shroud their minds to prevent magic from tampering with their judgments. They gain a +2 racial bonus on saving throws against mind-affecting effects.	DESC:This racial trait replaces energy resistance and low-light vision.|!PREABILITY:1,CATEGORY=Special Ability,Suli ~ Trusted Mediator	BONUS:VAR|SaveBonus_vs_MindAffecting|2|TYPE=Racial	COST:0	SOURCEPAGE:p.216	ASPECT:SaveBonus|+2 racial bonus on saving throws against mind-affecting effects.
+
+
+# ------------------------------
+# Svirfneblin
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\svirfneblin\
+
+###Block: Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Svirfneblin ~ Ability Scores.MOD		SOURCEPAGE:p.250
+CATEGORY=Special Ability|Svirfneblin ~ Type.MOD				SOURCEPAGE:p.250
+CATEGORY=Special Ability|Svirfneblin ~ Size.MOD				SOURCEPAGE:p.250
+CATEGORY=Special Ability|Svirfneblin ~ Speed.MOD			SOURCEPAGE:p.250
+CATEGORY=Special Ability|Svirfneblin ~ Vision.MOD			SOURCEPAGE:p.250
+CATEGORY=Special Ability|Svirfneblin ~ Defensive Training.MOD	SOURCEPAGE:p.250
+CATEGORY=Special Ability|Svirfneblin ~ Fortunate.MOD			SOURCEPAGE:p.250
+CATEGORY=Special Ability|Svirfneblin ~ Skilled.MOD			SOURCEPAGE:p.250
+CATEGORY=Special Ability|Svirfneblin ~ Hatred.MOD			SOURCEPAGE:p.250
+CATEGORY=Special Ability|Svirfneblin ~ Stonecunning.MOD		SOURCEPAGE:p.250
+CATEGORY=Special Ability|Svirfneblin ~ Spell Resistance.MOD		SOURCEPAGE:p.250
+CATEGORY=Special Ability|Svirfneblin ~ Svirfneblin Magic.MOD	SOURCEPAGE:p.250
+CATEGORY=Special Ability|Svirfneblin ~ Languages.MOD			SOURCEPAGE:p.250
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key					Category of Ability		Type													Multiple Requirements																									Desc is PI?		Description																																																																						Ability											Modify VAR								Cost		Source Page		Aspects																										FACT
+Stalwart Watcher	KEY:Svirfneblin ~ Stalwart Watcher	CATEGORY:Special Ability	TYPE:RacialTraits.Svirfneblin Racial Trait.SpecialAttack.Special Quality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Svirfneblin ~ Stalwart Watcher],[!PREFACT:1,ABILITIES,Svirfneblin_ReplaceHatred=True,Svirfneblin_ReplaceSkilled=True]	DESCISPI:YES	DESC:Svirfneblin first came to Golarion to thwart the schemes of evil fey. Those who still keep to this mission, primarily dwelling in settlements far beneath Andoran, gain a +1 racial bonus on attack rolls against fey creatures and a +2 racial bonus on saving throws against mind-affecting effects.	DESC:This racial trait replaces hatred and skilled.|!PREABILITY:1,CATEGORY=Special Ability,Svirfneblin ~ Stalwart Watcher	ABILITY:Special Ability|AUTOMATIC|Svirfneblin ~ Stalwart Watcher Output	BONUS:VAR|SaveBonus_vs_MindAffecting|2|TYPE=Racial	COST:0	SOURCEPAGE:p.216	ASPECT:CombatBonus|+1 racial bonus on attack rolls against fey creatures.	ASPECT:SaveBonus|+2 racial bonus on saving throws against mind-affecting effects.	FACT:Svirfneblin_ReplaceHatred|True	FACT:Svirfneblin_ReplaceSkilled|True
+
+###Block:
+# Ability Name		Unique Key						Category of Ability		Type				Source Page		Aspects
+Stalwart Watcher Output	KEY:Svirfneblin ~ Stalwart Watcher Output	CATEGORY:Special Ability	TYPE:Special Attack	SOURCEPAGE:p.216	ASPECT:StatBlockName|+1 on attack rolls against fey creatures
+
+
+# ------------------------------
+# Sylph
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\sylph\
+
+###Block: Racial Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Sylph ~ Ability Scores.MOD		SOURCEPAGE:p.250
+CATEGORY=Special Ability|Sylph ~ Type.MOD				SOURCEPAGE:p.250
+CATEGORY=Special Ability|Sylph ~ Size.MOD				SOURCEPAGE:p.250
+CATEGORY=Special Ability|Sylph ~ Speed.MOD			SOURCEPAGE:p.250
+CATEGORY=Special Ability|Sylph ~ Vision.MOD			SOURCEPAGE:p.250
+CATEGORY=Special Ability|Sylph ~ Spell-Like Ability.MOD	SOURCEPAGE:p.250
+CATEGORY=Special Ability|Sylph ~ Energy Resistance.MOD	SOURCEPAGE:p.250
+CATEGORY=Special Ability|Sylph ~ Air Affinity.MOD		SOURCEPAGE:p.250
+CATEGORY=Special Ability|Sylph ~ Languages.MOD			SOURCEPAGE:p.250
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key			Category of Ability		Type												Multiple Requirements																								Description																																										Modify VAR												Cost		Source Page		Aspects																	FACT
+Secretive		KEY:Sylph ~ Secretive	CATEGORY:Special Ability	TYPE:RacialTraits.Sylph Racial Trait.SpecialQuality.Special Quality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Sylph ~ Secretive],[!PREFACT:1,ABILITIES,Sylph_ReplaceSpellLikeAbility=True,Sylph_ReplaceEnergyResistance=True]	DESC:Sylphs gain a +2 racial bonus on saving throws against enchantment and divination spells and effects.	DESC:This racial trait replaces energy resistance and the spell-like ability racial trait.|!PREABILITY:1,CATEGORY=Special Ability,Sylph ~ Secretive	BONUS:VAR|SaveBonus_vs_Enchantments,SaveBonus_vs_Divination|2|TYPE=Racial	COST:0	SOURCEPAGE:p.216	ASPECT:SaveBonus|+2 racial bonus on saving throws against enchantment and divination spells and effects.	FACT:Sylph_ReplaceSpellLikeAbility|True	FACT:Sylph_ReplaceEnergyResistance|True
+
+
+# ------------------------------
+# Syrinx
+# ------------------------------
+
+###Block: Racial Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Syrinx ~ Ability Scores.MOD		SOURCEPAGE:p.251
+CATEGORY=Special Ability|Syrinx ~ Type.MOD			SOURCEPAGE:p.251
+CATEGORY=Special Ability|Syrinx ~ Size.MOD			SOURCEPAGE:p.251
+CATEGORY=Special Ability|Syrinx ~ Speed.MOD			SOURCEPAGE:p.251
+CATEGORY=Special Ability|Syrinx ~ Flight.MOD			SOURCEPAGE:p.251
+CATEGORY=Special Ability|Syrinx ~ Low-Light Vision.MOD	SOURCEPAGE:p.251
+CATEGORY=Special Ability|Syrinx ~ Darkvision.MOD		SOURCEPAGE:p.251
+CATEGORY=Special Ability|Syrinx ~ Nocturnal.MOD			SOURCEPAGE:p.251
+CATEGORY=Special Ability|Syrinx ~ Pride.MOD			SOURCEPAGE:p.251
+CATEGORY=Special Ability|Syrinx ~ Speak with Avians.MOD	SOURCEPAGE:p.251
+CATEGORY=Special Ability|Syrinx ~ Languages.MOD			SOURCEPAGE:p.251
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key			Category of Ability		Type															Multiple Requirements																						Description																																																																																																Cost		Source Page		FACT
+Oppressive		KEY:Syrinx ~ Oppressive	CATEGORY:Special Ability	TYPE:RacialTraits.Syrinx Racial Trait.SpecialQuality.Special Quality.Special Ability	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Syrinx ~ Oppressive],[!PREFACT:1,ABILITIES,Syrinx_ReplaceNocturnal=True,Syrinx_ReplacePride=True]	DESC:Syrinxes often have a natural talent for sensing how to unsettle and oppress other creatures. As a swift action, a syrinx can attempt a Sense Motive check against a DC of 10 + a creature's Hit Dice + its Charisma modifier or a DC of 10 + the creature's Bluff modifier, whichever is higher. On a success, syrinx gains a +4 racial bonus on Intimidate checks against that target and a +1 racial bonus to the DC of any fear effects she uses against that target.	DESC:This racial trait replaces nocturnal and pride.|!PREABILITY:1,CATEGORY=Special Ability,Syrinx ~ Oppressive	COST:0	SOURCEPAGE:p.216	FACT:Syrinx_ReplaceNocturnal|True	FACT:Syrinx_ReplacePride|True
+
+
+# ------------------------------
+# Tengu
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\tengu\
+
+###Block: Racial Traits
+# Ability Name							Source Page
+CATEGORY=Special Ability|Tengu ~ Ability Scores.MOD	SOURCEPAGE:p.251
+CATEGORY=Special Ability|Tengu ~ Type.MOD			SOURCEPAGE:p.251
+CATEGORY=Special Ability|Tengu ~ Size.MOD			SOURCEPAGE:p.251
+CATEGORY=Special Ability|Tengu ~ Speed.MOD		SOURCEPAGE:p.251
+CATEGORY=Special Ability|Tengu ~ Vision.MOD		SOURCEPAGE:p.251
+CATEGORY=Special Ability|Tengu ~ Sneaky.MOD		SOURCEPAGE:p.251
+CATEGORY=Special Ability|Tengu ~ Gifted Linguist.MOD	SOURCEPAGE:p.251
+CATEGORY=Special Ability|Tengu ~ Swordtrained.MOD	SOURCEPAGE:p.251
+CATEGORY=Special Ability|Tengu ~ Natural Weapon.MOD	SOURCEPAGE:p.251
+CATEGORY=Special Ability|Tengu ~ Languages.MOD		SOURCEPAGE:p.251
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key			Category of Ability		Type												Multiple Requirements																									Description																																																			Cost		Source Page		Aspects												FACT
+Deft Swords		KEY:Tengu ~ Deft Swords	CATEGORY:Special Ability	TYPE:RacialTraits.Tengu Racial Trait.SpecialQuality.Special Quality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Tengu ~ Deft Swords],[!PREABILITY:1,CATEGORY=Special Ability,Tengu_ReplaceNaturalWeapon=True,Tengu_ReplaceSneaky=True]	DESC:Some tengu learn dazzling blade techniques that allow them to use their weapons to protect against combat maneuvers. They gain a +2 dodge bonus to CMD while wielding a swordlike weapon.	DESC:This racial trait replaces natural weapon and sneaky.|!PREABILITY:1,CATEGORY=Special Ability,Tengu ~ Deft Swords	COST:0	SOURCEPAGE:p.216	ASPECT:CombatBonus|+2 dodge bonus to CMD while wielding a swordlike weapon.	FACT:Tengu_ReplaceNaturalWeapon|True	FACT:Tengu_ReplaceSneaky|True
+
+
+# ------------------------------
+# Tiefling
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\tengu\
+
+###Block: Racial Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Tiefling ~ Ability Scores.MOD	SOURCEPAGE:p.251
+CATEGORY=Special Ability|Tiefling ~ Type.MOD			SOURCEPAGE:p.251
+CATEGORY=Special Ability|Tiefling ~ Size.MOD			SOURCEPAGE:p.251
+CATEGORY=Special Ability|Tiefling ~ Speed.MOD			SOURCEPAGE:p.251
+CATEGORY=Special Ability|Tiefling ~ Vision.MOD			SOURCEPAGE:p.251
+CATEGORY=Special Ability|Tiefling ~ Skilled.MOD			SOURCEPAGE:p.251
+CATEGORY=Special Ability|Tiefling ~ Spell-Like Ability.MOD	SOURCEPAGE:p.251
+CATEGORY=Special Ability|Tiefling ~ Fiendish Resistance.MOD	SOURCEPAGE:p.251
+CATEGORY=Special Ability|Tiefling ~ Fiendish Sorcery.MOD	SOURCEPAGE:p.251
+CATEGORY=Special Ability|Tiefling ~ Languages.MOD		SOURCEPAGE:p.251
+
+###Block: Subrace Selection
+# Ability Name						Source Page
+CATEGORY=Special Ability|Tiefling ~ Default.MOD	SOURCEPAGE:p.251
+
+# ------------------------------
+# Tiefling ~ Asura-Spawn
+# ------------------------------
+
+###Block: Subrace Selection
+# Ability Name							Source Page
+CATEGORY=Special Ability|Tiefling ~ Asura-Spawn.MOD	SOURCEPAGE:p.251
+
+###Block: Replacement Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Asura-Spawn ~ Ability Scores.MOD		SOURCEPAGE:p.251
+CATEGORY=Special Ability|Asura-Spawn ~ Skilled.MOD			SOURCEPAGE:p.251
+CATEGORY=Special Ability|Asura-Spawn ~ Spell-Like Ability.MOD	SOURCEPAGE:p.251
+
+# ------------------------------
+# Tiefling ~ Daemon-Spawn
+# ------------------------------
+
+###Block: Subrace Selection
+# Ability Name							Source Page
+CATEGORY=Special Ability|Tiefling ~ Daemon-Spawn.MOD	SOURCEPAGE:p.251
+
+###Block: Replacement Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Daemon-Spawn ~ Ability Scores.MOD		SOURCEPAGE:p.251
+CATEGORY=Special Ability|Daemon-Spawn ~ Skilled.MOD			SOURCEPAGE:p.251
+CATEGORY=Special Ability|Daemon-Spawn ~ Spell-Like Ability.MOD	SOURCEPAGE:p.251
+
+# ------------------------------
+# Tiefling ~ Demodand-Spawn
+# ------------------------------
+
+###Block: Subrace Selection
+# Ability Name								Source Page
+CATEGORY=Special Ability|Tiefling ~ Demodand-Spawn.MOD	SOURCEPAGE:p.252
+
+###Block: Replacement Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Demodand-Spawn ~ Ability Scores.MOD	SOURCEPAGE:p.252
+CATEGORY=Special Ability|Demodand-Spawn ~ Skilled.MOD			SOURCEPAGE:p.252
+CATEGORY=Special Ability|Demodand-Spawn ~ Spell-Like Ability.MOD	SOURCEPAGE:p.252
+
+# ------------------------------
+# Tiefling ~ Demon-Spawn
+# ------------------------------
+
+###Block: Subrace Selection
+# Ability Name							Source Page
+CATEGORY=Special Ability|Tiefling ~ Demon-Spawn.MOD	SOURCEPAGE:p.252
+
+###Block: Replacement Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Demon-Spawn ~ Ability Scores.MOD		SOURCEPAGE:p.252
+CATEGORY=Special Ability|Demon-Spawn ~ Skilled.MOD			SOURCEPAGE:p.252
+CATEGORY=Special Ability|Demon-Spawn ~ Spell-Like Ability.MOD	SOURCEPAGE:p.252
+
+# ------------------------------
+# Tiefling ~ Devil-Spawn
+# ------------------------------
+
+###Block: Subrace Selection
+# Ability Name							Source Page
+CATEGORY=Special Ability|Tiefling ~ Devil-Spawn.MOD	SOURCEPAGE:p.252
+
+###Block: Replacement Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Devil-Spawn ~ Ability Scores.MOD		SOURCEPAGE:p.252
+CATEGORY=Special Ability|Devil-Spawn ~ Skilled.MOD			SOURCEPAGE:p.252
+CATEGORY=Special Ability|Devil-Spawn ~ Spell-Like Ability.MOD	SOURCEPAGE:p.252
+
+# ------------------------------
+# Tiefling ~ Div-Spawn
+# ------------------------------
+
+###Block: Subrace Selection
+# Ability Name							Source Page
+CATEGORY=Special Ability|Tiefling ~ Div-Spawn.MOD	SOURCEPAGE:p.252
+
+###Block: Replacement Racial Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Div-Spawn ~ Ability Scores.MOD	SOURCEPAGE:p.252
+CATEGORY=Special Ability|Div-Spawn ~ Skilled.MOD		SOURCEPAGE:p.252
+CATEGORY=Special Ability|Div-Spawn ~ Spell-Like Ability.MOD	SOURCEPAGE:p.252
+
+# ------------------------------
+# Tiefling ~ Kyton-Spawn
+# ------------------------------
+
+###Block: Subrace Selection
+# Ability Name							Source Page
+CATEGORY=Special Ability|Tiefling ~ Kyton-Spawn.MOD	SOURCEPAGE:p.252
+
+###Block: Replacement Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Kyton-Spawn ~ Ability Scores.MOD		SOURCEPAGE:p.252
+CATEGORY=Special Ability|Kyton-Spawn ~ Skilled.MOD			SOURCEPAGE:p.252
+CATEGORY=Special Ability|Kyton-Spawn ~ Spell-Like Ability.MOD	SOURCEPAGE:p.252
+
+# ------------------------------
+# Tiefling ~ Oni-Spawn
+# ------------------------------
+
+###Block: Subrace Selection
+# Ability Name							Source Page
+CATEGORY=Special Ability|Tiefling ~ Oni-Spawn.MOD	SOURCEPAGE:p.252
+
+###Block: Replacement Racial Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Oni-Spawn ~ Ability Scores.MOD	SOURCEPAGE:p.252
+CATEGORY=Special Ability|Oni-Spawn ~ Skilled.MOD		SOURCEPAGE:p.252
+CATEGORY=Special Ability|Oni-Spawn ~ Spell-Like Ability.MOD	SOURCEPAGE:p.252
+
+# ------------------------------
+# Tiefling ~ Qlippoth-Spawn
+# ------------------------------
+
+###Block: Subrace Selection
+# Ability Name								Source Page
+CATEGORY=Special Ability|Tiefling ~ Qlippoth-Spawn.MOD	SOURCEPAGE:p.252
+
+###Block: Replacement Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Qlippoth-Spawn ~ Ability Scores.MOD	SOURCEPAGE:p.252
+CATEGORY=Special Ability|Qlippoth-Spawn ~ Skilled.MOD			SOURCEPAGE:p.252
+CATEGORY=Special Ability|Qlippoth-Spawn ~ Spell-Like Ability.MOD	SOURCEPAGE:p.252
+
+# ------------------------------
+# Tiefling ~ Rakshasa-Spawn
+# ------------------------------
+
+###Block: Subrace Selection
+# Ability Name								Source Page
+CATEGORY=Special Ability|Tiefling ~ Rakshasa-Spawn.MOD	SOURCEPAGE:p.252
+
+###Block: Replacement Racial Traits
+# Ability Name									Source Page
+CATEGORY=Special Ability|Rakshasa-Spawn ~ Ability Scores.MOD	SOURCEPAGE:p.252
+CATEGORY=Special Ability|Rakshasa-Spawn ~ Skilled.MOD			SOURCEPAGE:p.252
+CATEGORY=Special Ability|Rakshasa-Spawn ~ Spell-Like Ability.MOD	SOURCEPAGE:p.252
+
+# ------------------------------
+# Tiefling ~ Alternate Racial Traits
+# ------------------------------
+
+###Block: Alternate Racial Traits
+# Ability Name		Unique Key						Category of Ability		Type															Multiple Requirements																							Description																																																																																																																																																																																																					Template											Ability													Modify VAR							Cost		Source Page		FACT
+Bullying			KEY:Tiefling ~ Bullying				CATEGORY:Special Ability	TYPE:RacialTraits.Tiefling Racial Trait.SpecialQuality.Special Quality.Applied Bonus	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Tiefling ~ Bullying],[!PREFACT:1,ABILITIES,Tiefling_ReplaceSkilled=True]						DESC:Tieflings are often disparaged and kept low in the social order, where they commonly resort to robbing those weaker than themselves. Tieflings with this racial trait gain a +1 racial bonus on combat maneuver checks to disarm or steal.	DESC:This racial trait replaces skilled.|!PREABILITY:1,CATEGORY=Special Ability,Tiefling ~ Bullying																																																																																																																																																																								BONUS:VAR|CMB_Disarm,CMB_Steal|1|TYPE=Racial	COST:0	SOURCEPAGE:p.216	FACT:Tiefling_ReplaceSkilled|True
+Light from the Darkness	KEY:Tiefling ~ Light from the Darkness	CATEGORY:Special Ability	TYPE:RacialTraits.Tiefling Racial Trait.SpecialQuality.Special Quality				PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Tiefling ~ Light from the Darkness],[!PREFACT:1,ABILITIES,Tiefling_ReplaceSpellLikeAbility=True]		DESC:Tieflings who deny the evil of their heritage to go on to become heroes refuse to use the dark magic of their blood, but their struggle grants them uncanny resilience against evil's touch. As long as they retain a good alignment, they gain the aasimar's incorruptible alternate racial trait (Advanced Race Guide).	DESC:This racial trait replaces the spell-like ability racial trait.|!PREABILITY:1,CATEGORY=Special Ability,Tiefling ~ Light from the Darkness																																																																																																																																					ABILITY:Aasimar Racial Trait|AUTOMATIC|Aasimar ~ Incorruptible|PREALIGN:LG,NG,CG									COST:0	SOURCEPAGE:p.217	FACT:Tiefling_ReplaceSpellLikeAbility|True
+Pass for Human		KEY:Tiefling ~ Pass for Human			CATEGORY:Special Ability	TYPE:RacialTraits.Tiefling Racial Trait.SpecialQuality.Special Quality				PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Tiefling ~ Pass for Human],[!PREFACT:1,ABILITIES,Tiefling_ReplaceType=True,Tiefling_ReplaceLanguages=True]	DESC:Discrimination against tieflings with horrifically fiendish features is so intense that even tieflings look up to those precious few of their kind who can pass as human. These tieflings have otherworldly features that are so subtle, they aren't often noticed unless the tiefling points them out (for example, eyes that flash red in the throes of passion, or fingernails that are naturally hard and pointed). Such a tiefling doesn't need to succeed at a Disguise check to appear to be human and count as humanoid (human) as well as outsider (native) for all purposes (such as humanoid-affecting spells like charm person or enlarge person). The tiefling does not automatically gain his associated outsider language (but may select it as a bonus language if his Intelligence score is high enough), and he may not select other racial traits that would grant him obviously fiendish features (such as the fiendish sprinter, maw or claw, prehensile tail, scaled skin, or vestigial wings alternate racial traits listed in the Advanced Race Guide).	DESC:This ability alters the tiefling's type, subtype, and languages.|!PREABILITY:1,CATEGORY=Special Ability,Tiefling ~ Pass for Human	TEMPLATE:Native|Racial Heritage ~ Humanoid|Racial Heritage ~ Human	ABILITY:Tiefling Racial Trait|AUTOMATIC|Pass for Human ~ Tiefling ~ Languages										COST:0	SOURCEPAGE:p.217	FACT:Tiefling_ReplaceType|True	FACT:Tiefling_ReplaceLanguages|True
+
+###Block: Replacement Racial Traits
+# Ability Name	Unique Key						Category of Ability		Type												Visible		Required Fact							Description																																					Template																																					Auto Language	Source Page
+Languages		KEY:Pass for Human ~ Tiefling ~ Languages	CATEGORY:Special Ability	TYPE:RacialTraits.Tiefling Racial Trait.SpecialQuality.Racial Language	VISIBLE:DISPLAY	PREFACT:1,ABILITIES,Tiefling_ReplaceLanguages=True	DESC:Tieflings that can pass for human begin play speaking Common. Tieflings with high Intelligence scores can choose from the following languages: Abyssal, Draconic, Dwarven, Elven, Gnome, Goblin, Halfling, Infernal, and Orc.	TEMPLATE:Bonus Language ~ Abyssal|Bonus Language ~ Draconic|Bonus Language ~ Dwarven|Bonus Language ~ Elven|Bonus Language ~ Gnome|Bonus Language ~ Goblin|Bonus Language ~ Halfling|Bonus Language ~ Infernal|Bonus Language ~ Orc	AUTO:LANG|Common	SOURCEPAGE:p.217
+
+
+# ------------------------------
+# Triaxian
+# ------------------------------
+
+###Block: Racial Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Triaxian ~ Ability Scores.MOD	SOURCEPAGE:p.252
+CATEGORY=Special Ability|Triaxian ~ Type.MOD			SOURCEPAGE:p.252
+CATEGORY=Special Ability|Triaxian ~ Size.MOD			SOURCEPAGE:p.252
+CATEGORY=Special Ability|Triaxian ~ Speed.MOD			SOURCEPAGE:p.252
+CATEGORY=Special Ability|Triaxian ~ Vision.MOD			SOURCEPAGE:p.252
+CATEGORY=Special Ability|Triaxian ~ Keen Senses.MOD		SOURCEPAGE:p.252
+CATEGORY=Special Ability|Triaxian ~ Bonus Feat.MOD		SOURCEPAGE:p.252
+CATEGORY=Special Ability|Triaxian ~ Seasoned.MOD		SOURCEPAGE:p.252
+CATEGORY=Special Ability|Triaxian ~ Languages.MOD		SOURCEPAGE:p.252
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key					Category of Ability		Type												Multiple Requirements																			Description																																																				Bonus to skill							Cost		Source Page		Aspects										FACT
+Transitional Lore	KEY:Triaxian ~ Transitional Lore	CATEGORY:Special Ability	TYPE:RacialTraits.Triaxian Racial Trait.SpecialQuality.Special Quality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Triaxian ~ Transitional Lore],[!PREFACT:1,ABILITIES,Triaxian_ReplaceSeasoned=True]	DESC:Transitional Triaxians are often instilled from a young age with the lore they need to prepare for the next winter or summer; they gain a +1 racial bonus on Knowledge (nature) and Survival checks.	DESC:This racial trait replaces seasoned.|!PREABILITY:1,CATEGORY=Special Ability,Triaxian ~ Transitional Lore	BONUS:SKILL|Knowledge (Nature),Survival|1|TYPE=Racial	COST:0	SOURCEPAGE:p.217	ASPECT:RacialSkillModifier|+1 Knowledge (nature), +1 Survival	FACT:Triaxian_ReplaceSeasoned|True
+
+
+# ------------------------------
+# Trox
+# ------------------------------
+
+###Block: Racial Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Trox ~ Ability Scores.MOD		SOURCEPAGE:p.253
+CATEGORY=Special Ability|Trox ~ Type.MOD				SOURCEPAGE:p.253
+CATEGORY=Special Ability|Trox ~ Size.MOD				SOURCEPAGE:p.253
+CATEGORY=Special Ability|Trox ~ Speed.MOD				SOURCEPAGE:p.253
+CATEGORY=Special Ability|Trox ~ Vision.MOD			SOURCEPAGE:p.253
+CATEGORY=Special Ability|Trox ~ Burrow.MOD			SOURCEPAGE:p.253
+CATEGORY=Special Ability|Trox ~ Frenzy.MOD			SOURCEPAGE:p.253
+CATEGORY=Special Ability|Trox ~ Grabbing Appendages.MOD	SOURCEPAGE:p.253
+CATEGORY=Special Ability|Trox ~ Languages.MOD			SOURCEPAGE:p.253
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key			Category of Ability		Type												Multiple Requirements																					Description																																														Vision			Cost		Source Page		FACT
+Tremorsense		KEY:Trox ~ Tremorsense	CATEGORY:Special Ability	TYPE:RacialTraits.Trox Racial Trait.SpecialQuality.Special Quality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Trox ~ Tremorsense],[!PREFACT:1,ABILITIES,Trox_ReplaceBurrow=True,Trox_ReplaceFrenzy=True]	DESC:Some trox have developed a closeness to the earth that helps them thwart the invisibility of their duergar enemies. They gain tremorsense to a range of 30 feet.	DESC:This racial trait replaces frenzy and burrow.|!PREABILITY:1,CATEGORY=Special Ability,Trox ~ Tremorsense	VISION:Tremorsense (30)	COST:0	SOURCEPAGE:p.217	FACT:Trox_ReplaceBurrow|True	FACT:Trox_ReplaceFrenzy|True
+
+
+# ------------------------------
+# Undine
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\undine\
+
+###Block: Racial Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Undine ~ Ability Scores.MOD		SOURCEPAGE:p.253
+CATEGORY=Special Ability|Undine ~ Type.MOD			SOURCEPAGE:p.253
+CATEGORY=Special Ability|Undine ~ Size.MOD			SOURCEPAGE:p.253
+CATEGORY=Special Ability|Undine ~ Speed.MOD			SOURCEPAGE:p.253
+CATEGORY=Special Ability|Undine ~ Vision.MOD			SOURCEPAGE:p.253
+CATEGORY=Special Ability|Undine ~ Spell-Like Ability.MOD	SOURCEPAGE:p.253
+CATEGORY=Special Ability|Undine ~ Energy Resistance.MOD	SOURCEPAGE:p.253
+CATEGORY=Special Ability|Undine ~ Water Affinity.MOD		SOURCEPAGE:p.253
+CATEGORY=Special Ability|Undine ~ Languages.MOD			SOURCEPAGE:p.253
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key				Category of Ability		Type												Multiple Requirements																			Desc is PI?		Description																																																						Ability														Cost		Source Page		FACT
+Triton Magic	KEY:Undine ~ Triton Magic	CATEGORY:Special Ability	TYPE:RacialTraits.Undine Racial Trait.SpecialQuality.Special Quality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Undine ~ Triton Magic],[!PREFACT:1,ABILITIES,Undine_ReplaceSpellLikeAbility=True]	DESCISPI:YES	DESC:Some undines--often from Outsea--descend from tritons, rather than genies. Undines with this racial trait can use summon nature's ally I as a spell-like ability, but only to summon a dolphin.	DESC:This racial trait replaces the spell-like ability racial trait.|!PREABILITY:1,CATEGORY=Special Ability,Undine ~ Triton Magic	ABILITY:Spell-Like Ability|AUTOMATIC|Racial SLA ~ Summon Nature's Ally I (dolphins only)	COST:0	SOURCEPAGE:p.217	FACT:Undine_ReplaceSpellLikeAbility|True
+
+
+# ------------------------------
+# Vanara
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\vanara\
+
+###Block: Racial Traits
+# Ability Name							Source Page
+CATEGORY=Special Ability|Vanara ~ Ability Scores.MOD	SOURCEPAGE:p.253
+CATEGORY=Special Ability|Vanara ~ Type.MOD		SOURCEPAGE:p.253
+CATEGORY=Special Ability|Vanara ~ Size.MOD		SOURCEPAGE:p.253
+CATEGORY=Special Ability|Vanara ~ Speed.MOD		SOURCEPAGE:p.253
+CATEGORY=Special Ability|Vanara ~ Vision.MOD		SOURCEPAGE:p.253
+CATEGORY=Special Ability|Vanara ~ Nimble.MOD		SOURCEPAGE:p.253
+CATEGORY=Special Ability|Vanara ~ Prehensile Tail.MOD	SOURCEPAGE:p.253
+CATEGORY=Special Ability|Vanara ~ Languages.MOD		SOURCEPAGE:p.253
+
+###Block: Alternate Racial Traits
+# Ability Name		Unique Key					Category of Ability		Type												Multiple Requirements																				Description																																																																										Cost		Source Page		Aspects																																FACT
+Risky Troublemaker	KEY:Vanara ~ Risky Troublemaker	CATEGORY:Special Ability	TYPE:RacialTraits.Vanara Racial Trait.SpecialQuality.Special Quality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Vanara ~ Risky Troublemaker],[!PREFACT:1,ABILITIES,Vanara_ReplacePrehensileTail=True]	DESC:Vanara families who seek to emulate the Monkey King teach their members that unexpected opportunities are worth taking great risks. These vanaras can choose to roll twice on Use Magic Device checks. If they do, they take the higher result unless either die roll is a natural 1, in which case the check automatically fails.	DESC:This racial trait replaces prehensile tail.|!PREABILITY:1,CATEGORY=Special Ability,Vanara ~ Risky Troublemaker	COST:0	SOURCEPAGE:p.217	ASPECT:SkillBonus|You can choose to roll twice on Use Magic Device checks. If you do, you take the higher result unless either die roll is a natural 1, in which case the check automatically fails.	FACT:Vanara_ReplacePrehensileTail|True
+
+
+# ------------------------------
+# Vishkanya
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\vishkanya\
+
+###Block: Racial Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Vishkanya ~ Ability Scores.MOD	SOURCEPAGE:p.253
+CATEGORY=Special Ability|Vishkanya ~ Type.MOD			SOURCEPAGE:p.253
+CATEGORY=Special Ability|Vishkanya ~ Size.MOD			SOURCEPAGE:p.253
+CATEGORY=Special Ability|Vishkanya ~ Speed.MOD			SOURCEPAGE:p.253
+CATEGORY=Special Ability|Vishkanya ~ Vision.MOD			SOURCEPAGE:p.253
+CATEGORY=Special Ability|Vishkanya ~ Keen Senses.MOD		SOURCEPAGE:p.253
+CATEGORY=Special Ability|Vishkanya ~ Limber.MOD			SOURCEPAGE:p.253
+CATEGORY=Special Ability|Vishkanya ~ Poison Resistance.MOD	SOURCEPAGE:p.253
+CATEGORY=Special Ability|Vishkanya ~ Poison Use.MOD		SOURCEPAGE:p.253
+CATEGORY=Special Ability|Vishkanya ~ Toxic.MOD			SOURCEPAGE:p.253
+CATEGORY=Special Ability|Vishkanya ~ Weapon Familiarity.MOD	SOURCEPAGE:p.253
+CATEGORY=Special Ability|Vishkanya ~ Languages.MOD		SOURCEPAGE:p.253
+
+###Block: Toxic Poison
+# Ability Name									Source Page
+CATEGORY=Special Ability|Vishkanya ~ Toxic ~ Vishkanya Venom.MOD	SOURCEPAGE:p.253
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key				Category of Ability		Type												Multiple Requirements																		Description																																																		Ability											Bonus to skill				Cost		Source Page		Aspects					FACT
+Deceptive		KEY:Vishkanya ~ Deceptive	CATEGORY:Special Ability	TYPE:RacialTraits.Vishkanya Racial Trait.SpecialQuality.Special Quality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Vishkanya ~ Deceptive],[!PREFACT:1,ABILITIES,Vishkanya_ReplaceLimber=True]	DESC:Vishkanya clans that make their livings robbing or killing humans train to distract targets at critical moments. They gain a +2 racial bonus on Bluff checks.	DESC:This racial trait replaces the racial bonus on Escape Artist checks.|!PREABILITY:1,CATEGORY=Special Ability,Vishkanya ~ Deceptive	ABILITY:Vishkanya Racial Trait|AUTOMATIC|Deceptive ~ Vishkanya ~ Limber	BONUS:SKILL|Bluff|2|TYPE=Racial	COST:0	SOURCEPAGE:p.217	ASPECT:RacialSkillModifier|+2 Bluff	FACT:Vishkanya_ReplaceLimber|True
+
+###Block: Replacement Racial Traits
+# Ability Name	Unique Key					Category of Ability		Type										Required Fact							Description											Bonus to skill				Source Page		Aspects
+Limber		KEY:Deceptive ~ Vishkanya ~ Limber	CATEGORY:Special Ability	TYPE:RacialTraits.Vishkanya Racial Trait.SpecialQuality	PREFACT:1,ABILITIES,Vishkanya_ReplaceLimber=True	DESC:Deceptive vishkanyas receive a +2 racial bonus on Stealth checks.	BONUS:SKILL|Stealth|2|TYPE=Racial	SOURCEPAGE:p.217	ASPECT:RacialSkillModifier|+2 Stealth
+
+
+# ------------------------------
+# Wayang
+# ------------------------------
+
+###NOTE: Race files are in core_essentials\races\wayang\
+
+###Block: Racial Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Wayang ~ Ability Scores.MOD		SOURCEPAGE:p.254
+CATEGORY=Special Ability|Wayang ~ Type.MOD			SOURCEPAGE:p.254
+CATEGORY=Special Ability|Wayang ~ Size.MOD			SOURCEPAGE:p.254
+CATEGORY=Special Ability|Wayang ~ Speed.MOD			SOURCEPAGE:p.254
+CATEGORY=Special Ability|Wayang ~ Vision.MOD			SOURCEPAGE:p.254
+CATEGORY=Special Ability|Wayang ~ Light and Dark.MOD		SOURCEPAGE:p.254
+CATEGORY=Special Ability|Wayang ~ Lurker.MOD			SOURCEPAGE:p.254
+CATEGORY=Special Ability|Wayang ~ Shadow Magic.MOD		SOURCEPAGE:p.254
+CATEGORY=Special Ability|Wayang ~ Shadow Resistance.MOD	SOURCEPAGE:p.254
+CATEGORY=Special Ability|Wayang ~ Languages.MOD			SOURCEPAGE:p.254
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key				Category of Ability		Type												Multiple Requirements																		Description																																																					Multiple?	Choose											Selections	Bonus to skill				Cost		Source Page		Aspects						FACT
+In the Shadows	KEY:Wayang ~ In the Shadows	CATEGORY:Special Ability	TYPE:RacialTraits.Wayang Racial Trait.SpecialQuality.Special Quality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Wayang ~ In the Shadows],[!PREFACT:1,ABILITIES,Wayang_ReplaceLurker=True]	DESC:Many wayangs perform a variety of unusual roles and tasks in wayang society. They gain a +2 racial bonus on their choice of two of the following skills: Appraise, Bluff, Craft, Profession, and Sleight of Hand.	DESC:This racial trait replaces lurker.|!PREABILITY:1,CATEGORY=Special Ability,Wayang ~ In the Shadows	MULT:YES	CHOOSE:SKILL|Appraise|Bluff|TYPE=Craft|TYPE=Profession|Sleight of Hand	SELECT:2	BONUS:SKILL|%LIST|2|TYPE=Racial	COST:0	SOURCEPAGE:p.217	ASPECT:RacialSkillModifier|+2 %1|%LIST	FACT:Wayang_ReplaceLurker|True
+
+
+# ------------------------------
+# Wyrwood
+# ------------------------------
+
+###Block: Racial Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Wyrwood ~ Ability Scores.MOD		SOURCEPAGE:p.254
+CATEGORY=Special Ability|Wyrwood ~ Type.MOD			SOURCEPAGE:p.254
+CATEGORY=Special Ability|Wyrwood ~ Size.MOD			SOURCEPAGE:p.254
+CATEGORY=Special Ability|Wyrwood ~ Speed.MOD			SOURCEPAGE:p.254
+CATEGORY=Special Ability|Wyrwood ~ Darkvision.MOD		SOURCEPAGE:p.254
+CATEGORY=Special Ability|Wyrwood ~ Low-Light Vision.MOD	SOURCEPAGE:p.254
+CATEGORY=Special Ability|Wyrwood ~ Languages.MOD		SOURCEPAGE:p.254
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key				Category of Ability		Type												Multiple Requirements																			Description																																								Ability										Cost		Source Page		FACT
+Repair Magic	KEY:Wyrwood ~ Repair Magic	CATEGORY:Special Ability	TYPE:RacialTraits.Wyrwood Racial Trait.SpecialQuality.Special Quality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Wyrwood ~ Repair Magic],[!PREFACT:1,ABILITIES,Wyrwood_ReplaceDarkvision=True]	DESC:Some wyrwoods have developed magic to keep them more self-sufficient. They can use make whole as a spell-like ability once per day.	DESC:This racial trait replaces darkvision.|!PREABILITY:1,CATEGORY=Special Ability,Wyrwood ~ Repair Magic	ABILITY:Spell-Like Ability|AUTOMATIC|Racial SLA ~ Make Whole	COST:0	SOURCEPAGE:p.217	FACT:Wyrwood_ReplaceDarkvision|True
+
+
+# ------------------------------
+# Wyvaran
+# ------------------------------
+
+# Race files are in core_essentials\races\wyvaran\
+###Block: Racial Traits
+# Ability Name								Source Page
+CATEGORY=Special Ability|Wyvaran ~ Ability Scores.MOD		SOURCEPAGE:p.254
+CATEGORY=Special Ability|Wyvaran ~ Type.MOD			SOURCEPAGE:p.254
+CATEGORY=Special Ability|Wyvaran ~ Size.MOD			SOURCEPAGE:p.254
+CATEGORY=Special Ability|Wyvaran ~ Speed.MOD			SOURCEPAGE:p.254
+CATEGORY=Special Ability|Wyvaran ~ Flight.MOD			SOURCEPAGE:p.254
+CATEGORY=Special Ability|Wyvaran ~ Slapping Tail.MOD		SOURCEPAGE:p.254
+CATEGORY=Special Ability|Wyvaran ~ Darkvision.MOD		SOURCEPAGE:p.254
+CATEGORY=Special Ability|Wyvaran ~ Low-Light Vision.MOD	SOURCEPAGE:p.254
+CATEGORY=Special Ability|Wyvaran ~ Languages.MOD		SOURCEPAGE:p.254
+
+###Block: Alternate Racial Traits
+# Ability Name	Unique Key					Category of Ability		Type												Multiple Requirements																									Description																																																																								Modify VAR														Cost		Source Page		Aspects																						FACT
+Evasive Maneuvers	KEY:Wyvaran ~ Evasive Maneuvers	CATEGORY:Special Ability	TYPE:RacialTraits.Wyvaran Racial Trait.SpecialQuality.Special Quality	PREMULT:1,[PREABILITY:1,CATEGORY=Special Ability,Wyvaran ~ Evasive Maneuvers],[!PREFACT:1,ABILITIES,Wyvaran_ReplaceSlappingTail=True,Wyvaran_ReplaceDarkvision=True]	DESC:Coastal wyvarans often take to the air to defend their territory from intruding ships, and are forced to learn aerial maneuvers to avoid siege fire. They fly with an average maneuverability instead of clumsy, and they gain a +2 dodge bonus to AC and on Reflex saving throws against siege weapons.	DESC:This racial trait replaces darkvision and slapping tail.|!PREABILITY:1,CATEGORY=Special Ability,Wyvaran ~ Evasive Maneuvers	BONUS:VAR|Maneuverability|3|TYPE=Base	BONUS:VAR|RefSave_vs_SiegeWeapons|2|TYPE=Racial	COST:0	SOURCEPAGE:p.217	ASPECT:CombatBonus|+2 dodge bonus to AC against siege weapons.	ASPECT:SaveBonus|+2 on Reflex saving throws against siege weapons.	FACT:Wyvaran_ReplaceSlappingTail|True	FACT:Wyvaran_ReplaceDarkvision|True

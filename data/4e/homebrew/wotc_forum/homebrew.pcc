@@ -1,0 +1,41 @@
+# CVS $Revision$ $Author$ -- Sun Dec  8 22:17:49 2013 -- reformated by prettylst.pl v1.50 (build 22352)
+CAMPAIGN:Hombrew - Forum Entries
+
+GAMEMODE:4e
+GENRE:Fantasy
+BOOKTYPE:Homebrew
+PUBNAMELONG:Wizards of the Coast, Inc
+PUBNAMESHORT:wotc
+PUBNAMEWEB:http://www.wizards.com/welcome.asp
+SETTING:Dungeons and Dragons 4th edition
+TYPE:Wizards of the Coast.Homebrew
+SOURCELONG:Homebrew - Forum Entries
+SOURCESHORT:HBFE
+SOURCEWEB:http://www.wizards.com/welcome.asp
+SOURCEDATE:2008-08
+RANK:200808
+ISOGL:NO
+COPYRIGHT:Copyright 2008, Wizards of the Coast, Inc.
+INFOTEXT:Homebrew from 4e forums online
+
+PRECAMPAIGN:2,INCLUDESBOOKTYPE=Core,Monster Manual v.4.0
+
+ABILITY:homebrew_abilities.lst
+ABILITY:homebrew_feats.lst
+RACE:homebrew_races.lst
+
+#
+# End
+#
+
+INFOTEXT:Supports 6.4.1
+# ENTRY DATE: 2015-01 (Unknown)
+# LST MONKEY: Bahamut
+# RELEASE REVIEW #
+# BETA:
+# RELEASE:
+# Built for PCGen Version: 6.04.01
+# Updated to work with version: -
+# MINVER:6.4
+# MINDEVVER:6.04.1
+# COMMENTS:

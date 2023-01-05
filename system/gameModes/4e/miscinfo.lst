@@ -1,0 +1,234 @@
+# message displayed when experience added allows character to advance a level
+LEVELMSG:Congratulations, you can advance with that much experience!
+#
+#
+ACNAME:Armor Class
+
+
+# Stacking bonuses
+BONUSSTACKS:Defense.Dodge.Circumstance.NotRanged.NotFlatFooted
+
+#
+#misc. currency specific items
+#
+CURRENCYUNITABBREV:gp
+
+#
+
+
+#
+# Whether or not the game mode displays these tabs
+#
+TAB:CLASS		NAME:in_class					CONTEXT:tabpages\tabclasses.html
+TAB:DESCRIPTION	NAME:in_descrip					CONTEXT:tabpages\tabdescription.html
+TAB:DOMAINS		NAME:in_domains			VISIBLE:NO	CONTEXT:tabpages\tabdomains.html
+TAB:FEATS		NAME:in_feats					CONTEXT:tabpages\tabfeatsandabilities.html
+TAB:INVENTORY	NAME:in_inventory					CONTEXT:tabpages\tabinventory.html
+TAB:RACE		NAME:in_race					CONTEXT:tabpages\tabraces.html
+TAB:SKILLS		NAME:in_skills			VISIBLE:NO	CONTEXT:tabpages\tabskills.html
+TAB:SPELLS		NAME:in_spells					CONTEXT:tabpages\tabspells.html
+TAB:SUMMARY		NAME:in_summary					CONTEXT:tabpages\tabsummary.html
+# Inventory subpanels
+TAB:EQUIPPING	NAME:in_InfoEquipping				CONTEXT:tabpages\tabinventory.html
+TAB:TEMPMOD		NAME:in_InfoTempMod				CONTEXT:tabpages\tabtemporarybonuses.html
+#
+#
+MENUENTRY:4e
+DISPLAYORDER:1
+ALLOWEDMODES:4e
+#
+
+SHORTRANGE:30
+#
+RANGEPENALTY:-2
+
+# SQUARESIZE defines the size of a battlemap square in feet.
+SQUARESIZE:5
+
+SPELLRANGE:CLOSE|floor(CASTERLEVEL/2)*5+25
+SPELLRANGE:MEDIUM|(CASTERLEVEL*10)+100
+SPELLRANGE:LONG|(CASTERLEVEL*40)+400
+
+SKILLMULTIPLIER:4
+SPELLBASEDC:10+SPELLLEVEL+BASESPELLSTAT
+
+BONUSFEATLEVELSTARTINTERVAL:2|2
+
+BONUSSTATLEVELSTARTINTERVAL:4|if(mod(TL,10)>0&&mod(mod(TL,10),4)==0,1,0)|2
+
+
+
+
+#Attack/Check Cycle attributes
+BABMAXATT:1
+BABATTCYC:30
+BABMINVAL:1
+MAXNONEPICLEVEL:19
+
+#Class Types
+CLASSTYPE:PC			CRFORMULA:0			ISMONSTER:NO	
+CLASSTYPE:NPC			CRFORMULA:0			ISMONSTER:NO	
+CLASSTYPE:Monster			CRFORMULA:0			ISMONSTER:YES	
+
+#AC Types
+ACTYPE:Total				ADD:TOTAL
+ACTYPE:Flatfooted				ADD:Flatfooted
+#ADD:TOTAL		REMOVE:Ability|PRESTAT:1,DEX=10|!PREABILITY:1,CATEGORY=Special Ability,Uncanny Dodge	REMOVE:Dodge|!PREABILITY:1,CATEGORY=Special Ability,Uncanny Dodge
+ACTYPE:Touch				ADD:Touch
+#ADD:TOTAL		REMOVE:Armor|NaturalArmor|Shield|NaturalArmorEnhancement
+ACTYPE:Base					ADD:Base
+ACTYPE:Armor				ADD:Armor
+ACTYPE:Shield				ADD:Shield
+ACTYPE:Ability				ADD:Ability
+ACTYPE:Size					ADD:Size
+ACTYPE:NaturalArmor			ADD:NaturalArmor|NaturalArmorEnhancement
+ACTYPE:NaturalArmorEnhancement	ADD:NaturalArmorEnhancement
+ACTYPE:Misc					ADD:TOTAL		REMOVE:Base|Armor|Shield|Ability|Size|NaturalArmor|NaturalArmorEnhancement
+ACTYPE:ClassDefense			ADD:ClassDefense
+ACTYPE:Dodge				ADD:Dodge
+ACTYPE:Deflection				ADD:Deflection
+ACTYPE:Insight				ADD:Insight
+
+ACTYPE:Moral
+ACTYPE:Sacred
+ACTYPE:Profane
+
+# Damage die changes on size
+BASEDICE:1d2	UP:1d3,1d4,1d6,1d8,2d6,3d6,4d6,6d6,8d6,12d6	DOWN:1,0
+BASEDICE:1d3	UP:1d4,1d6,1d8,2d6,3d6,4d6,6d6,8d6,12d6		DOWN:1d2,1,0
+BASEDICE:1d4	UP:1d6,1d8,2d6,3d6,4d6,6d6,8d6,12d6			DOWN:1d3,1d2,1,0
+BASEDICE:1d6	UP:1d8,2d6,3d6,4d6,6d6,8d6,12d6			DOWN:1d4,1d3,1d2,1
+BASEDICE:1d8	UP:2d6,3d6,4d6,6d6,8d6,12d6				DOWN:1d6,1d4,1d3,1d2
+BASEDICE:1d10	UP:2d8,3d8,4d8,6d8,8d8,12d8				DOWN:1d8,1d6,1d4,1d3
+BASEDICE:1d12	UP:3d6,4d6,6d6,8d6,12d6					DOWN:1d10,1d8,1d6,1d4
+BASEDICE:2d4	UP:2d6,3d6,4d6,6d6,8d6,12d6				DOWN:1d6,1d4,1d3,1d2
+BASEDICE:2d6	UP:3d6,4d6,6d6,8d6,12d6					DOWN:1d10,1d8,1d6,1d4
+BASEDICE:2d8	UP:3d8,4d8,6d8,8d8,12d8					DOWN:2d6,1d10,1d8,1d6
+BASEDICE:2d10	UP:4d8,6d8,8d8,12d8					DOWN:2d8,2d6,1d10,1d8
+BASEDICE:3d6	UP:4d6,6d6,8d6,12d6					DOWN:2d6,1d10,1d8,1d6,1d4
+
+# Penalty to attacks for different sized weapons
+EQSIZEPENALTY:35 Size Penalty		BONUS:WEAPON|TOHIT|(PC.SIZE.INT-EQUIP.SIZE.INT)*-2|PREVARGT:PC.SIZE.INT,EQUIP.SIZE.INT|!PRETYPE:2,Melee,Natural|TYPE=DifferentEQSizePenalty	BONUS:WEAPON|TOHIT|(EQUIP.SIZE.INT-PC.SIZE.INT)*-2|PREVARGT:EQUIP.SIZE.INT,PC.SIZE.INT|!PRETYPE:2,Melee,Natural|TYPE=DifferentEQSizePenalty
+
+# Long and Short weapon damage types
+WEAPONTYPE:Bludgeoning|B
+WEAPONTYPE:Piercing|P
+WEAPONTYPE:Slashing|S
+WEAPONTYPE:Fire|F
+WEAPONTYPE:Acid|A
+WEAPONTYPE:Electricity|E
+WEAPONTYPE:Cold|C
+WEAPONTYPE:Poison|Po
+WEAPONTYPE:Sonic|So
+
+# Weapon proficiency categories
+WEAPONCATEGORY:Improvised
+WEAPONCATEGORY:Simple
+WEAPONCATEGORY:Military
+WEAPONCATEGORY:Superior
+#
+WEAPONCATEGORY:Natural
+
+
+
+
+# Non-proficient penalty
+#WEAPONNONPROFPENALTY:0
+
+# Number of hands required to wield weapon categories
+#									Object Size difference
+# 											
+WIELDCATEGORY:Light		HANDS:1		FINESSABLE:Yes	
+WIELDCATEGORY:OneHanded		HANDS:1					
+WIELDCATEGORY:TwoHanded		HANDS:2					
+WIELDCATEGORY:TooSmall		HANDS:999
+WIELDCATEGORY:TooLarge		HANDS:999
+WIELDCATEGORY:Unusable		HANDS:999
+WIELDCATEGORY:None		HANDS:0
+
+# Light weapon vs PC size changes
+WIELDCATEGORY:Light		PREVARLTEQ:EQUIP.SIZE.INT,PC.SIZE.INT-1	SWITCH:TooSmall
+WIELDCATEGORY:Light		PREVAREQ:EQUIP.SIZE.INT,PC.SIZE.INT+1	SWITCH:OneHanded
+WIELDCATEGORY:Light		PREVAREQ:EQUIP.SIZE.INT,PC.SIZE.INT+2	SWITCH:TwoHanded
+WIELDCATEGORY:Light		PREVARGTEQ:EQUIP.SIZE.INT,PC.SIZE.INT+3	SWITCH:TooLarge
+
+# OneHanded weapon vs PC size changes
+WIELDCATEGORY:OneHanded		PREVARLTEQ:EQUIP.SIZE.INT,PC.SIZE.INT-2	SWITCH:TooSmall
+WIELDCATEGORY:OneHanded		PREVAREQ:EQUIP.SIZE.INT,PC.SIZE.INT-1	SWITCH:Light
+WIELDCATEGORY:OneHanded		PREVAREQ:EQUIP.SIZE.INT,PC.SIZE.INT+1	SWITCH:TwoHanded
+WIELDCATEGORY:OneHanded		PREVARGTEQ:EQUIP.SIZE.INT,PC.SIZE.INT+2	SWITCH:TooLarge
+
+# TwoHanded weapon vs PC size changes
+WIELDCATEGORY:TwoHanded		PREVARLTEQ:EQUIP.SIZE.INT,PC.SIZE.INT-3	SWITCH:TooSmall
+WIELDCATEGORY:TwoHanded		PREVAREQ:EQUIP.SIZE.INT,PC.SIZE.INT-2	SWITCH:Light
+WIELDCATEGORY:TwoHanded		PREVAREQ:EQUIP.SIZE.INT,PC.SIZE.INT-1	SWITCH:OneHanded
+WIELDCATEGORY:TwoHanded		PREVARGTEQ:EQUIP.SIZE.INT,PC.SIZE.INT+1	SWITCH:TooLarge
+
+#
+
+WIELDCATEGORY:TooSmall		UP:Light|OneHanded|TwoHanded					
+WIELDCATEGORY:Light		UP:OneHanded|TwoHanded
+WIELDCATEGORY:OneHanded		UP:TwoHanded			DOWN:Light
+WIELDCATEGORY:TwoHanded						DOWN:OneHanded|Light
+WIELDCATEGORY:TooLarge						DOWN:TwoHanded|OneHanded|Light	
+
+#
+# Dice rolling methods for character creation
+#
+ROLLMETHOD:3d6						SORTKEY:A1	METHOD:3d6
+ROLLMETHOD:4d4						SORTKEY:A2	METHOD:4d4
+ROLLMETHOD:4d6 drop lowest				SORTKEY:A3	METHOD:roll(4,6,[2,3,4])
+ROLLMETHOD:4d6, reroll 1's				SORTKEY:A4	METHOD:4d5+4
+ROLLMETHOD:4d6, reroll 1's, drop the lowest	SORTKEY:A5	METHOD:3+roll(4,5,[2,3,4])
+ROLLMETHOD:5d6 drop 2 lowest				SORTKEY:A6	METHOD:roll(5,6,[3,4,5])
+
+#define this game mode's default unit set
+#as specified in unitset.lst
+#
+DEFAULTUNITSET:Imperial 4e
+
+# Unit Set
+UNITSET:Imperial 4e			HEIGHTUNIT:ftin	HEIGHTFACTOR:1		HEIGHTPATTERN:#		DISTANCEUNIT:sq.	DISTANCEFACTOR:1	DISTANCEPATTERN:#	WEIGHTUNIT:lbs.	WEIGHTFACTOR:1	WEIGHTPATTERN:#.##
+#COMMENT: Allow people to port over races and use regular MOVE:Walk,30 = Walk 6 sq.
+UNITSET:Imperial 4e (Conversion)	HEIGHTUNIT:ftin	HEIGHTFACTOR:1		HEIGHTPATTERN:#		DISTANCEUNIT:sq.	DISTANCEFACTOR:.2	DISTANCEPATTERN:#	WEIGHTUNIT:lbs.	WEIGHTFACTOR:1	WEIGHTPATTERN:#.##
+UNITSET:Imperial		HEIGHTUNIT:ftin	HEIGHTFACTOR:1		HEIGHTPATTERN:#		DISTANCEUNIT:ft.	DISTANCEFACTOR:1	DISTANCEPATTERN:#	WEIGHTUNIT:lbs.	WEIGHTFACTOR:1	WEIGHTPATTERN:#.##
+UNITSET:Metric		HEIGHTUNIT:cm	HEIGHTFACTOR:2.54		HEIGHTPATTERN:#		DISTANCEUNIT:m	DISTANCEFACTOR:0.3	DISTANCEPATTERN:#.##	WEIGHTUNIT:kg	WEIGHTFACTOR:0.5	WEIGHTPATTERN:#.###
+
+#
+# Reach mode formula to calculate weapon reach for a player
+#
+# RACEREACH = player's natural reach
+# REACH = equipment's reach
+# REACHMULT = equipment's reach multiple
+#
+WEAPONREACH:(RACEREACH+(max(0,REACH-5)))*REACHMULT
+
+#
+# Ability Categories
+#
+
+ABILITYCATEGORY:FEAT		VISIBLE:YES		EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO		CATEGORY:FEAT	PLURAL:Feats	DISPLAYLOCATION:Feats
+ABILITYCATEGORY:Internal	VISIBLE:NO		EDITABLE:NO		EDITPOOL:NO		FRACTIONALPOOL:NO		CATEGORY:Internal
+###COMMENT: Internal Category is for all hidden abilities.
+
+
+PREVIEWDIR:d20/4e
+PREVIEWSHEET:Standard.htm.ftl
+INFOSHEET:SUMMARY|preview/summary/35e_info.html.ftl
+INFOSHEET:SKILLS|preview/skills/35e_skills.html
+
+OUTPUTSHEET:DIRECTORY|d20/4e
+OUTPUTSHEET:DEFAULT.PDF|csheet_fantasy_grey_light.xslt
+OUTPUTSHEET:DEFAULT.HTM|csheet_standard_4e.htm
+
+# DIESIZES values are used by the HITEDIE tag to bump up/down HD per level.
+DIESIZES:1,2,3,MIN=4,6,8,10,MAX=12,20,100,1000 
+
+# Types which automatic resizing is activated on
+RESIZABLEEQUIPTYPE:Shield|Weapon|Armor|Ammunition|Resizable
+
+
+
+#
+# DONE
+#

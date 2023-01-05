@@ -1,0 +1,63 @@
+# CVS $Revision$ $Author$ -- Sun Dec  8 22:17:49 2013 -- reformated by prettylst.pl v1.50 (build 22352)
+
+# NOTE: This needs to be brought up to Ability KEY naming standards. This does work though for now.
+CAMPAIGN:Expanded Psionics Handbook
+GAMEMODE:35e|DnD35e|Bahamut35e
+GENRE:Fantasy
+
+PRECAMPAIGN:1,INCLUDESBOOKTYPE=Core35e
+BOOKTYPE:Supplement
+SETTING:Fantasy
+TYPE:Wizards of the Coast.Supplement
+STATUS:BETA
+PUBNAMELONG:Wizards of the Coast
+PUBNAMESHORT:WotC
+PUBNAMEWEB:http://www.wizards.com/default.asp?x=dnd
+SOURCELONG:Expanded Psionics Handbook
+SOURCESHORT:XPH
+SOURCEWEB:www.wizards.com
+SOURCEDATE:2004-04
+RANK:200404
+ISOGL:NO
+ISLICENSED:NO
+COPYRIGHT:Wizards of the Coast
+
+# COVER should be cover_gameMode_pub_book.file
+COVER:../../../../_artwork/cover_35e_wotc_xph.jpg
+# LOGO should be logo_pub.file
+LOGO:../../../../_artwork/logo_wotc.png
+
+
+ABILITY:xph_abilities.lst
+ABILITYCATEGORY:xph_abilitycategories.lst
+BIOSET:xph_biosettings.lst
+CLASS:xph_classes.lst
+COMPANIONMOD:xph_companionmods.lst
+DEITY:xph_deities.lst
+DOMAIN:xph_domains.lst
+EQUIPMENT:xph_equip.lst
+EQUIPMOD:xph_equipmods.lst
+ABILITY:xph_feats.lst
+KIT:xph_kits.lst
+LANGUAGE:xph_languages.lst
+ARMORPROF:xph_profs_armor.lst
+SHIELDPROF:xph_profs_shield.lst
+WEAPONPROF:xph_profs_weapon.lst
+RACE:xph_races.lst
+#add support for psionic thri-kreen
+RACE:xph_kreen_subrace.lst|PRECAMPAIGN:1,INCLUDES=Monster Manual II
+SKILL:xph_skills.lst
+SPELL:xph_spells.lst
+TEMPLATE:xph_templates.lst
+
+INFOTEXT:Supports 6.4.1
+# ENTRY DATE: 2015-01 (Unknown)
+# LST MONKEY: Bahamut
+# RELEASE REVIEW #
+# BETA:
+# RELEASE:
+# Built for PCGen Version: 6.04.01
+# Updated to work with version: -
+# MINVER:6.4
+# MINDEVVER:6.04.1
+# COMMENTS:

@@ -1,0 +1,74 @@
+# CVS $Revision$ $Author$ -- Wed Feb 26 18:18:46 2014 -- reformated by prettylst.pl v1.51 (build 22988)
+# Original Entry by: BahamutDragon
+# Date Entered: 2014-02
+CAMPAIGN:Races of the Dragon
+KEY:Races of the Dragon
+GAMEMODE:35e|Bahamut35e
+
+STATUS:ALPHA
+TYPE:Wizards of the Coast.Supplement.Race
+SETTING:Fantasy
+PRECAMPAIGN:2,INCLUDES=Complete Arcane,INCLUDES=Sandstorm
+PRECAMPAIGN:1,INCLUDESBOOKTYPE=Core35e
+
+# Sources this book pulls from
+#Dr: Draconomicon
+#Mon: Monsters of Faerun
+#ELH: Epic Level Handbook
+#OA: Oriental Adventures
+#MM: Monster Manual
+#Sa: Sandstorm
+#MM2: Monster Manual II
+#SC: Spell Compendium
+
+
+PUBNAMELONG:Wizards of the Coast
+PUBNAMESHORT:WotC
+PUBNAMEWEB:http://www.wizards.com/default.asp?x=dnd
+SOURCELONG:Races of the Dragon
+SOURCESHORT:RDr
+SOURCEDATE:2006-01
+RANK:200601
+ISOGL:NO
+COPYRIGHT:Wizards of the Coast
+
+# COVER should be cover_gameMode_pub_book.file
+COVER:../../../../_artwork/cover_35e_wotc_rdr.jpg
+# LOGO should be logo_pub.file
+LOGO:../../../../_artwork/logo_wotc.png
+
+# rdr
+ABILITY:rdr_abilities.lst
+ABILITYCATEGORY:rdr_abilitycategories.lst
+CLASS:rdr_classes.lst
+#COMPANIONMOD:rdr_companionmods.lst
+DEITY:rdr_deities.lst
+#DOMAIN:rdr_domains.lst
+EQUIPMENT:rdr_equip.lst
+EQUIPMOD:rdr_equipmods.lst
+ABILITY:rdr_feats.lst
+#KIT:rdr_kits.lst
+#ARMORPROF:rdr_profs_armor.lst
+#WEAPONPROF:rdr_profs_weapon.lst
+RACE:rdr_races.lst
+#SKILL:rdr_skills.lst
+SPELL:rdr_spells.lst
+TEMPLATE:rdr_templates.lst
+
+FORWARDREF:CLASSSPELLLIST|Psychic Warrior,Psion,Wilder
+FORWARDREF:DOMAIN|Cavern,Charm,Darkness,Dragon,Fate,Greed,Hatred,Illusion,Metal,Planning,Renewal,Retribution,Scalykind,Spell,Storm,Time,Trade,Tyranny,Undeath,Wealth
+FORWARDREF:SPELL|Transcribe Symbol
+
+#NOTES: PCGen version 6.2
+
+INFOTEXT:Supports 6.4.1
+# ENTRY DATE: 2015-01 (Unknown)
+# LST MONKEY: Bahamut
+# RELEASE REVIEW #
+# BETA:
+# RELEASE:
+# Built for PCGen Version: 6.04.01
+# Updated to work with version: -
+# MINVER:6.4
+# MINDEVVER:6.04.1
+# COMMENTS:

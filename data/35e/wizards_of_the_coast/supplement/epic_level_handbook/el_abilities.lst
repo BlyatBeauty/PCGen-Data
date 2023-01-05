@@ -1,0 +1,301 @@
+# CVS $Revision: $ $Author: $ -- Sun Aug 17 15:41:15 2014 -- reformated by prettylst.pl v1.51 (build 24906)
+###Block: Epic Horizon Walker Terrain Abilities
+# Ability Name			Category of Ability		Type						Visible	Required Ability								Var. Max. Value										Define					Description					Stackable?	Multiple?	Choose		Modify VAR													Source Page
+Improved Aquatic Terrain	CATEGORY:Special Ability	TYPE:SpecialQuality.ImprovedTerrain	VISIBLE:YES	PREABILITY:1,CATEGORY=Special Ability,Aquatic Terrain		PREVARLTEQ:ImprovedAquaticTerrain,ceil((CL=Horizon Walker)/10)		DEFINE:ImprovedAquaticTerrain|0	DESC:+%1|ImprovedAquaticTerrain	STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:VAR|ImprovedAquaticTerrain|1	BONUS:VAR|ImprovedAquaticTerrain|1			SOURCEPAGE:epicclasses
+Improved Desert Terrain		CATEGORY:Special Ability	TYPE:SpecialQuality.ImprovedTerrain	VISIBLE:YES	PREABILITY:1,CATEGORY=Special Ability,Desert Terrain		PREVARLTEQ:ImprovedDesertTerrain,ceil((CL=Horizon Walker)/10)		DEFINE:ImprovedDesertTerrain|0	DESC:+%1|ImprovedDesertTerrain	STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:VAR|ImprovedDesertTerrain|1	BONUS:VAR|ImprovedDesertTerrain|1			SOURCEPAGE:epicclasses
+Improved Forest Terrain		CATEGORY:Special Ability	TYPE:SpecialQuality.ImprovedTerrain	VISIBLE:YES	PREABILITY:1,CATEGORY=Special Ability,Forest Terrain		PREVARLTEQ:ImprovedForestTerrain,ceil((CL=Horizon Walker)/10)		DEFINE:ImprovedForestTerrain|0	DESC:+%1|ImprovedForestTerrain	STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:VAR|ImprovedForestTerrain|1	BONUS:VAR|ImprovedForestTerrain|1			SOURCEPAGE:epicclasses
+Improved Hills Terrain		CATEGORY:Special Ability	TYPE:SpecialQuality.ImprovedTerrain	VISIBLE:YES	PREABILITY:1,CATEGORY=Special Ability,Hills Terrain		PREVARLTEQ:ImprovedHillsTerrain,ceil((CL=Horizon Walker)/10)		DEFINE:ImprovedHillsTerrain|0		DESC:+%1|ImprovedHillsTerrain		STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:VAR|ImprovedHillsTerrain|1	BONUS:VAR|ImprovedHillsTerrain|1			SOURCEPAGE:epicclasses
+Improved Marsh Terrain		CATEGORY:Special Ability	TYPE:SpecialQuality.ImprovedTerrain	VISIBLE:YES	PREABILITY:1,CATEGORY=Special Ability,Marsh Terrain		PREVARLTEQ:ImprovedMarshTerrain,ceil((CL=Horizon Walker)/10)		DEFINE:ImprovedMarshTerrain|0		DESC:+%1|ImprovedMarshTerrain		STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:VAR|ImprovedMarshTerrain|1	BONUS:VAR|ImprovedMarshTerrain|1			SOURCEPAGE:epicclasses
+Improved Mountain Terrain	CATEGORY:Special Ability	TYPE:SpecialQuality.ImprovedTerrain	VISIBLE:YES	PREABILITY:1,CATEGORY=Special Ability,Mountain Terrain	PREVARLTEQ:ImprovedMountainTerrain,ceil((CL=Horizon Walker)/10)		DEFINE:ImprovedMountainTerrain|0	DESC:+%1|ImprovedMountainTerrain	STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:VAR|ImprovedMountainTerrain|1	BONUS:VAR|ImprovedMountainTerrain|1			SOURCEPAGE:epicclasses
+Improved Plains Terrain		CATEGORY:Special Ability	TYPE:SpecialQuality.ImprovedTerrain	VISIBLE:YES	PREABILITY:1,CATEGORY=Special Ability,Plains Terrain		PREVARLTEQ:ImprovedPlainsTerrain,ceil((CL=Horizon Walker)/10)		DEFINE:ImprovedPlainsTerrain|0	DESC:+%1|ImprovedPlainsTerrain	STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:VAR|ImprovedPlainsTerrain|1	BONUS:VAR|ImprovedPlainsTerrain|1			SOURCEPAGE:epicclasses
+Improved Underground Terrain	CATEGORY:Special Ability	TYPE:SpecialQuality.ImprovedTerrain	VISIBLE:YES	PREABILITY:1,CATEGORY=Special Ability,Underground Terrain	PREVARLTEQ:ImprovedUndergroundTerrain,ceil((CL=Horizon Walker)/10)	DEFINE:ImprovedUndergroundTerrain|0	DESC:+%1|ImprovedUndergroundTerrain	STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:VAR|ImprovedUndergroundTerrain|1	BONUS:VAR|ImprovedUndergroundTerrain|1	SOURCEPAGE:epicclasses
+Improved Fiery Planar		CATEGORY:Special Ability	TYPE:SpecialQuality.ImprovedTerrain	VISIBLE:YES	PREABILITY:1,CATEGORY=Special Ability,Fiery Planar		PREVARLTEQ:ImprovedFieryPlanar,ceil((CL=Horizon Walker)/10)			DEFINE:ImprovedFieryPlanar|0		DESC:+%1|ImprovedFieryPlanar		STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:VAR|ImprovedFieryPlanar|1	BONUS:VAR|ImprovedFieryPlanar|1			SOURCEPAGE:epicclasses
+Improved Weightless Planar	CATEGORY:Special Ability	TYPE:SpecialQuality.ImprovedTerrain	VISIBLE:YES	PREABILITY:1,CATEGORY=Special Ability,Weightless Planar	PREVARLTEQ:ImprovedWeightlessPlanar,ceil((CL=Horizon Walker)/10)		DEFINE:ImprovedWeightlessPlanar|0	DESC:+%1|ImprovedWeightlessPlanar	STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:VAR|ImprovedWeightlessPlanar|1	BONUS:VAR|ImprovedWeightlessPlanar|1	SOURCEPAGE:epicclasses
+Improved Cold Planar		CATEGORY:Special Ability	TYPE:SpecialQuality.ImprovedTerrain	VISIBLE:YES	PREABILITY:1,CATEGORY=Special Ability,Cold Planar		PREVARLTEQ:ImprovedColdPlanar,ceil((CL=Horizon Walker)/10)			DEFINE:ImprovedColdPlanar|0		DESC:+%1|ImprovedColdPlanar		STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:VAR|ImprovedColdPlanar|1	BONUS:VAR|ImprovedColdPlanar|1			SOURCEPAGE:epicclasses
+Improved Shifting Planar	CATEGORY:Special Ability	TYPE:SpecialQuality.ImprovedTerrain	VISIBLE:YES	PREABILITY:1,CATEGORY=Special Ability,Shifting Planar		PREVARLTEQ:ImprovedShiftingPlanar,ceil((CL=Horizon Walker)/10)		DEFINE:ImprovedShiftingPlanar|0	DESC:+%1|ImprovedShiftingPlanar	STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:VAR|ImprovedShiftingPlanar|1	BONUS:VAR|ImprovedShiftingPlanar|1			SOURCEPAGE:epicclasses
+Improved Aligned Planar		CATEGORY:Special Ability	TYPE:SpecialQuality.ImprovedTerrain	VISIBLE:YES	PREABILITY:1,CATEGORY=Special Ability,Aligned Planar		PREVARLTEQ:ImprovedAlignedPlanar,ceil((CL=Horizon Walker)/10)		DEFINE:ImprovedAlignedPlanar|0	DESC:+%1|ImprovedAlignedPlanar	STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:VAR|ImprovedAlignedPlanar|1	BONUS:VAR|ImprovedAlignedPlanar|1			SOURCEPAGE:epicclasses
+Improved Cavernous Planar	CATEGORY:Special Ability	TYPE:SpecialQuality.ImprovedTerrain	VISIBLE:YES	PREABILITY:1,CATEGORY=Special Ability,Cavernous Planar	PREVARLTEQ:ImprovedCavernousPlanar,ceil((CL=Horizon Walker)/10)		DEFINE:ImprovedCavernousPlanar|0	DESC:+%1|ImprovedCavernousPlanar	STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:VAR|ImprovedCavernousPlanar|1	BONUS:VAR|ImprovedCavernousPlanar|1			SOURCEPAGE:epicclasses
+Improved Other Planar		CATEGORY:Special Ability	TYPE:SpecialQuality.ImprovedTerrain	VISIBLE:YES	PREABILITY:1,CATEGORY=Special Ability,Other Planar		PREVARLTEQ:ImprovedOtherPlanar,ceil((CL=Horizon Walker)/10)			DEFINE:ImprovedOtherPlanar|0		DESC:+%1|ImprovedOtherPlanar		STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:VAR|ImprovedOtherPlanar|1	BONUS:VAR|ImprovedOtherPlanar|1			SOURCEPAGE:epicclasses
+
+###Block: Epic Infiltrator Specialist Training
+# Ability Name		Category of Ability		Type				Visible	Required Class			Define			Description			Stackable?	Multiple?	Choose		Bonus to skill												Modify VAR				Source Page
+Concealment Specialist	CATEGORY:Special Ability	TYPE:SpecialistTraining	VISIBLE:YES	PRECLASS:1,Epic Infiltrator=2	DEFINE:EIConcealment|0	DESC:+%1|EIConcealment	STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:SKILL|Bluff,Disguise,Forgery|EIConcealment						BONUS:VAR|EIConcealment|3	SOURCEPAGE:epicprestigeclasses
+Subterfuge Specialist	CATEGORY:Special Ability	TYPE:SpecialistTraining	VISIBLE:YES	PRECLASS:1,Epic Infiltrator=2	DEFINE:EISubterfuge|0	DESC:+%1|EISubterfuge	STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:SKILL|Hide,Move Silently,Open Lock,Sleight of Hand|EISubterfuge			BONUS:VAR|EISubterfuge|3	SOURCEPAGE:epicprestigeclasses
+Espionage Specialist	CATEGORY:Special Ability	TYPE:SpecialistTraining	VISIBLE:YES	PRECLASS:1,Epic Infiltrator=2	DEFINE:EIEspionage|0	DESC:+%1|EIEspionage	STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:SKILL|Listen,Search,Spot|EIEspionage							BONUS:VAR|EIEspionage|3		SOURCEPAGE:epicprestigeclasses
+Interaction Specialist	CATEGORY:Special Ability	TYPE:SpecialistTraining	VISIBLE:YES	PRECLASS:1,Epic Infiltrator=2	DEFINE:EIInteraction|0	DESC:+%1|EIInteraction	STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:SKILL|Diplomacy,Gather Information,Intimidate,Sense Motive|EIInteraction	BONUS:VAR|EIInteraction|3	SOURCEPAGE:epicprestigeclasses
+
+###Block: Epic Spellcasting Support
+# Ability Name					Category of Ability		Type			Visible		Add							Bonus to spell cast/day
+Epic Spellcaster (Arcane/INT Spellstat)	CATEGORY:Special Ability	TYPE:EpicSpells	VISIBLE:DISPLAY	ADD:SPELLCASTER|Epic Spells (Arcane/INT)	BONUS:SPELLCAST|CLASS=Epic Spells (Arcane/INT);LEVEL=10|EpicSpellsPerDay
+Epic Spellcaster (Arcane/WIS Spellstat)	CATEGORY:Special Ability	TYPE:EpicSpells	VISIBLE:DISPLAY	ADD:SPELLCASTER|Epic Spells (Arcane/WIS)	BONUS:SPELLCAST|CLASS=Epic Spells (Arcane/WIS);LEVEL=10|EpicSpellsPerDay
+Epic Spellcaster (Arcane/CHA Spellstat)	CATEGORY:Special Ability	TYPE:EpicSpells	VISIBLE:DISPLAY	ADD:SPELLCASTER|Epic Spells (Arcane/CHA)	BONUS:SPELLCAST|CLASS=Epic Spells (Arcane/CHA);LEVEL=10|EpicSpellsPerDay
+Epic Spellcaster (Divine/INT Spellstat)	CATEGORY:Special Ability	TYPE:EpicSpells	VISIBLE:DISPLAY	ADD:SPELLCASTER|Epic Spells (Divine/INT)	BONUS:SPELLCAST|CLASS=Epic Spells (Divine/INT);LEVEL=10|EpicSpellsPerDay
+Epic Spellcaster (Divine/WIS Spellstat)	CATEGORY:Special Ability	TYPE:EpicSpells	VISIBLE:DISPLAY	ADD:SPELLCASTER|Epic Spells (Divine/WIS)	BONUS:SPELLCAST|CLASS=Epic Spells (Divine/WIS);LEVEL=10|EpicSpellsPerDay
+Epic Spellcaster (Divine/CHA Spellstat)	CATEGORY:Special Ability	TYPE:EpicSpells	VISIBLE:DISPLAY	ADD:SPELLCASTER|Epic Spells (Divine/CHA)	BONUS:SPELLCAST|CLASS=Epic Spells (Divine/CHA);LEVEL=10|EpicSpellsPerDay
+Epic Manifester (Psionic/INT Spellstat)	CATEGORY:Special Ability	TYPE:EpicSpells	VISIBLE:DISPLAY	ADD:SPELLCASTER|Epic Powers (Psionic/INT)	BONUS:SPELLCAST|CLASS=Epic Powers (Psionic/INT);LEVEL=10|EpicSpellsPerDay
+
+###Block: Cosmic Descryer Naturalization
+# Ability Name	Category of Ability		Type				Visible	Define				Description					Source Page
+Naturalization	CATEGORY:Special Ability	TYPE:Naturalization	VISIBLE:YES	DEFINE:CSNaturalization|0	DESC:%1 planes|CSNaturalization	SOURCEPAGE:epicclasses
+
+###Block: Mod Shadow Jump:
+# Ability Name								Define			Description
+CATEGORY=Special Ability|Shadowdancer ~ Shadow Jump.MOD	DEFINE:EpicShadowJump|0	DESC:%1 ft|EpicShadowJump|PREVAREQ:ShadowJumpProgression,1	DESC:%1 mi|EpicShadowJump/5280|PREVAREQ:ShadowJumpProgression,2	DESC:%1 AU|EpicShadowJump/5280/92955778.5|PREVAREQ:ShadowJumpProgression,3
+
+###Block: Agent Retriever Abilities
+# Ability Name				Category of Ability		Type					Visible	Define				Description								Modify VAR
+Uncanny Location				CATEGORY:Special Ability	TYPE:SpecialQuality.SpellLike	VISIBLE:YES
+Agent Retriever Tracking Bonus	CATEGORY:Special Ability	TYPE:SpecialQuality		VISIBLE:YES	DEFINE:ARTracking|0		DESC:+%1|ARTracking
+Force Sphere				CATEGORY:Special Ability	TYPE:SpecialAttack.SpellLike	VISIBLE:YES	DEFINE:ForceSphereTimes|0	DESC:%1/day DC %2|ForceSphereTimes|20+(CL/2)+DEX	BONUS:VAR|ForceSphereTimes|(CL+2)/5
+
+###Block: Cosmic Descryer Abilities
+# Ability Name			Category of Ability		Type						Visible	Define				Description
+Superior Planar Summoning	CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary	VISIBLE:YES	DEFINE:SuperiorSummoning|0	DESC:+%1 HD|SuperiorSummoning
+Enduring Gate			CATEGORY:Special Ability	TYPE:SpecialQuality.Supernatural	VISIBLE:YES	DEFINE:EnduringGate|0		DESC:%1 days|EnduringGate
+Cosmic Connection			CATEGORY:Special Ability	TYPE:SpecialQuality.Supernatural	VISIBLE:YES	DEFINE:CosmicConnection|0	DESC:%1/day|CosmicConnection
+
+###Block: Divine Emissary Abilities
+# Ability Name		Category of Ability		Type						Visible	Define				Description
+Divine Inspiration	CATEGORY:Special Ability	TYPE:SpecialQuality.SpellLike		VISIBLE:YES	DEFINE:DEDivineInspiration|0	DESC:%1/day|DEDivineInspiration
+Divine Hand			CATEGORY:Special Ability	TYPE:SpecialQuality.Supernatural	VISIBLE:YES	DEFINE:DEDivineHand|0		DESC:%1/day|DEDivineHand
+
+###Block: Epic Infiltrator Abilities
+# Ability Name		Category of Ability		Type								Visible	Define							Description
+Improved Cover Identity	CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary			VISIBLE:YES	DEFINE:EICover|0						DESC:%1/day|EICover
+Read Thoughts		CATEGORY:Special Ability	TYPE:SpecialQuality.Supernatural.Communicate	VISIBLE:YES	DEFINE:EIReadThoughts|0					DESC:%1/day|EIReadThoughts
+Far Senses			CATEGORY:Special Ability	TYPE:SpecialQuality.Supernatural.Sense		VISIBLE:YES	DEFINE:EIFarSenses|0	DEFINE:FarSensesRange|0	DESC:%1/day %2 ft|EIFarSenses|FarSensesRange
+
+###Block: Guardian Paramount Abilities
+# Ability Name					Output Name				Category of Ability		Type								Visible	Define			Description
+Uncanny Dodge Enabler									CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary.ModifyAC	VISIBLE:YES	DEFINE:GPEnabler|0	DESC:%1/day|GPEnabler
+Evasive Preceptor										CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary			VISIBLE:YES	DEFINE:GPPreceptor|0	DESC:%1/day|GPPreceptor
+Protective Aura ~ Guardian Paramount	OUTPUTNAME:Protective Aura	CATEGORY:Special Ability	TYPE:SpecialQuality.SpellLike				VISIBLE:YES	DEFINE:GPAura|0		DESC:%1/day|GPAura
+Adjust Probability									CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary			VISIBLE:YES	DEFINE:GPProbability|0	DESC:%1/day|GPProbability
+Call Back											CATEGORY:Special Ability	TYPE:SpecialQuality.SpellLike				VISIBLE:YES	DEFINE:GPCallBack|0	DESC:%1/day|GPCallBack
+
+###Block: High Proselytizer Abilities
+# Ability Name	Category of Ability		Type					Visible	Define				Description
+Proselytize		CATEGORY:Special Ability	TYPE:SpecialQuality.SpellLike	VISIBLE:YES	DEFINE:HPProsetilyze|0		DESC:%1/day|HPProsetilyze
+Deific Touch	CATEGORY:Special Ability	TYPE:SpecialQuality.SpellLike	VISIBLE:YES	DEFINE:HPProsetilyzeDT|0	DESC:%1/day|HPProsetilyzeDT
+Deific Word		CATEGORY:Special Ability	TYPE:SpecialQuality.SpellLike	VISIBLE:YES	DEFINE:HPProsetilyzeDW|0	DESC:%1/day|HPProsetilyzeDW
+Deific Face		CATEGORY:Special Ability	TYPE:SpecialQuality.SpellLike	VISIBLE:YES	DEFINE:HPProsetilyzeDF|0	DESC:%1/day|HPProsetilyzeDF
+Deific Aura		CATEGORY:Special Ability	TYPE:SpecialQuality.SpellLike	VISIBLE:YES	DEFINE:HPProsetilyzeDA|0	DESC:%1/day|HPProsetilyzeDA
+
+###Block: Legendary Dreadnought Abilities
+# Ability Name		Category of Ability		Type								Visible	Define			Description				Bonus DR				Bonus to HP
+Unstoppable			CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary			VISIBLE:YES	DEFINE:LDUnstoppable|0	DESC:%1/day|LDUnstoppable
+Unmovable			CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary			VISIBLE:YES	DEFINE:LDUnmovable|0	DESC:%1/day|LDUnmovable
+Shrug Off Punishment	CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary.ModifyAC	VISIBLE:YES	DEFINE:LDShrugOff|0											BONUS:HP|CURRENTMAX|LDShrugOff
+Thick Skinned		CATEGORY:Special Ability	TYPE:SpecialQuality.Extraordinary.ModifyAC	VISIBLE:YES	DEFINE:ThickSkinnedDR|0						BONUS:DR|-|ThickSkinnedDR
+
+###Block: Perfect Wight Abilities
+# Ability Name			Output Name			Category of Ability		Type						Visible	Define			Description
+Improved Legerdemain						CATEGORY:Special Ability	TYPE:SpecialQuality.Supernatural	VISIBLE:YES	DEFINE:PWLengerdemain|0	DESC:%1/day|PWLengerdemain
+Incorporeal ~ Perfect Wight	OUTPUTNAME:Incorporeal	CATEGORY:Special Ability	TYPE:SpecialQuality.Supernatural	VISIBLE:YES	DEFINE:PWIncorporeal|0	DESC:%1/day|PWIncorporeal
+Shadow Form								CATEGORY:Special Ability	TYPE:SpecialQuality.Supernatural	VISIBLE:YES	DEFINE:PWShadowForm|0	DESC:%1/day|PWShadowForm
+
+###Block: Union Sentinel Abilities
+# Ability Name	Category of Ability		Type						Visible	Define				Description												Stackable?	Multiple?	Choose							Source Page
+Portal Guardian	CATEGORY:Special Ability	TYPE:SpecialQuality.Supernatural	VISIBLE:YES	DEFINE:USPortalGuardian|0	DESC:%1/day|USPortalGuardian
+Imprisonment	CATEGORY:Special Ability	TYPE:SpecialQuality.SpellLike		VISIBLE:YES	DEFINE:USImprisonment|0		DESC:%1/week|USImprisonment|PREVARGT:USImprisonment,0
+
+# Ability Name	Category of Ability		Type						Visible	Define				Description												Stackable?	Multiple?	Choose							Source Page
+Familiar Spell	CATEGORY:Special Ability	TYPE:SpecialQuality.FamiliarSpell								DESC:Your familiar can cast a spell once per day as a spell-like ability	STACK:NO	MULT:YES	CHOOSE:SPELLS|SPELLTYPE=Arcane[LEVELMAX=8]	SOURCEPAGE:EpicFeats
+
+###Block:
+Additional Rogue Ability		KEY:Epic Rogue ~ Rogue Ability	CATEGORY:Internal	TYPE:EpicRogueSelection	STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:ABILITYPOOL|Rogue Special Ability|1
+Additional Epic Rogue Feat		KEY:Epic Rogue ~ +1 Feat		CATEGORY:Internal	TYPE:EpicRogueSelection	STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:ABILITYPOOL|Epic Rogue Feat|1
+
+Additional Loremaster Ability		KEY:Epic Loremaster ~ Loremaster Ability	CATEGORY:Internal	TYPE:EpicLoremasterSelection	STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:ABILITYPOOL|Loremaster Secret|1
+Additional Epic Loremaster Feat	KEY:Epic Loremaster ~ +1 Feat			CATEGORY:Internal	TYPE:EpicLoremasterSelection	STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:ABILITYPOOL|Epic Loremaster Feat|1
+
+
+
+###Block: Support
+Energy Resistance Tracker		CATEGORY:Internal		BONUS:VAR|AcidResistanceBonus|10*count("ABILITIES","CATEGORY=FEAT","NAME=Energy Resistance (Acid)")|TYPE=EpicEnergyResistanceFeat	BONUS:VAR|ColdResistanceBonus|10*count("ABILITIES","CATEGORY=FEAT","NAME=Energy Resistance (Cold)")|TYPE=EpicEnergyResistanceFeat	BONUS:VAR|ElectricityResistanceBonus|10*count("ABILITIES","CATEGORY=FEAT","NAME=Energy Resistance (Electricity)")|TYPE=EpicEnergyResistanceFeat	BONUS:VAR|FireResistanceBonus|10*count("ABILITIES","CATEGORY=FEAT","NAME=Energy Resistance (Fire)")|TYPE=EpicEnergyResistanceFeat	BONUS:VAR|SonicResistanceBonus|10*count("ABILITIES","CATEGORY=FEAT","NAME=Energy Resistance (Sonic)")|TYPE=EpicEnergyResistanceFeat
+
+
+###BLock: Temporary fix till abilities brought up to speed
+# Ability Name					Category of Ability		Type						Description
+Ability Drain					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Acid Cloud						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Air Mastery						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Air Walk						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Alacrity						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Alter Shape						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Alternate Form					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Amorphous						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Amorphous Physiology				CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Animate Trees					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Antimagic Field					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Astral Projection					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Aura of Doom					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Blazefire						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Blightfire						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Blinding						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Blur							CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Burn							CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Chameleon Ability					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Charisma Drain					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Charming Gaze					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Chronal Blast					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Cocoon						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Cold							CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Cold Aura						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Concealing Aura					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Confusion Aura					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Constant Insight					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Constitution Drain				CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Constrict						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Create Spawn					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Crush							CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Deflecting Force					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Despair						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Destabilize Form					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Dimensional Travel				CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Dire Winter						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Discorporate					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Disintegrating Touch				CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Displacement					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Distraction						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Drench						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Earth Mastery					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Empower Spell-Like Ability ~ Epic Dragon	CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Energy Drain					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Engulf						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Enslave						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Etherealness					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Extract Brains					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Eye Rays						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Fear Aura						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Fear Gaze						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Fiery Hardness					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Fiery Overrun					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Fiery Touch						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Flight (Ex)						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Flight (Su)						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Frightful Howl					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Frightful Presence				CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder.Frightful Presence	DESC:Temp, replace with real ability. Best, BD.
+Frightful Presence ~ Su				CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder.Frightful Presence	DESC:Temp, replace with real ability. Best, BD.
+Gaze							CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Gibbering						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Greater Invisibility ~ Force Dragon		CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Head Tentacles					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Headloss Resistance				CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Heat Aura						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Hunefer Rot						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Improved Grab					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Keen Senses						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Leshay Weapons					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Low light Vision					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Magic Circle Against Good			CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Maximize Spell-Like Ability ~ Epic Dragon	CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Misty Breath					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Natural Weapons Treated as Epic		CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Negative Energy Affinity			CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Negative Energy Aura				CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Null Time Field					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Opportunist						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Paralyzing Touch					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Perfect Automatic Still Spell			CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Phylactery Transference				CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Planar Travel					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Poison						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Pounce						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Prismatic Blur					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Prismatic Emanations				CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Push							CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Quiescence						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Recognition						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Regeneration					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Rend							CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Rotting Constriction				CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Rustproof						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Safekeeping						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Savage						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Sending						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Shatter						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Sonic Blast						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Spell Suck						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Spells ~ Titan Elder				CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Spore Cough						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Squeeze						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Stasis Touch					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Stench						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Sticky						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Stomp							CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Stunning Roar					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Summon Air Elemental				CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Summon Creature					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Summon Elder Fire Elemental			CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Summon Fiend					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Summon Hecatoncheires				CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Summon Iron Golem					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Summon Nightcrawler				CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Summon Nightwalker				CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Summon Past Time Duplicate			CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Summon White Dragon				CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Superior Multiweapon Fighting			CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Superior Two-Weapon Fighting			CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Swallow Whole					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Tail Sweep						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Time Leach						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Time Regression					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Trample						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Trap the Soul					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Triple Damage Against Objects			CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Vortex						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Vortex ~ Ex						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Water Mastery					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Web							CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Whirlwind						CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Wisdom Drain					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+Worst Nightmare					CATEGORY:Special Ability	TYPE:SpecialQuality.TemporaryHolder	DESC:Temp, replace with real ability. Best, BD.
+
+
+###Block - Epic Leadership Support
+CATEGORY=Special Ability|Leadership Score.MOD	BONUS:VAR|FollowersLVL1Count|if(LeadershipScoreFollower>=26,25,0)+if(LeadershipScoreFollower>=27,30,0)+if(LeadershipScoreFollower>=28,30,0)+if(LeadershipScoreFollower>=29,40,0)+if(LeadershipScoreFollower>=30,40,0)+if(LeadershipScoreFollower>=31,50,0)+if(LeadershipScoreFollower>=32,50,0)+if(LeadershipScoreFollower>=33,60,0)+if(LeadershipScoreFollower>=34,60,0)+if(LeadershipScoreFollower>=35,70,0)+if(LeadershipScoreFollower>=36,70,0)+if(LeadershipScoreFollower>=37,80,0)+if(LeadershipScoreFollower>=38,80,0)+if(LeadershipScoreFollower>=39,90,0)+if(LeadershipScoreFollower>=40,90,0)	
+CATEGORY=Special Ability|Leadership Score.MOD	BONUS:VAR|FollowersLVL2Count|if(LeadershipScoreFollower>=26,1,0)+if(LeadershipScoreFollower>=26,3,0)+if(LeadershipScoreFollower>=27,3,0)+if(LeadershipScoreFollower>=28,4,0)+if(LeadershipScoreFollower>=29,4,0)+if(LeadershipScoreFollower>=30,5,0)+if(LeadershipScoreFollower>=31,5,0)+if(LeadershipScoreFollower>=32,6,0)+if(LeadershipScoreFollower>=33,6,0)+if(LeadershipScoreFollower>=34,7,0)+if(LeadershipScoreFollower>=35,7,0)+if(LeadershipScoreFollower>=36,8,0)+if(LeadershipScoreFollower>=37,8,0)+if(LeadershipScoreFollower>=38,9,0)+if(LeadershipScoreFollower>=39,9,0)+if(LeadershipScoreFollower>=40,10,0)
+CATEGORY=Special Ability|Leadership Score.MOD	BONUS:VAR|FollowersLVL3Count|if(LeadershipScoreFollower>=26,1,0)+if(LeadershipScoreFollower>=27,2,0)+if(LeadershipScoreFollower>=28,1,0)+if(LeadershipScoreFollower>=29,2,0)+if(LeadershipScoreFollower>=30,2,0)+if(LeadershipScoreFollower>=31,3,0)+if(LeadershipScoreFollower>=32,2,0)+if(LeadershipScoreFollower>=33,3,0)+if(LeadershipScoreFollower>=34,3,0)+if(LeadershipScoreFollower>=35,4,0)+if(LeadershipScoreFollower>=36,3,0)+if(LeadershipScoreFollower>=37,4,0)+if(LeadershipScoreFollower>=38,4,0)+if(LeadershipScoreFollower>=39,5,0)+if(LeadershipScoreFollower>=40,4,0)	
+CATEGORY=Special Ability|Leadership Score.MOD	BONUS:VAR|FollowersLVL4Count|if(LeadershipScoreFollower>=27,1,0)+if(LeadershipScoreFollower>=28,1,0)+if(LeadershipScoreFollower>=29,1,0)+if(LeadershipScoreFollower>=30,1,0)+if(LeadershipScoreFollower>=31,1,0)+if(LeadershipScoreFollower>=32,1,0)+if(LeadershipScoreFollower>=33,2,0)+if(LeadershipScoreFollower>=34,1,0)+if(LeadershipScoreFollower>=35,2,0)+if(LeadershipScoreFollower>=36,2,0)+if(LeadershipScoreFollower>=37,2,0)+if(LeadershipScoreFollower>=38,2,0)+if(LeadershipScoreFollower>=39,2,0)+if(LeadershipScoreFollower>=40,2,0)	
+CATEGORY=Special Ability|Leadership Score.MOD	BONUS:VAR|FollowersLVL5Count|if(LeadershipScoreFollower>=27,1,0)+if(LeadershipScoreFollower>=29,1,0)+if(LeadershipScoreFollower>=31,1,0)+if(LeadershipScoreFollower>=33,1,0)+if(LeadershipScoreFollower>=35,2,0)+if(LeadershipScoreFollower>=36,1,0)+if(LeadershipScoreFollower>=37,1,0)+if(LeadershipScoreFollower>=38,1,0)+if(LeadershipScoreFollower>=39,1,0)+if(LeadershipScoreFollower>=40,1,0)	
+CATEGORY=Special Ability|Leadership Score.MOD	BONUS:VAR|FollowersLVL6Count|if(LeadershipScoreFollower>=31,1,0)+if(LeadershipScoreFollower>=35,1,0)+if(LeadershipScoreFollower>=36,1,0)+if(LeadershipScoreFollower>=38,1,0)+if(LeadershipScoreFollower>=40,1,0)	
+CATEGORY=Special Ability|Leadership Score.MOD	BONUS:VAR|FollowersLVL7Count|if(LeadershipScoreFollower>=25,1,0)+if(LeadershipScoreFollower>=31,1,0)+if(LeadershipScoreFollower>=36,1,0)+if(LeadershipScoreFollower>=40,1,0)
+CATEGORY=Special Ability|Leadership Score.MOD	BONUS:VAR|FollowersLVL8Count|if(LeadershipScoreFollower>=31,1,0)+if(LeadershipScoreFollower>=36,1,0)
+CATEGORY=Special Ability|Leadership Score.MOD	BONUS:VAR|FollowersLVL9Count|if(LeadershipScoreFollower>=36,1,0)
+
+# Greater than 40 Score Progression
+CATEGORY=Special Ability|Leadership Score.MOD	BONUS:VAR|FollowersLVL1Count|if(LeadershipScoreFollower>=41,100*(LeadershipScoreFollower-40),0)
+CATEGORY=Special Ability|Leadership Score.MOD	BONUS:VAR|FollowersLVL2Count|if(LeadershipScoreFollower>=41,10*(LeadershipScoreFollower-40),0)
+CATEGORY=Special Ability|Leadership Score.MOD	BONUS:VAR|FollowersLVL3Count|if(LeadershipScoreFollower>=41,5*(LeadershipScoreFollower-40),0)
+CATEGORY=Special Ability|Leadership Score.MOD	BONUS:VAR|FollowersLVL4Count|if(LeadershipScoreFollower>=41,ceil(2.5*(LeadershipScoreFollower-40)),0)
+CATEGORY=Special Ability|Leadership Score.MOD	BONUS:VAR|FollowersLVL5Count|if(LeadershipScoreFollower>=41,ceil(1.25*(LeadershipScoreFollower-40)),0)
+CATEGORY=Special Ability|Leadership Score.MOD	BONUS:VAR|FollowersLVL6Count|if(LeadershipScoreFollower>=41,if(.75*(LeadershipScoreFollower-40)>=1,ceil(.75*(LeadershipScoreFollower-40)),0),0)
+CATEGORY=Special Ability|Leadership Score.MOD	BONUS:VAR|FollowersLVL7Count|if(LeadershipScoreFollower>=41,if(.375*(LeadershipScoreFollower-40)>=1,ceil(.375*(LeadershipScoreFollower-40)),0),0)
+CATEGORY=Special Ability|Leadership Score.MOD	BONUS:VAR|FollowersLVL8Count|if(LeadershipScoreFollower>=41,if(.1875*(LeadershipScoreFollower-40)>=1,ceil(.1875*(LeadershipScoreFollower-40)),0),0)
+CATEGORY=Special Ability|Leadership Score.MOD	BONUS:VAR|FollowersLVL9Count|if(LeadershipScoreFollower>=41,if(.09375*(LeadershipScoreFollower-40)>=1,ceil(.09375*(LeadershipScoreFollower-40)),0),0)
+CATEGORY=Special Ability|Leadership Score.MOD	BONUS:VAR|FollowersLVL10Count|if(LeadershipScoreFollower>=41,if(.046875*(LeadershipScoreFollower-40)>=1,ceil(.046875*(LeadershipScoreFollower-40)),0),0)
+
+CATEGORY=Special Ability|Leadership Score.MOD	BONUS:VAR|FollowersLVL7|FollowersLVL7Count
+CATEGORY=Special Ability|Leadership Score.MOD	BONUS:VAR|FollowersLVL8|FollowersLVL8Count
+CATEGORY=Special Ability|Leadership Score.MOD	BONUS:VAR|FollowersLVL9|FollowersLVL9Count
+CATEGORY=Special Ability|Leadership Score.MOD	BONUS:VAR|FollowersLVL10|FollowersLVL10Count
+
+CATEGORY=Special Ability|Leadership Score.MOD	DEFINE:FollowersLVL7|0		DEFINE:FollowersLVL7Count|0
+CATEGORY=Special Ability|Leadership Score.MOD	DEFINE:FollowersLVL8|0		DEFINE:FollowersLVL8Count|0
+CATEGORY=Special Ability|Leadership Score.MOD	DEFINE:FollowersLVL9|0		DEFINE:FollowersLVL9Count|0
+CATEGORY=Special Ability|Leadership Score.MOD	DEFINE:FollowersLVL10|0		DEFINE:FollowersLVL10Count|0
+
+CATEGORY=Special Ability|Leadership Score.MOD	ABILITY:Special Ability|AUTOMATIC|Grant Follower LV 7|PREVARGTEQ:FollowersLVL7,1
+CATEGORY=Special Ability|Leadership Score.MOD	ABILITY:Special Ability|AUTOMATIC|Grant Follower LV 8|PREVARGTEQ:FollowersLVL8,1
+CATEGORY=Special Ability|Leadership Score.MOD	ABILITY:Special Ability|AUTOMATIC|Grant Follower LV 9|PREVARGTEQ:FollowersLVL9,1
+CATEGORY=Special Ability|Leadership Score.MOD	ABILITY:Special Ability|AUTOMATIC|Grant Follower LV 10|PREVARGTEQ:FollowersLVL10,1
+
+###Comment: Add Desc
+CATEGORY=Special Ability|Leadership Score.MOD	DESC: Epic = %1 level 7, %2 level 8, %3 level 9, %4 level 10.|FollowersLVL7|FollowersLVL8|FollowersLVL9|FollowersLVL10
+
+
+Grant Follower LV 7	CATEGORY:Special Ability	COMPANIONLIST:Follower LV 7|ANY	FOLLOWERS:Follower LV 7|FollowersLVL7	DEFINE:LeadershipFollowersLVL7|0
+Grant Follower LV 8	CATEGORY:Special Ability	COMPANIONLIST:Follower LV 8|ANY	FOLLOWERS:Follower LV 8|FollowersLVL8	DEFINE:LeadershipFollowersLVL8|0
+Grant Follower LV 9	CATEGORY:Special Ability	COMPANIONLIST:Follower LV 9|ANY	FOLLOWERS:Follower LV 9|FollowersLVL9	DEFINE:LeadershipFollowersLVL9|0
+Grant Follower LV 10	CATEGORY:Special Ability	COMPANIONLIST:Follower LV 10|ANY	FOLLOWERS:Follower LV 10|FollowersLVL10	DEFINE:LeadershipFollowersLVL10|0

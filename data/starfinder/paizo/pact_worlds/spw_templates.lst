@@ -1,0 +1,6 @@
+#  Sun Sep 23 13:50:08 2018 -- reformated by PCGen PrettyLST v6.06.00
+
+# Display for SRO Race choice
+# Template Name	Visible	Subrace
+SRO ~ Small		VISIBLE:NO	SUBRACE:Small
+SRO ~ Medium	VISIBLE:NO	SUBRACE:Medium

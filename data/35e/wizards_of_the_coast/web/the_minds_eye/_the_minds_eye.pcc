@@ -1,0 +1,48 @@
+# CVS $Revision$ $Author$ -- Sat Jan  4 10:42:33 2014 -- reformated by prettylst.pl v1.50 (build 22746)
+CAMPAIGN:The Mind's Eye
+KEY:The Mind's Eye
+GAMEMODE:35e|Bahamut35e
+TYPE:Wizards of the Coast.Web Enhancements
+PRECAMPAIGN:1,INCLUDESBOOKTYPE=Core35e
+PRECAMPAIGN:1,INCLUDES=Expanded Psionics Handbook
+RANK:9
+SOURCELONG:The Mind's Eye
+SOURCESHORT:TME
+SOURCEWEB:http://www.wizards.com/default.asp?x=dnd/arch/psi
+PUBNAMELONG:Wizards of the Coast
+PUBNAMESHORT:WotC
+PUBNAMEWEB:http://www.wizards.com/dnd
+ISOGL:YES
+ISLICENSED:NO
+BOOKTYPE:Web Enhancement
+SETTING:Generic
+GENRE:Fantasy
+LOGO:../../../_artwork/logo_wotc.jpg
+COPYRIGHT:Open Game License v 1.0 Copyright 2000, Wizards of the Coast, Inc.
+COPYRIGHT:System Reference Document Copyright 2000, Wizards of the Coast, Inc.; Authors Jonathan Tweet, Monte Cook, Skip Williams, based on original material by E. Gary Gygax and Dave Arneson
+
+ABILITY:tme_abilities.lst
+ABILITYCATEGORY:tme_abilitycategories.lst
+CLASS:tme_classes.lst
+EQUIPMENT:tme_equip.lst
+ABILITY:tme_feats.lst
+SKILL:tme_skills.lst
+SPELL:tme_spells.lst
+
+SPELL:support/cp_spells.lst|PRECAMPAIGN:1,INCLUDES=Complete Psionic
+
+
+INFOTEXT:Supports 6.4.1
+# ENTRY DATE: 2015-01 (Unknown)
+# LST MONKEY: Bahamut
+# RELEASE REVIEW #
+# BETA:
+# RELEASE:
+# Built for PCGen Version: 6.04.01
+# Updated to work with version: -
+# MINVER:6.4
+# MINDEVVER:6.04.1
+# COMMENTS:
+
+
+

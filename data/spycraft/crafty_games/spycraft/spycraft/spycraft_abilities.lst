@@ -1,0 +1,425 @@
+#  Fri Nov 16 19:52:40 2018 -- reformated by PCGen PrettyLST v6.08.00
+# CVS $Revision$ $Author$ -- Wed Sep  3 00:18:24 2014 -- reformated by prettylst.pl v1.51 (build 24947)
+
+# Ability Name			Category of Ability	Define									Modify VAR
+Default				CATEGORY:Internal
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_Rank|0							BONUS:VAR|Allowed_Rank|TL+32
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankAppraise|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankBalance|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankBluff|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankBoating|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankBureaucracy|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankClimb|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankComputers|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankConcentration|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankCryptography|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankCultures|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankDemolitions|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankDiplomacy|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankDisguise|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankDriver|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankElectronics|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankEscape_Artist|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankFirst_Aid|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankForgery|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankGather_Information|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankHandle_Animal|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankHide|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankInnuendo|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankJump|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankLanguages|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankListen|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankMechanics|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankMove_Silently|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankOpen_Lock|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankPerform|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankPilot|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankRead_Lips|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankSearch|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankSense_Motive|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankSleight_of_Hand|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankSpot|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankSurveillance|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankSurvival|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankSwim|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankTumble|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankUse_Rope|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankIntimidate|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankCraft_Carpentry|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankCraft_Plumbing|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankCraft_Ceramics|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankCraft_Welding|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankCraft_Bookbinding|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankCraft_Calligraphy|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankCraft_Painting|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankHobby_Clubbing|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankHobby_Creative_Writing|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankHobby_Gambling|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankHobby_Gaming|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankHobby_Gardening|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankHobby_Internet_Surfing|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankHobby_Jogging|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankHobby_Puzzle_Solving|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankHobby_Reading|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankHobby_Shopping|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankHobby_Stamp_Collecting|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankHobby_Socializing|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankHobby_Tinkering|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankHobby_Travelling|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankKnowledge_Architecture|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankKnowledge_Big_Business|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankKnowledge_Biology|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankKnowledge_Chaos_Theory|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankKnowledge_Chemistry|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankKnowledge_Conspiracy_Theory|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankKnowledge_Criminal_Behavior|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankKnowledge_Engineering|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankKnowledge_English Literature|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankKnowledge_Finance|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankKnowledge_Forensics|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankKnowledge_Geography|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankKnowledge_History|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankKnowledge_Idle_Gossip|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankKnowledge_Local|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankKnowledge_Munitions|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankKnowledge_Nature|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankKnowledge_Occult_Science|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankKnowledge_Physics|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankKnowledge_Political_Science|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankKnowledge_Religion|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankKnowledge_Spy_Agencies|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankKnowledge_Underworld|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankKnowledge_Vehicals|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankProfession_Computer_Technicion|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankProfession_Diplomat|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankProfession_Doctor|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankProfession_Hunter|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankProfession_Lawyer|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankProfession_Mechanic|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankProfession_Military_Officer|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankProfession_Spy|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankProfession_Teacher|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankProfession_Terrorist|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankProfession_Web_Programmer|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankSport_Baseball|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankSport_Basketball|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankSport_Football|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankSport_Soccer|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankSport_Hockey|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankSport_Jai_alai|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankSport_Boat_Racing|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankSport_Drag_Racing|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankSport_Horse_Racing|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankSport_Plane_Racing|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankSport_Stock_Car_Racing|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankSport_Rugby|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankSport_Swimming|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankSport_Tennis|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankSport_Track_and_Field|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankBackground_Amnesia|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankBackground_Debt|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankBackground_Defeated|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankBackground_Fear|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankBackground_Game_Control_Fiat|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankBackground_Hunted|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankBackground_Long_Term_Mission|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankBackground_Lost_Love|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankBackground_Mistaken_Identity|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankBackground_Nemesis|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankBackground_Obligation|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankBackground_Romance|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankBackground_Stolen_Object|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankBackground_True_Identity|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankBackground_Vendetta|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankBackground_Vow|0
+CATEGORY=Internal|Default.MOD					DEFINE:Allowed_RankBackground_Resolved_Background_Points|0
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankAppraise|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankBalance|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankBluff|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankBoating|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankBureaucracy|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankClimb|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankComputers|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankConcentration|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankCryptography|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankCultures|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankDemolitions|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankDiplomacy|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankDisguise|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankDriver|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankElectronics|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankEscape_Artist|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankFirst_Aid|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankForgery|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankGather_Information|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankHandle_Animal|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankHide|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankInnuendo|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankJump|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankLanguages|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankListen|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankMechanics|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankMove_Silently|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankOpen_Lock|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankPerform|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankPilot|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankRead_Lips|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankSearch|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankSense_Motive|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankSleight_of_Hand|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankSpot|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankSurveillance|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankSurvival|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankSwim|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankTumble|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankUse_Rope|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankIntimidate|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankCraft_Carpentry|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankCraft_Plumbing|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankCraft_Ceramics|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankCraft_Welding|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankCraft_Bookbinding|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankCraft_Calligraphy|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankCraft_Painting|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankHobby_Clubbing|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankHobby_Creative_Writing|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankHobby_Gambling|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankHobby_Gaming|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankHobby_Gardening|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankHobby_Internet_Surfing|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankHobby_Jogging|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankHobby_Puzzle_Solving|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankHobby_Reading|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankHobby_Shopping|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankHobby_Stamp_Collecting|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankHobby_Socializing|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankHobby_Tinkering|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankHobby_Travelling|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankKnowledge_Architecture|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankKnowledge_Big_Business|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankKnowledge_Biology|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankKnowledge_Chaos_Theory|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankKnowledge_Chemistry|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankKnowledge_Conspiracy_Theory|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankKnowledge_Criminal_Behavior|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankKnowledge_Engineering|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankKnowledge_English Literature|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankKnowledge_Finance|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankKnowledge_Forensics|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankKnowledge_Geography|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankKnowledge_History|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankKnowledge_Idle_Gossip|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankKnowledge_Local|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankKnowledge_Munitions|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankKnowledge_Nature|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankKnowledge_Occult_Science|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankKnowledge_Physics|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankKnowledge_Political_Science|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankKnowledge_Religion|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankKnowledge_Spy_Agencies|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankKnowledge_Underworld|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankKnowledge_Vehicals|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankProfession_Computer_Technicion|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankProfession_Diplomat|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankProfession_Doctor|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankProfession_Hunter|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankProfession_Lawyer|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankProfession_Mechanic|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankProfession_Military_Officer|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankProfession_Spy|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankProfession_Teacher|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankProfession_Terrorist|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankProfession_Web_Programmer|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankSport_Baseball|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankSport_Basketball|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankSport_Football|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankSport_Soccer|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankSport_Hockey|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankSport_Jai_alai|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankSport_Boat_Racing|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankSport_Drag_Racing|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankSport_Horse_Racing|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankSport_Plane_Racing|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankSport_Stock_Car_Racing|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankSport_Rugby|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankSport_Swimming|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankSport_Tennis|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankSport_Track_and_Field|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankBackground_Amnesia|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankBackground_Debt|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankBackground_Defeated|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankBackground_Fear|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankBackground_Game_Control_Fiat|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankBackground_Hunted|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankBackground_Long_Term_Mission|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankBackground_Lost_Love|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankBackground_Mistaken_Identity|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankBackground_Nemesis|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankBackground_Obligation|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankBackground_Romance|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankBackground_Stolen_Object|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankBackground_True_Identity|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankBackground_Vendetta|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankBackground_Vow|var("Allowed_Rank")-30
+CATEGORY=Internal|Default.MOD															BONUS:VAR|Allowed_RankBackground_Resolved_Background_Points|var("Allowed_Rank")-30
+
+
+###Block: Department Abilities
+
+# Feat Name		Type					Visible	Stackable?	Multiple?	Choose				Bonus to skill			Stat bonus										Class Skill	Cost
+# Ability Name	Category of Ability	Type					Stackable?	Multiple?	Choose			Bonus to skill			Stat bonus										Class Skill	Cost
+D-0 Class Skills	CATEGORY:Internal		TYPE:Department			STACK:NO	MULT:YES	CHOOSE:SKILL|CROSSCLASS																	CSKILL:LIST	COST:0
+
+D-2 Stat Bonus	CATEGORY:Internal		TYPE:Department					MULT:YES	CHOOSE:PCSTAT|ALL							BONUS:STAT|LIST|2	BONUS:STAT|STR,DEX,CON,INT,WIS,CHA|-2
+D-2 Stat Penalty	CATEGORY:Internal		TYPE:Department.StatPenalty			MULT:YES	CHOOSE:PCSTAT|ALL							BONUS:STAT|LIST|-2	BONUS:STAT|STR,DEX,CON,INT,WIS,CHA|2
+D-2 Skill Bonus	CATEGORY:Internal		TYPE:DepartmentD2			STACK:NO	MULT:YES	CHOOSE:SKILL|CLASS	BONUS:SKILL|LIST|(TL/4)+1														COST:0
+
+
+### >>>>> Need to be ABILIFIED! <<<<<
+
+
+
+### Class Abilities
+
+###Block:  Core Class Abilities
+
+# Feat Name			Type			Visible	Var. Max. Value	Special ABility						Define
+# Ability Name	Category of Ability		Type						Define			Description
+Adaptable		CATEGORY:Special Ability	TYPE:SpecialQuality.CoreAbility
+Dexterous		CATEGORY:Special Ability	TYPE:SpecialQuality.CoreAbility
+Generous		CATEGORY:Special Ability	TYPE:SpecialQuality.CoreAbility
+Astute		CATEGORY:Special Ability	TYPE:SpecialQuality.CoreAbility
+Accurate		CATEGORY:Special Ability	TYPE:SpecialQuality.CoreAbility
+Lucky			CATEGORY:Special Ability	TYPE:SpecialQuality.CoreAbility
+Custom Ride		CATEGORY:Special Ability	TYPE:SpecialQuality.CoreAbility	DEFINE:CustomRide|0	DESC: (%1 BP)|CustomRide
+
+###Block:  Fixer Abilities
+
+# Feat Name			Type					Visible	Special ABility																																				Define											Stackable?	Multiple?	Choose			Add					Add to base move													Modify VAR
+# Ability Name		Category of Ability		Type							Define									Description																																					Stackable?	Multiple?	Choose		Bonus Ability Pool				Add to base move													Modify VAR
+Sneak Attack		CATEGORY:Special Ability	TYPE:SpecialQuality.Special			DEFINE:SneakAttackDice|0	DEFINE:SneakAttackDieSize|0	DESC: +%1d%2|SneakAttackDice|SneakAttackDieSize																																																												BONUS:VAR|SneakAttackDieSize|6|TYPE=Base
+Uncanny Dodge		CATEGORY:Special Ability	TYPE:SpecialQuality.Special			DEFINE:UncannyDodge|0	DEFINE:UncannyTraps|0			DESC:Uncanny Dodge (Dex bonus to Defense)|PREVAREQ:UncannyDodge,1	DESC:Uncanny Dodge (can't be flanked)|PREVAREQ:UncannyDodge,2	DESC:Uncanny Dodge (can't be flanked, +%1 against traps)|UncannyTraps|PREVARGTEQ:UncannyDodge,3																														BONUS:VAR|UncannyTraps|max((UncannyDodge-2),0)
+Evasion			CATEGORY:Special Ability	TYPE:SpecialQuality.Special			DEFINE:EvasionFactor|0							DESC:Evasion (no damage on save)|PREVAREQ:EvasionFactor,1	DESC:Evasion (fail saves for half)|PREVAREQ:EvasionFactor,2	DESC:Evasion (fail saves for quarter)|PREVARGTEQ:EvasionFactor,3
+
+Fast Movement		CATEGORY:Special Ability	TYPE:SpecialQuality.FixerSpecialAbility																																																															BONUS:MOVEADD|TYPE.Walk|10|PREMULT:2,[PREVARLT:ENCUMBERANCE,2],[!PREEQUIP:1,TYPE=Heavy]
+Improvisation		CATEGORY:Special Ability	TYPE:SpecialQuality.FixerSpecialAbility																																																	STACK:YES	MULT:YES	CHOOSE:NOCHOICE																							BONUS:VAR|FixerImprovisation|1
+Master Thief		CATEGORY:Special Ability	TYPE:SpecialQuality.FixerSpecialAbility																																																	STACK:YES	MULT:YES	CHOOSE:NOCHOICE																							BONUS:VAR|FixerMasterThief|1
+Fixer Skill Mastery	CATEGORY:Special Ability	TYPE:SpecialQuality.FixerSpecialAbility																																																	STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:ABILITYPOOL|Skill Mastery|3
+Skill Mastery		CATEGORY:Special Ability	TYPE:SpecialQuality.SpecialAbility												DESC:Skill Mastery Selections %1|(%CHOICE)																															STACK:NO	MULT:YES	CHOOSE:SKILL|ALL
+Stash It			CATEGORY:Special Ability	TYPE:SpecialQuality.FixerSpecialAbility
+
+Fixer Feat Choice		CATEGORY:Special Ability	TYPE:FixerSpecialAbility																																																			STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:ABILITYPOOL|Fixer Feat Choice|1
+
+###Block:  Pointman Abilities
+
+# Feat Name						Type					Visible	Required Feat				Special ABility							Define				Stackable?	Multiple?	Choose				Add														Combat bonus					Misc bonus							Modify VAR					Class Skill	Damage Reduction
+# Ability Name					Category of Ability		Type								Required Ability									Define				Description								Stackable?	Multiple?	Choose			Add					Bonus Ability Pool				Combat bonus					Misc bonus							Modify VAR					Class Skill	Damage Reduction
+Versatility						CATEGORY:Special Ability	TYPE:SpecialQuality.PointmanSpecialAbility																										STACK:NO	MULT:YES	CHOOSE:SKILL|CROSSCLASS																																		CSKILL:LIST
+
+Faceman Linguist					CATEGORY:Special Ability	TYPE:SpecialQuality.CrossClassAbility																											STACK:YES	MULT:YES	CHOOSE:NOCHOICE		ADD:LANGUAGE|TYPE=Spoken
+Faceman Cold Read					CATEGORY:Special Ability	TYPE:SpecialQuality.CrossClassAbility																		DESC:Cold Read (1/session)
+Faceman Quick Change				CATEGORY:Special Ability	TYPE:SpecialQuality.CrossClassAbility													DEFINE:PointmanQuickChange|0	DESC:Quick Change (%1/session)|PointmanQuickChange																																				BONUS:VAR|PointmanQuickChange|1
+Faceman Quick Change (additional session)	CATEGORY:Special Ability	TYPE:SpecialQuality.CrossClassAbility		PREABILITY:1,CATEGORY=Special Ability,Faceman Quick Change																																																			BONUS:VAR|PointmanQuickChange|1
+Faceman Backup					CATEGORY:Special Ability	TYPE:SpecialQuality.CrossClassAbility																		DESC:Backup (1/session)
+
+Fixer Procure					CATEGORY:Special Ability	TYPE:SpecialQuality.CrossClassAbility
+Fixer Evasion					CATEGORY:Special Ability	TYPE:SpecialQuality.CrossClassAbility																		DESC:Evasion (no damage on save)
+Fixer Uncanny Dodge				CATEGORY:Special Ability	TYPE:SpecialQuality.CrossClassAbility																		DESC:Uncanny Dodge (Dex bonus to Defense)
+Fixer Sneak Attack				CATEGORY:Special Ability	TYPE:SpecialQuality.CrossClassAbility													DEFINE:PMSneakAttack|0		DESC:Sneak Attack %1d6|PMSneakAttack																																						BONUS:VAR|PMSneakAttack|1
+Fixer Sneak Attack (Additional Attack)	CATEGORY:Special Ability	TYPE:SpecialQuality.CrossClassAbility		PREABILITY:1,CATEGORY=Special Ability,Fixer Sneak Attack																																																			BONUS:VAR|PMSneakAttack|1
+
+Snoop Flawless search				CATEGORY:Special Ability	TYPE:SpecialQuality.CrossClassAbility
+Snoop Intuition					CATEGORY:Special Ability	TYPE:SpecialQuality.CrossClassAbility																		DESC:Intuition (1/session)
+Snoop Back Door					CATEGORY:Special Ability	TYPE:SpecialQuality.CrossClassAbility																		DESC:Back Door (1 system)
+Snoop Jury-rig					CATEGORY:Special Ability	TYPE:SpecialQuality.CrossClassAbility													DEFINE:PointmanJuryrig|0	DESC:Jury-rig +%1|PointmanJuryrig																																							BONUS:VAR|PointmanJuryrig|2
+Snoop Jury-rig +1					CATEGORY:Special Ability	TYPE:SpecialQuality.CrossClassAbility		PREABILITY:1,CATEGORY=Special Ability,Snoop Jury-rig																																																				BONUS:VAR|PointmanJuryrig|1
+
+Soldier Bonus Feat x1				CATEGORY:Special Ability	TYPE:SpecialQuality.CrossClassAbility																																								BONUS:ABILITYPOOL|Solder Class Ability|1
+Soldier Bonus Feat x2				CATEGORY:Special Ability	TYPE:SpecialQuality.CrossClassAbility		PREABILITY:1,CATEGORY=Special Ability,Soldier Bonus Feat x1																													BONUS:ABILITYPOOL|Solder Class Ability|1
+Soldier Damage Reduction			CATEGORY:Special Ability	TYPE:SpecialQuality.CrossClassAbility																																																																						DR:1/-
+Soldier Armor Use					CATEGORY:Special Ability	TYPE:SpecialQuality.CrossClassAbility																																															BONUS:COMBAT|AC|1|PREEQUIP:1,TYPE=Armor	BONUS:MISC|ACCCHECK|-1|PREEQUIP:1,TYPE=Armor
+
+Wheelman Daredevil				CATEGORY:Special Ability	TYPE:SpecialQuality.CrossClassAbility
+Wheelman Kick Start				CATEGORY:Special Ability	TYPE:SpecialQuality.CrossClassAbility																		DESC:Kick Start (1/session)
+Wheelman Familiarity +1				CATEGORY:Special Ability	TYPE:SpecialQuality.CrossClassAbility													DEFINE:PointmanFamiliarity|0	DESC:Familiarity +%1|PointmanFamiliarity																																						BONUS:VAR|PointmanFamiliarity|1
+Wheelman Familiarity +2				CATEGORY:Special Ability	TYPE:SpecialQuality.CrossClassAbility		PREABILITY:1,CATEGORY=Special Ability,Wheelman Familiarity +1																																																		BONUS:VAR|PointmanFamiliarity|1
+
+###Block:  Snoop Abilities
+
+# Feat Name							Type			Visible	Required Feat				Special ABility									Define					Stackable?	Multiple?	Choose		Add					Modify VAR
+# Ability Name						Category of Ability		Type						Required Ability									Define					Description										Stackable?	Multiple?	Choose		Bonus Ability Pool				Modify VAR
+Comb the Streets						CATEGORY:Special Ability	TYPE:SpecialQuality.SnoopAbility												DEFINE:CombtheStreets|0			DESC:Comb the Streets (%1/session)|CombtheStreets																	BONUS:VAR|CombtheStreets|1
+Comb the Streets (additional sessions)		CATEGORY:Special Ability	TYPE:SpecialQuality.SnoopAbility	PREABILITY:1,CATEGORY=Special Ability,Comb the Streets																			STACK:YES	MULT:YES	CHOOSE:NOCHOICE								BONUS:VAR|CombtheStreets|1
+
+Intercept Communication					CATEGORY:Special Ability	TYPE:SpecialQuality.SnoopAbility												DEFINE:InterceptCommunication|0	DESC:Intercept Communication (%1/session)|InterceptCommunication															BONUS:VAR|InterceptCommunication|1
+Intercept Communication (additional sessions)	CATEGORY:Special Ability	TYPE:SpecialQuality.SnoopAbility	PREABILITY:1,CATEGORY=Special Ability,Intercept Communication																		STACK:YES	MULT:YES	CHOOSE:NOCHOICE								BONUS:VAR|InterceptCommunication|1
+
+Intelligence Analysis					CATEGORY:Special Ability	TYPE:SpecialQuality.SnoopAbility																		DESC:Intelligence Analysis
+Electronics Familiarity					CATEGORY:Special Ability	TYPE:SpecialQuality.SnoopAbility																		DESC:Electronics Familiarity
+Snoop Skill Mastery					CATEGORY:Special Ability	TYPE:SpecialQuality.SnoopAbility																													STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:ABILITYPOOL|Skill Mastery|3
+Snoop Gain Feat						CATEGORY:Special Ability	TYPE:SnoopAbility																																STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:ABILITYPOOL|Snoop Feat Choice|1
+
+###Block:  Soldier Abilities
+
+# Feat Name			Type				Visible	Stackable?	Multiple?	Choose			Weapon prof. bonus
+# Ability Name		Category of Ability		Type						Stackable?	Multiple?	Choose				Weapon prof. bonus
+Weapon Specialization	CATEGORY:Special Ability	TYPE:SpecialQuality.SoldierAbility	STACK:YES	MULT:YES	CHOOSE:WEAPONPROFICIENCY|PC	BONUS:WEAPONPROF=%LIST|DAMAGE|2|TYPE=NotRanged	BONUS:WEAPONPROF=%LIST|DAMAGE-SHORTRANGE|2
+
+###Block: Nationalities
+
+# Feat Name		Type					Visible	Special ABility				Template					Automatic Languages
+# Ability Name	Category of Ability		Type							Description					Template					Auto Language
+American		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - American	AUTO:LANG|English
+Apache		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality	DESC:Native American (Apache)		TEMPLATE:Nationality - American	AUTO:LANG|Apache
+Assyrian		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Assyrian	AUTO:LANG|Assyrian
+Australian		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Australian	AUTO:LANG|English
+Austrian		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Austrian	AUTO:LANG|German
+Bantu			CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Bantu		AUTO:LANG|Bantu
+Bosnian		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Bosnian	AUTO:LANG|Bosnian
+Brazilian		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Brazilian	AUTO:LANG|Spanish
+Canadian		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Canadian	AUTO:LANG|French
+Cherokee		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality	DESC:Native American (Cherokee)	TEMPLATE:Nationality - American	AUTO:LANG|Cherokee
+Cheyenne		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality	DESC:Native American (Cheyenne)	TEMPLATE:Nationality - American	AUTO:LANG|Cheyenne
+Chinese		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Chinese	AUTO:LANG|Chinese
+Croatian		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Croatian	AUTO:LANG|Croatian
+Czech			CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Czech		AUTO:LANG|Czech
+Danish		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Danish		AUTO:LANG|Danish
+Dutch			CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Dutch		AUTO:LANG|Dutch
+English		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - British	AUTO:LANG|English
+Egyptian		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Egyptian	AUTO:LANG|Arabic (Egyptian)
+Finnnish		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Finnnish	AUTO:LANG|Finnnish
+French		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - French		AUTO:LANG|French
+Georgian		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Georgian	AUTO:LANG|Georgian
+German		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - German		AUTO:LANG|German
+Greek			CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Greek		AUTO:LANG|Greek (Modern)
+Haitian		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Haitian	AUTO:LANG|Haitian
+Hungarian		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Hungarian	AUTO:LANG|Hungarian
+Icelandic		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Icelandic	AUTO:LANG|Icelandic
+Inodnesian		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Inodnesian	AUTO:LANG|Inodnesian
+Irish			CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - British	AUTO:LANG|Gaelic
+Isreali		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Isreali	AUTO:LANG|Hebrew
+Italian		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Italian	AUTO:LANG|Italian
+Japanese		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Japanese	AUTO:LANG|Japanese
+Mexican		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Mexican	AUTO:LANG|Spanish
+Navajo		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality	DESC:Native American (Navajo)		TEMPLATE:Nationality - American	AUTO:LANG|Navajo
+New Zealand		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - New Zealand	AUTO:LANG|English
+North Korean	CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - North Korean	AUTO:LANG|Korean
+Norwegian		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Norwegian	AUTO:LANG|Norwegian
+Polish		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Polish		AUTO:LANG|Polish
+Portuguese		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Portuguese	AUTO:LANG|Portuguese
+Romanian		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Romanian	AUTO:LANG|Romanian
+Russian		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Russian	AUTO:LANG|Russian
+Saudi			CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Saudi Arabia	AUTO:LANG|Arabic (Modern)
+Serbian		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Serbian	AUTO:LANG|Serbian
+South Korean	CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - South Korean	AUTO:LANG|Korean
+Spanish		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Spanish	AUTO:LANG|Spanish
+Scottish		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - British	AUTO:LANG|English
+Swedish		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Swedish	AUTO:LANG|Swedish
+Thai			CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Thai		AUTO:LANG|Thai
+Turkish		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Turkish	AUTO:LANG|Turkish
+Ukranian		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Ukranian	AUTO:LANG|Ukranian
+Vietnamese		CATEGORY:Special Ability	TYPE:SpecialQuality.StartingNationality							TEMPLATE:Nationality - Vietnamese	AUTO:LANG|Vietnamese
+
+#
+# End
+#

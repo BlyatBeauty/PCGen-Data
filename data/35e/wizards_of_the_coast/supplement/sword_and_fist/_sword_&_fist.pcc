@@ -1,0 +1,39 @@
+# CVS $Revision$ $Author$ -- Mon Jun  3 22:31:18 2013 -- reformated by prettylst.pl v1.50 (build 19967)
+CAMPAIGN:Sword & Fist (3e)
+GAMEMODE:3e
+TYPE:Wizards of the Coast.Supplement
+STATUS:BETA
+
+PRECAMPAIGN:1,INCLUDESBOOKTYPE=Core35e
+SOURCELONG:Sword & Fist (3e)
+SOURCESHORT:SF
+SOURCEDATE:2001-01
+RANK:200101
+ISOGL:NO
+COPYRIGHT:Sword & Fist (3e)
+INFOTEXT:Sword & Fist (3e)
+# COVER should be cover_gameMode_pub_book.file
+COVER:../../../../_artwork/cover_35e_wotc_sf.jpg
+# LOGO should be logo_pub.file
+LOGO:../../../../_artwork/logo_wotc.png
+
+ABILITY:sf_abilities.lst
+CLASS:sf_classes.lst
+
+EQUIPMENT:sf_equipment.lst
+EQUIPMOD:sf_equipmods.lst
+
+ABILITY:sf_feats.lst
+SKILL:sf_skills.lst
+
+INFOTEXT:Supports 6.4.1
+# ENTRY DATE: 2015-01 (Unknown)
+# LST MONKEY: Bahamut
+# RELEASE REVIEW #
+# BETA:
+# RELEASE:
+# Built for PCGen Version: 6.04.01
+# Updated to work with version: -
+# MINVER:6.4
+# MINDEVVER:6.04.1
+# COMMENTS:

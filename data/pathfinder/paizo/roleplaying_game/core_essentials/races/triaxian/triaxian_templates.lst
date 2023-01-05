@@ -1,0 +1,17 @@
+# Tue Aug 24 13:40:19 2021 -- reformated by PCGen PrettyLST v6.08.00
+
+
+###Block: Racial Heritage
+# Template Name	Unique Key					Visible	Template			Type				FACT
+Triaxian		KEY:Racial Heritage ~ Triaxian	VISIBLE:NO	TEMPLATE:IsTriaxian	TYPE:Racial Heritage	FACT:IsTriaxian|True
+IsTriaxian								VISIBLE:NO
+
+
+###Block: Creature Subtypes
+# Template Name	Visible	Race Subtype
+Triaxian		VISIBLE:NO	RACESUBTYPE:Triaxian
+
+
+###Block: Race Builder Humanoid Subtypes
+# Template Name	Unique Key					Visible	Race Subtype		Type
+Triaxian		KEY:Race Builder Subtype ~ Triaxian	VISIBLE:NO	RACESUBTYPE:Triaxian	TYPE:Race Builder Subtype

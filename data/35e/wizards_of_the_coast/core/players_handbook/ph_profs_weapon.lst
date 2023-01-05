@@ -1,0 +1,124 @@
+# CVS $Revision: $ $Author: $ -- Thu Jul 10 13:59:32 2014 -- reformated by prettylst.pl v1.51 (build 24365)
+
+# Misc for PCGen
+# Weapon Name			Type
+Grapple				TYPE:Auto.Simple.SimpleMelee
+Spells (Ray)			TYPE:Auto.Simple
+Spells (Touch)			TYPE:Auto.Simple.SimpleMelee
+Ranged Spell			TYPE:Auto.Simple.Ranged.SimpleRanged
+
+# Name of Proficiency		Weapon groups
+# Weapon Name			Type
+Gauntlet				TYPE:Simple.Unarmed.Melee.SimpleMelee
+Strike (Unarmed)			TYPE:Simple.Unarmed.Melee.SimpleMelee
+# Inconsistency in how Unarmed Strike vs. Strike, Unarmed
+Unarmed Strike			TYPE:Simple.Unarmed.Melee.SimpleMelee
+#- Light
+Dagger				TYPE:Simple.Melee.Light.SimpleMelee.MeleeLight.MeleeRanged
+Dagger (Punching)			TYPE:Simple.Melee.Light.SimpleMelee.MeleeLight
+Gauntlet (Spiked)			TYPE:Simple.Melee.Light.SimpleMelee.MeleeLight.Unarmed
+Mace (Light)			TYPE:Simple.Melee.Light.SimpleMelee.MeleeLight
+Sickle				TYPE:Simple.Melee.Light.SimpleMelee.MeleeLight
+#- One-Handed
+Club					TYPE:Simple.Melee.SimpleMelee.OneHanded.OneHandedMelee.OneHandedSimpleMelee
+Mace (Heavy)			TYPE:Simple.Melee.SimpleMelee.OneHanded.OneHandedMelee.OneHandedSimpleMelee
+Morningstar				TYPE:Simple.Melee.SimpleMelee.OneHanded.OneHandedMelee.OneHandedSimpleMelee
+Shortspear				TYPE:Simple.Melee.SimpleMelee.OneHanded.OneHandedMelee.OneHandedSimpleMelee.Spear
+#- Two-Handed
+Longspear				TYPE:Simple.Melee.SimpleMelee.TwoHanded.TwoHandedMelee.TwoHandedSimpleMelee.Spear
+Quarterstaff			TYPE:Simple.Melee.SimpleMelee.TwoHanded.TwoHandedMelee.TwoHandedSimpleMelee
+Spear					TYPE:Simple.Melee.SimpleMelee.TwoHanded.TwoHandedMelee.TwoHandedSimpleMelee.Spear
+#- Ranged
+Crossbow (Heavy)			TYPE:Simple.Ranged.SimpleRanged.Crossbow
+Crossbow (Light)			TYPE:Simple.Ranged.SimpleRanged.Crossbow
+Dart					TYPE:Simple.Ranged.Thrown.SimpleRanged.SimpleThrown
+Javelin				TYPE:Simple.Ranged.Thrown.SimpleRanged.SimpleThrown
+Sling					TYPE:Simple.Ranged.SimpleRanged
+
+
+# MARTIAL
+#- Light
+Axe (Throwing)			TYPE:Martial.Melee.Light.MartialMelee.MeleeLight.MartialLight.Thrown.MartialThrown
+Hammer (Light)			TYPE:Martial.Melee.Light.MartialMelee.MeleeLight.MartialLight.Hammer
+Handaxe				TYPE:Martial.Melee.Light.MartialMelee.MeleeLight.MartialLight
+Kukri					TYPE:Martial.Melee.Light.MartialMelee.MeleeLight.MartialLight
+Pick (Light)			TYPE:Martial.Melee.Light.MartialMelee.MeleeLight.MartialLight
+Sap					TYPE:Martial.Melee.Light.MartialMelee.MeleeLight.MartialLight
+Spiked Armor			TYPE:Martial.Melee.Light.MartialMelee.MeleeLight.MartialLight
+Sword (Short)			TYPE:Martial.Melee.Light.MartialMelee.MeleeLight.MartialLight
+#- One-Handed
+Battleaxe				TYPE:Martial.Melee.OneHanded.MartialMelee
+Flail					TYPE:Martial.Melee.OneHanded.MartialMelee
+Longsword				TYPE:Martial.Melee.OneHanded.MartialMelee
+Pick (Heavy)			TYPE:Martial.Melee.OneHanded.MartialMelee
+Rapier				TYPE:Martial.Melee.OneHanded.MartialMelee
+Scimitar				TYPE:Martial.Melee.OneHanded.MartialMelee
+Shieldbash				TYPE:Martial.Melee.OneHanded.MartialMelee
+Trident				TYPE:Martial.Melee.OneHanded.MartialMelee
+Warhammer				TYPE:Martial.Melee.OneHanded.MartialMelee.Hammer
+#- Two-Handed
+Falchion				TYPE:Martial.Melee.TwoHanded.MartialMelee
+Glaive				TYPE:Martial.Melee.TwoHanded.MartialMelee
+Greataxe				TYPE:Martial.Melee.TwoHanded.MartialMelee
+Greatclub				TYPE:Martial.Melee.TwoHanded.MartialMelee
+Flail (Heavy)			TYPE:Martial.Melee.TwoHanded.MartialMelee
+Greatsword				TYPE:Martial.Melee.TwoHanded.MartialMelee
+Guisarme				TYPE:Martial.Melee.TwoHanded.MartialMelee
+Halberd				TYPE:Martial.Melee.TwoHanded.MartialMelee
+Lance					TYPE:Martial.Melee.TwoHanded.MartialMelee
+Ranseur				TYPE:Martial.Melee.TwoHanded.MartialMelee
+Scythe				TYPE:Martial.Melee.TwoHanded.MartialMelee
+#- Ranged Weapons
+Longbow				TYPE:Martial.Bow.Ranged.Projectile.Martial Ranged
+Shortbow				TYPE:Martial.Bow.Ranged.Projectile.Martial Ranged
+
+# Exotic
+#- Light
+Kama					TYPE:Exotic.Melee.Light.ExoticMelee
+Nunchaku				TYPE:Exotic.Melee.Light.ExoticMelee
+Sai					TYPE:Exotic.Melee.Light.ExoticMelee
+Siangham				TYPE:Exotic.Melee.Light.ExoticMelee
+#- One-Handed
+Sword (Bastard)			TYPE:Exotic.Melee.OneHanded.Martial.ExoticMelee.MartialMelee
+Waraxe (Dwarven)			TYPE:Exotic.Melee.OneHanded.ExoticMelee
+Whip					TYPE:Exotic.Melee.OneHanded.ExoticMelee
+#- Two-Handed
+Axe (Orc Double)			TYPE:Exotic.Melee.TwoHanded.ExoticMelee
+Chain (Spiked)			TYPE:Exotic.Melee.TwoHanded.ExoticMelee
+Flail (Dire)			TYPE:Exotic.Melee.TwoHanded.ExoticMelee
+Hammer (Gnome Hooked)		TYPE:Exotic.Melee.TwoHanded.ExoticMelee
+Sword (Two-Bladed)		TYPE:Exotic.Melee.TwoHanded.ExoticMelee
+Urgrosh (Dwarven)			TYPE:Exotic.Melee.TwoHanded.ExoticMelee
+#- Ranged
+Bolas					TYPE:Exotic.Thrown
+Crossbow (Hand)			TYPE:Exotic.Ranged.Projectile.Crossbow
+Crossbow (Repeating Heavy)	TYPE:Exotic.Ranged.Projectile.Crossbow
+Crossbow (Repeating Light)	TYPE:Exotic.Ranged.Projectile.Crossbow
+Net					TYPE:Exotic.Thrown
+Shuriken				TYPE:Exotic.Thrown
+
+
+
+
+###Block: Weapon Groups:
+# Weapon Name		Type
+Dagger.MOD			TYPE:Dagger
+Dagger (Punching).MOD	TYPE:Dagger
+
+
+###Block: Monk	Prep for Expanding Monk Weapons with AE
+# Weapon Name		Type
+Club.MOD			TYPE:Monk
+Crossbow (Light).MOD	TYPE:Monk
+Crossbow (Heavy).MOD	TYPE:Monk
+Dagger.MOD			TYPE:Monk
+Handaxe.MOD			TYPE:Monk
+Javelin.MOD			TYPE:Monk
+Kama.MOD			TYPE:Monk
+Nunchaku.MOD		TYPE:Monk
+Quarterstaff.MOD		TYPE:Monk
+Sai.MOD			TYPE:Monk
+Shuriken.MOD		TYPE:Monk
+Siangham.MOD		TYPE:Monk
+Sling.MOD			TYPE:Monk
+Unarmed Strike.MOD	TYPE:Monk

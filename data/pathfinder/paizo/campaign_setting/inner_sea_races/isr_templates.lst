@@ -1,0 +1,72 @@
+#  Fri Nov 16 19:52:40 2018 -- reformated by PCGen PrettyLST v6.08.00
+# CVS $Revision: $ $Author: $ -- Fri Jan 29 20:50:52 2016 -- reformated by PCGen PrettyLST v6.06.00
+SOURCELONG:Inner Sea Races	SOURCESHORT:ISR	SOURCEWEB:http://paizo.com/products/btpy9g9v?Pathfinder-Campaign-Setting-Inner-Sea-Races	SOURCEDATE:2015-09
+# ORIGINAL ENTRY: Gwen T. (evilpixie87)
+# ORIGINAL ENTRY DATE: 14 May 2016
+
+# ==============================
+# Human Ethnicities
+# ==============================
+
+# Template Name			Product Identity?	Visible	Source Page		Auto Language		Subrace		Lock Gender Selection
+Human Ethnicity (Mwangi)	NAMEISPI:YES	VISIBLE:NO	SOURCEPAGE:p.15	AUTO:LANG|Polyglot	SUBRACE:Mwangi
+Human Ethnicity (Arcadian)	NAMEISPI:YES	VISIBLE:NO	SOURCEPAGE:p.64					SUBRACE:Arcadian
+Human Ethnicity (Caldaru)	NAMEISPI:YES	VISIBLE:NO	SOURCEPAGE:p.64	AUTO:LANG|Polyglot	SUBRACE:Caldaru
+Human Ethnicity (Erutaki)	NAMEISPI:YES	VISIBLE:NO	SOURCEPAGE:p.64					SUBRACE:Erutaki
+Human Ethnicity (Iobarian)	NAMEISPI:YES	VISIBLE:NO	SOURCEPAGE:p.64					SUBRACE:Iobarian
+Human Ethnicity (Jadwiga)	NAMEISPI:YES	VISIBLE:NO	SOURCEPAGE:p.65					SUBRACE:Jadwiga
+Human Ethnicity (Lirgeni)	NAMEISPI:YES	VISIBLE:NO	SOURCEPAGE:p.65					SUBRACE:Lirgeni
+Human Ethnicity (Varki)		NAMEISPI:YES	VISIBLE:NO	SOURCEPAGE:p.65					SUBRACE:Varki
+
+# ==============================
+# Racial Trait Support
+# ==============================
+
+###Block: Aasimar Subraces
+# Template Name				Source Page
+Aasimar ~ Agathion-Blooded.MOD	SOURCEPAGE:p.238
+Aasimar ~ Angel-Blooded.MOD		SOURCEPAGE:p.239
+Aasimar ~ Archon-Blooded.MOD		SOURCEPAGE:p.239
+Aasimar ~ Azata-Blooded.MOD		SOURCEPAGE:p.239
+Aasimar ~ Garuda-Blooded.MOD		SOURCEPAGE:p.239
+Aasimar ~ Peri-Blooded.MOD		SOURCEPAGE:p.239
+
+###Block: Dhampir Subraces
+# Template Name			Source Page
+Dhampir ~ Jiang-shi-Born.MOD	SOURCEPAGE:p.241
+Dhampir ~ Moroi-Born.MOD	SOURCEPAGE:p.241
+Dhampir ~ Nosferatu-Born.MOD	SOURCEPAGE:p.241
+Dhampir ~ Vetala-Born.MOD	SOURCEPAGE:p.241
+
+###Block: Skinwalker Subraces
+# Template Name				Source Page
+Skinwalker ~ Werebat-Kin.MOD		SOURCEPAGE:p.248
+Skinwalker ~ Werebear-Kin.MOD		SOURCEPAGE:p.248
+Skinwalker ~ Wereboar-Kin.MOD		SOURCEPAGE:p.248
+Skinwalker ~ Werecrocodile-Kin.MOD	SOURCEPAGE:p.249
+Skinwalker ~ Wererat-Kin.MOD		SOURCEPAGE:p.249
+Skinwalker ~ Wereshark-Kin.MOD	SOURCEPAGE:p.249
+Skinwalker ~ Weretiger-Kin.MOD	SOURCEPAGE:p.249
+Skinwalker ~ Werewolf-Kin.MOD		SOURCEPAGE:p.249
+
+###Block: Tiefling Subraces
+# Template Name			Source Page
+Tiefling ~ Asura-Spawn.MOD	SOURCEPAGE:p.251
+Tiefling ~ Daemon-Spawn.MOD	SOURCEPAGE:p.251
+Tiefling ~ Demodand-Spawn.MOD	SOURCEPAGE:p.252
+Tiefling ~ Demon-Spawn.MOD	SOURCEPAGE:p.252
+Tiefling ~ Devil-Spawn.MOD	SOURCEPAGE:p.252
+Tiefling ~ Div-Spawn.MOD	SOURCEPAGE:p.252
+Tiefling ~ Kyton-Spawn.MOD	SOURCEPAGE:p.252
+Tiefling ~ Oni-Spawn.MOD	SOURCEPAGE:p.252
+Tiefling ~ Qlippoth-Spawn.MOD	SOURCEPAGE:p.252
+Tiefling ~ Rakshasa-Spawn.MOD	SOURCEPAGE:p.252
+
+# ==============================
+# Bonus Languages
+# ==============================
+
+###Block: Bonus Languages
+# Template Name					Visible	Bonus Languages
+Bonus Language ~ Senzar				VISIBLE:NO	LANGBONUS:Senzar
+Bonus Language ~ Drow Sign Language.MOD			LANGBONUS:Sakvroth

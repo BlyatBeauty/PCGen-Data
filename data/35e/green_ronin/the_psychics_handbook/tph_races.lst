@@ -1,0 +1,8 @@
+# CVS $Revision: $ $Author: $ -- Thu Jul 10 13:59:32 2014 -- reformated by prettylst.pl v1.51 (build 24365)
+
+# In Progress
+# Race Name		Favored Class	Skills/Level		Starting Feats	Size		Move			Face/Space	Reach		Bonus Languages	Bonus to skill												Class Skill																Automatically Gained Feat		Automatically Gained Language	Ability								Main Race Type	Race Subtype	Type			Challenge Rating	Source, Long Desc.				Source, Short Desc.	Source Page
+Psychic Construct											SIZE:M	MOVE:Fly,30				REACH:5																																																							RACETYPE:Humanoid				TYPE:Construct
+
+# Race Name		Favored Class	Skills/Level		Starting Feats	Size		Move			Face/Space	Reach		Bonus Languages	Bonus to skill												Class Skill																Automatically Gained Feat		Automatically Gained Language	Ability								Main Race Type	Race Subtype	Type			Challenge Rating	Source, Long Desc.				Source, Short Desc.	Source Page
+Illan			FAVCLASS:Psychic	XTRASKILLPTSPERLVL:1	STARTFEATS:1	FACT:HasFirstLevelFeat|True	SIZE:M	MOVE:Walk,30	FACE:5	REACH:5	LANGBONUS:ALL	BONUS:SKILL|TYPE.Psychic Mental Contact,TYPE.Psychic Psychic Shield|2|TYPE=Racial	CSKILL:TYPE=Psychic Empathy|TYPE=Psychic Mental Contact|TYPE=Psychic Sense|TYPE=Psychic Psychic Shield	ABILITY:FEAT|AUTOMATIC|Psychic Ability|Telepathy	AUTO:LANG|Common			ABILITY:Internal|AUTOMATIC|Racial Traits ~ Illan	RACETYPE:Humanoid	RACESUBTYPE:Illan	TYPE:Humanoid	CR:1/2		SOURCELONG:The Psychics's Handbook (Web)	SOURCESHORT:TPH		SOURCEPAGE:p.2

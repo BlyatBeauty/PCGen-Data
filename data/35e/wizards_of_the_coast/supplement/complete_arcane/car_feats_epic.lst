@@ -1,0 +1,67 @@
+# CVS $Revision: $ $Author: $ -- Sun Aug 17 15:41:15 2014 -- reformated by prettylst.pl v1.51 (build 24906)
+###Block: Epic Support
+# Feat Name										Type						Required Skill			Required Text											Clear Description	Stackable?	Multiple?	Choose				Bonus DC											Bonus to skill													Modify VAR				Source Page
+CATEGORY=FEAT|Automatic Quicken Spell.MOD		TYPE:Epic.Metamagic.Wizard																			DESC:.CLEAR																																						BONUS:VAR|AutomaticQuicken|-2	SOURCEPAGE:p.
+CATEGORY=FEAT|Automatic Silent Spell.MOD		TYPE:Epic.Metamagic.Wizard																			DESC:.CLEAR
+CATEGORY=FEAT|Automatic Still Spell.MOD			TYPE:Epic.Metamagic.Wizard																			DESC:.CLEAR
+CATEGORY=FEAT|Enhance Spell.MOD					TYPE:Epic.Metamagic.Wizard																			DESC:.CLEAR
+CATEGORY=FEAT|Epic Spell Focus.MOD													PRETEXT:Ability to cast at least one 9th level spell of the selected school													BONUS:DC|SCHOOL.%LIST|3|TYPE=SpellFocus	BONUS:DC|SCHOOL.%LIST|-1																					SOURCEPAGE:p.
+#Epic Spell Penetration
+CATEGORY=FEAT|Improved Combat Casting.MOD																												STACK:NO	MULT:YES	CHOOSE:CLASS|PC[SPELLCASTER]													BONUS:SITUATION|Concentration=Cast defensively|max(1,charbonusto(CASTERLEVEL,%LIST)/2)						SOURCEPAGE:p.
+CATEGORY=FEAT|Master Staff.MOD									PRESKILL:1,Spellcraft=30																																																										SOURCEPAGE:p.
+#Master Wand
+
+# Warmage
+CATEGORY=FEAT|Automatic Silent Spell.MOD			TYPE:EpicWarmage
+CATEGORY=FEAT|Automatic Still Spell.MOD				TYPE:EpicWarmage
+CATEGORY=FEAT|Craft Epic Magic Arms and Armor.MOD	TYPE:EpicWarmage
+CATEGORY=FEAT|Craft Epic Rod.MOD					TYPE:EpicWarmage
+CATEGORY=FEAT|Craft Epic Staff.MOD					TYPE:EpicWarmage
+CATEGORY=FEAT|Craft Epic Wondrous Item.MOD			TYPE:EpicWarmage
+CATEGORY=FEAT|Efficient Item Creation.MOD			TYPE:EpicWarmage
+CATEGORY=FEAT|Energy Resistance.MOD				TYPE:EpicWarmage
+#CATEGORY=FEAT|Energy Resistance ~ Acid.MOD			TYPE:EpicWarmage
+#CATEGORY=FEAT|Energy Resistance ~ Cold.MOD			TYPE:EpicWarmage
+#CATEGORY=FEAT|Energy Resistance ~ Electricity.MOD	TYPE:EpicWarmage
+#CATEGORY=FEAT|Energy Resistance ~ Fire.MOD			TYPE:EpicWarmage
+#CATEGORY=FEAT|Energy Resistance ~ Sonic.MOD			TYPE:EpicWarmage
+CATEGORY=FEAT|Enhance Spell.MOD						TYPE:EpicWarmage
+CATEGORY=FEAT|Epic Spell Focus.MOD					TYPE:EpicWarmage
+CATEGORY=FEAT|Epic Spell Penetration.MOD			TYPE:EpicWarmage
+CATEGORY=FEAT|Epic Spellcasting.MOD					TYPE:EpicWarmage
+CATEGORY=FEAT|Ignore Material Components.MOD		TYPE:EpicWarmage
+CATEGORY=FEAT|Improved Combat Casting.MOD			TYPE:EpicWarmage
+CATEGORY=FEAT|Improved Heighten Spell.MOD			TYPE:EpicWarmage
+CATEGORY=FEAT|Improved Metamagic.MOD				TYPE:EpicWarmage
+CATEGORY=FEAT|Improved Spell Capacity.MOD			TYPE:EpicWarmage
+CATEGORY=FEAT|Intensify Spell.MOD					TYPE:EpicWarmage
+CATEGORY=FEAT|Master Staff.MOD						TYPE:EpicWarmage
+CATEGORY=FEAT|Master Wand.MOD						TYPE:EpicWarmage
+CATEGORY=FEAT|Scribe Epic Scroll.MOD				TYPE:EpicWarmage
+CATEGORY=FEAT|Spell Opportunity.MOD					TYPE:EpicWarmage
+CATEGORY=FEAT|Spell Stowaway.MOD					TYPE:EpicWarmage
+CATEGORY=FEAT|Spellcasting Harrier.MOD				TYPE:EpicWarmage
+CATEGORY=FEAT|Tenacious Magic.MOD					TYPE:EpicWarmage
+# Wu Jen
+CATEGORY=FEAT|Augmented Alchemy.MOD					TYPE:EpicWuJen
+CATEGORY=FEAT|Automatic Quicken Spell.MOD			TYPE:EpicWuJen
+CATEGORY=FEAT|Automatic Silent Spell.MOD			TYPE:EpicWuJen
+CATEGORY=FEAT|Automatic Still Spell.MOD				TYPE:EpicWuJen
+CATEGORY=FEAT|Enhance Spell.MOD						TYPE:EpicWuJen
+CATEGORY=FEAT|Epic Spell Focus.MOD					TYPE:EpicWuJen
+CATEGORY=FEAT|Epic Spell Penetration.MOD			TYPE:EpicWuJen
+CATEGORY=FEAT|Epic Spellcasting.MOD					TYPE:EpicWuJen
+CATEGORY=FEAT|Ignore Material Components.MOD		TYPE:EpicWuJen
+CATEGORY=FEAT|Improved Combat Casting.MOD			TYPE:EpicWuJen
+CATEGORY=FEAT|Improved Heighten Spell.MOD			TYPE:EpicWuJen
+CATEGORY=FEAT|Improved Metamagic.MOD				TYPE:EpicWuJen
+CATEGORY=FEAT|Improved Spell Capacity.MOD			TYPE:EpicWuJen
+CATEGORY=FEAT|Intensify Spell.MOD					TYPE:EpicWuJen
+CATEGORY=FEAT|Multispell.MOD						TYPE:EpicWuJen
+CATEGORY=FEAT|Permanent Emanation.MOD				TYPE:EpicWuJen
+CATEGORY=FEAT|Spell Knowledge.MOD					TYPE:EpicWuJen
+CATEGORY=FEAT|Spell Opportunity.MOD					TYPE:EpicWuJen
+CATEGORY=FEAT|Spell Stowaway.MOD					TYPE:EpicWuJen
+CATEGORY=FEAT|Spontaneous Spell.MOD					TYPE:EpicWuJen
+CATEGORY=FEAT|Superior Initiative.MOD				TYPE:EpicWuJen
+CATEGORY=FEAT|Tenacious Magic.MOD					TYPE:EpicWuJen

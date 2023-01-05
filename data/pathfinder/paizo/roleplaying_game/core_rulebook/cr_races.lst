@@ -1,0 +1,19 @@
+#  Fri Nov 16 19:52:40 2018 -- reformated by PCGen PrettyLST v6.08.00
+SOURCELONG:Core Rulebook	SOURCESHORT:CR	SOURCEWEB:http://paizo.com/store/downloads/pathfinder/pathfinderRPG/v5748btpy88yj	SOURCEDATE:2009-08
+# Original Entry by: Stefan Radermacher
+
+###Block: Races
+# Race Name		Source Page
+Dwarf.MOD		SOURCEPAGE:p.21
+Elf.MOD		SOURCEPAGE:p.22
+Gnome.MOD		SOURCEPAGE:p.23
+Half-Elf.MOD	SOURCEPAGE:p.24
+Half-Orc.MOD	SOURCEPAGE:p.25
+Halfling.MOD	SOURCEPAGE:p.26
+Human.MOD		SOURCEPAGE:p.27
+
+
+
+
+
+#A test	SORTKEY:a_base_pc		FACT:BaseSize|M	SIZE:M					STARTFEATS:1	SIZE:T	MOVE:Walk,10	REACH:0	KIT:1|A Test

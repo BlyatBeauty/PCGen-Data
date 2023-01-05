@@ -1,0 +1,23 @@
+#  Fri Nov 16 19:52:40 2018 -- reformated by PCGen PrettyLST v6.08.00
+# CVS $Revision: 19255 $ $Author: amaitland $ -- Fri Jun 17 21:51:56 2016 -- reformated by PCGen PrettyLST v6.06.00
+SOURCELONG:Pathfinder Player Companion: Blood of Fiends	SOURCESHORT:BOF	SOURCEWEB:http://paizo.com/products/btpy8qzz	SOURCEDATE:2012-04
+# ORIGINAL ENTRY: Stefan Radermacher
+# ORIGINAL ENTRY DATE: 12 July 2013
+
+###Block: Template to activate bardic masterpieces
+# Template Name				Visible	Ability
+Masterpiece Activation Tiefling	VISIBLE:NO	ABILITY:Special Ability|AUTOMATIC|Masterpiece ~ Dance of Kindled Desires|PREMULT:1,[PRESPELL:1,Masterpiece (Dance of Kindled Desires)],[PREABILITY:1,CATEGORY=FEAT,Masterpiece (Dance of Kindled Desires)]	ABILITY:Special Ability|AUTOMATIC|Masterpiece ~ Melody of Frightful Death|PREMULT:1,[PRESPELL:1,Masterpiece (Melody of Frightful Death)],[PREABILITY:1,CATEGORY=FEAT,Masterpiece (Melody of Frightful Death)]	ABILITY:Special Ability|AUTOMATIC|Masterpiece ~ Rheumy Refrain|PREMULT:1,[PRESPELL:1,Masterpiece (Rheumy Refrain)],[PREABILITY:1,CATEGORY=FEAT,Masterpiece (Rheumy Refrain)]
+
+
+###Block: Tiefling Subraces
+# Template Name			Source Page
+Tiefling ~ Asura-Spawn.MOD	SOURCEPAGE:p.19
+Tiefling ~ Daemon-Spawn.MOD	SOURCEPAGE:p.19
+Tiefling ~ Demodand-Spawn.MOD	SOURCEPAGE:p.20
+Tiefling ~ Demon-Spawn.MOD	SOURCEPAGE:p.20
+Tiefling ~ Devil-Spawn.MOD	SOURCEPAGE:p.21
+Tiefling ~ Div-Spawn.MOD	SOURCEPAGE:p.21
+Tiefling ~ Kyton-Spawn.MOD	SOURCEPAGE:p.22
+Tiefling ~ Oni-Spawn.MOD	SOURCEPAGE:p.22
+Tiefling ~ Qlippoth-Spawn.MOD	SOURCEPAGE:p.23
+Tiefling ~ Rakshasa-Spawn.MOD	SOURCEPAGE:p.23

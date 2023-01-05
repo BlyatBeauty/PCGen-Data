@@ -1,0 +1,9 @@
+#  Fri Nov 16 19:52:40 2018 -- reformated by PCGen PrettyLST v6.08.00
+# CVS $Revision: $ $Author: $ -- Tue Dec 15 01:48:08 2015 -- reformated by PCGen PrettyLST v6.06.00
+
+###Block: Player Races
+# Race Name	Starting Feats	Size		Move			Reach		Change Weapon Prof. Category			Ability								Nb Legs	Nb Hands	Main Race Type	Race Subtype					Type			Source Page		FACT
+Android.MOD																																												SOURCEPAGE:p.6
+Kasatha.MOD											CHANGEPROF:Kasatha Spinal Sword=Martial																											SOURCEPAGE:p.8
+Lashunta.MOD																																											SOURCEPAGE:p.10
+Triaxian.MOD																																											SOURCEPAGE:p.12

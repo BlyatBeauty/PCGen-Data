@@ -1,0 +1,48 @@
+# CVS $Revision$ $Author$ -- Fri Apr 20 01:54:50 2007 -- reformated by prettylst.pl v1.37 (build 2312)
+CAMPAIGN:Frostburn
+GAMEMODE:35e|Bahamut35e
+TYPE:Wizards of the Coast.Supplement
+STATUS:ALPHA
+
+PRECAMPAIGN:1,INCLUDESBOOKTYPE=Core35e
+GENRE:Fantasy
+BOOKTYPE:Supplement
+SETTING:Fantasy
+PUBNAMELONG:Wizards of the Coast
+PUBNAMESHORT:WotC
+PUBNAMEWEB:http://www.wizards.com/default.asp?x=dnd
+SOURCELONG:Frostburn
+SOURCESHORT:Fr
+SOURCEDATE:2004-09
+RANK:200409
+ISOGL:NO
+# COVER should be cover_gameMode_pub_book.file
+COVER:../../../../_artwork/cover_35e_wotc_fr.jpg
+# LOGO should be logo_pub.file
+LOGO:../../../../_artwork/logo_wotc.png
+
+INFOTEXT:Frostburn Supplement. Only supports limited Feats and Spells. Incomplete
+
+# Basics
+ABILITY:fr_abilities.lst
+ABILITYCATEGORY:fr_abilitycategories.lst
+CLASS:fr_classes.lst
+DOMAIN:fr_domains.lst
+EQUIPMENT:fr_equip.lst
+ABILITY:fr_feats.lst
+WEAPONPROF:fr_profs_weapon.lst
+RACE:fr_races.lst
+SPELL:fr_spells.lst
+TEMPLATE:fr_templates.lst
+
+INFOTEXT:Supports 6.4.1
+# ENTRY DATE: 2015-01 (Unknown)
+# LST MONKEY: Bahamut
+# RELEASE REVIEW #
+# BETA:
+# RELEASE:
+# Built for PCGen Version: 6.04.01
+# Updated to work with version: -
+# MINVER:6.4
+# MINDEVVER:6.04.1
+# COMMENTS:

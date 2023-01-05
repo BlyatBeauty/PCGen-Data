@@ -1,0 +1,6 @@
+# CVS $Revision: $ $Author: $ -- Thu Feb 12 11:39:05 2015 -- reformated by PCGen PrettyLST v6.04.01
+SOURCELONG:Monster Manual II	SOURCESHORT:MM2	SOURCEDATE:2002-09
+
+# BASICS
+# Ability Name	Category of Ability	Type			Min. nb of Hands	Required Stat	Description										Combat bonus											Source Page
+Multidexterity	CATEGORY:FEAT		TYPE:General	PREHANDSGTEQ:3	PRESTAT:1,DEX=15	DESC:The creature ignores all penalties for using an off hand.	BONUS:COMBAT|TOHIT-PRIMARY,TOHIT-SECONDARY|4|PREEQUIPSECONDARY:1,TYPE=Natural	SOURCEPAGE:MM2

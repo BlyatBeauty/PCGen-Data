@@ -1,0 +1,57 @@
+# CVS $Revision$ $Author$ -- Fri Oct 11 07:36:00 2013 -- reformated by prettylst.pl v1.50 (build 20400)
+CAMPAIGN:Complete Arcane
+KEY:Complete Arcane
+GAMEMODE:35e|Bahamut35e
+
+GENRE:Fantasy
+BOOKTYPE:Supplement
+SETTING:Fantasy
+TYPE:Wizards of the Coast.Supplement.Supplement
+PRECAMPAIGN:1,INCLUDESBOOKTYPE=Core35e
+STATUS:BETA
+PUBNAMELONG:Wizards of the Coast
+PUBNAMESHORT:WotC
+PUBNAMEWEB:http://www.wizards.com/default.asp?x=dnd
+SOURCELONG:Complete Arcane
+SOURCESHORT:CAr
+SOURCEDATE:2004-11
+RANK:200411
+ISOGL:NO
+# COVER should be cover_gameMode_pub_book.file
+COVER:../../../../_artwork/cover_35e_wotc_car.jpg
+# LOGO should be logo_pub.file
+LOGO:../../../../_artwork/logo_wotc.png
+
+INFOTEXT:Complete Arcane Supplement
+
+# Complete Arcane Files
+ABILITY:car_abilities.lst
+ABILITYCATEGORY:car_abilitycategories.lst
+CLASS:car_classes.lst
+COMPANIONMOD:car_companionmods.lst
+EQUIPMENT:car_equip.lst
+EQUIPMOD:car_equipmods.lst
+ABILITY:car_feats.lst
+ABILITY:car_feats_epic.lst|PRECAMPAIGN:1,INCLUDES=Epic Level Handbook
+KIT:car_kits.lst
+LANGUAGE:car_languages.lst
+RACE:car_races.lst
+SKILL:car_skills.lst
+SPELL:car_spells.lst
+TEMPLATE:car_templates.lst
+
+#
+HIDETYPE:FEAT|PreAppFeat
+FORWARDREF:CLASSSPELLLIST|Hexblade
+
+INFOTEXT:Supports 6.4.1
+# ENTRY DATE: 2015-01 (Unknown)
+# LST MONKEY: Bahamut
+# RELEASE REVIEW #
+# BETA:
+# RELEASE:
+# Built for PCGen Version: 6.04.01
+# Updated to work with version: -
+# MINVER:6.4
+# MINDEVVER:6.04.1
+# COMMENTS:

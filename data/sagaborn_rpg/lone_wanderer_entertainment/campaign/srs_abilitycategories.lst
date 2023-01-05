@@ -1,0 +1,35 @@
+#  Fri Nov 16 19:52:40 2018 -- reformated by PCGen PrettyLST v6.08.00
+
+# Parent Categories
+# Ability Category				Visible		Editable?		Change Pool?	Fractional values?	Base Pool number			Category of Object		Type of Object			Plural description for UI	Display Location
+ABILITYCATEGORY:Special Ability		VISIBLE:QUALIFY	EDITABLE:NO		EDITPOOL:NO											CATEGORY:Special Ability											DISPLAYLOCATION:Character
+ABILITYCATEGORY:Internal			VISIBLE:QUALIFY	EDITABLE:NO		EDITPOOL:NO											CATEGORY:Internal													DISPLAYLOCATION:Character
+ABILITYCATEGORY:Race				VISIBLE:QUALIFY	EDITABLE:NO		EDITPOOL:NO											CATEGORY:Race													DISPLAYLOCATION:Character
+ABILITYCATEGORY:Talent				VISIBLE:NO		EDITABLE:NO		EDITPOOL:YES	FRACTIONALPOOL:NO							CATEGORY:Talent								PLURAL:Talents			DISPLAYLOCATION:Character
+
+# Level Based Bonuses
+ABILITYCATEGORY:Skill				VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO						POOL:Pool_Skill			CATEGORY:Special Ability	TYPE:Skill									DISPLAYLOCATION:Character
+ABILITYCATEGORY:Ability Point			VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO						POOL:Pool_Ability_Point		CATEGORY:Special Ability	TYPE:Ability Point							DISPLAYLOCATION:Character
+ABILITYCATEGORY:Legacy Item			VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO						POOL:Pool_Legacy_Item		CATEGORY:Special Ability	TYPE:Legacy Item								DISPLAYLOCATION:Character
+ABILITYCATEGORY:Talents				VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO						POOL:Pool_Talent			CATEGORY:Talent			TYPE:Talent									DISPLAYLOCATION:Character
+
+
+
+# Class Based Bonuses
+ABILITYCATEGORY:Fighter Class Feature	VISIBLE:QUALIFY	EDITABLE:NO		EDITPOOL:NO											CATEGORY:Special Ability	TYPE:Fighter Class Feature						DISPLAYLOCATION:Character
+ABILITYCATEGORY:Barbarian Class Feature	VISIBLE:QUALIFY	EDITABLE:NO		EDITPOOL:NO											CATEGORY:Special Ability	TYPE:Barbarian Class Feature						DISPLAYLOCATION:Character
+ABILITYCATEGORY:Archeon Class Feature	VISIBLE:QUALIFY	EDITABLE:NO		EDITPOOL:NO											CATEGORY:Special Ability	TYPE:Archeon Class Feature						DISPLAYLOCATION:Character
+ABILITYCATEGORY:Wylder Class Feature	VISIBLE:QUALIFY	EDITABLE:NO		EDITPOOL:NO											CATEGORY:Special Ability	TYPE:Wylder Class Feature						DISPLAYLOCATION:Character
+ABILITYCATEGORY:Luminar Class Feature	VISIBLE:QUALIFY	EDITABLE:NO		EDITPOOL:NO											CATEGORY:Special Ability	TYPE:Luminar Class Feature						DISPLAYLOCATION:Character
+ABILITYCATEGORY:Bard Class Feature		VISIBLE:QUALIFY	EDITABLE:NO		EDITPOOL:NO											CATEGORY:Special Ability	TYPE:Bard Class Feature							DISPLAYLOCATION:Character
+ABILITYCATEGORY:Ranger Class Feature	VISIBLE:QUALIFY	EDITABLE:NO		EDITPOOL:NO											CATEGORY:Special Ability	TYPE:Ranger Class Feature						DISPLAYLOCATION:Character
+ABILITYCATEGORY:Rogue Class Feature		VISIBLE:QUALIFY	EDITABLE:NO		EDITPOOL:NO											CATEGORY:Special Ability	TYPE:Rogue Class Feature						DISPLAYLOCATION:Character
+
+
+ABILITYCATEGORY:Favored Terrain		VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO						POOL:Pool_FavoredTerrain	CATEGORY:Special Ability	TYPE:Ranger Favored Terrain						DISPLAYLOCATION:Character
+ABILITYCATEGORY:Favored Enemy			VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO						POOL:Pool_FavoredEnemy		CATEGORY:Special Ability	TYPE:Ranger Favored Enemy						DISPLAYLOCATION:Character
+ABILITYCATEGORY:Spellcasting Ability	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO						POOL:Pool_SpellcastingAbility	CATEGORY:Special Ability	TYPE:Spellcasting Ability						DISPLAYLOCATION:Character
+ABILITYCATEGORY:Hunter's Bond			VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO						POOL:Pool_HuntersBond		CATEGORY:Special Ability	TYPE:Hunter's Bond							DISPLAYLOCATION:Character
+
+
+ABILITYCATEGORY:Dwarf Knowledge Bonus	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO											CATEGORY:Special Ability	TYPE:Dwarf Knowledge Bonus						DISPLAYLOCATION:Character

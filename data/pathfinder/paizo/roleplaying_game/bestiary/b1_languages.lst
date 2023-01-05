@@ -1,0 +1,10 @@
+SOURCELONG:Bestiary	SOURCESHORT:B1	SOURCEWEB:http://paizo.com/store/downloads/pathfinder/pathfinderRPG/v5748btpy8auu	SOURCEDATE:2009-10
+
+# Language			Type
+Cyclops			TYPE:Spoken.Written.Read
+Dark Folk			TYPE:Spoken.Written.Read
+Pidgin of Giant		TYPE:Spoken
+Sahuagin			TYPE:Spoken.Written.Read
+Treant			TYPE:Spoken.Written.Read
+Vegepygmy			TYPE:Spoken
+Worg				TYPE:Spoken.Written.Read

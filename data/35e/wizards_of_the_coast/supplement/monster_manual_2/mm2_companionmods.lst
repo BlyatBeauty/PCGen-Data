@@ -1,0 +1,9 @@
+# CVS $Revision: $ $Author: $ -- Thu Feb 12 11:10:07 2015 -- reformated by PCGen PrettyLST v6.04.01
+SOURCELONG:Monster Manual II	SOURCESHORT:MM2	SOURCEDATE:2002-09
+
+# Kits granted to Familiar
+# Class of the Master	Type			Required Race				Apply Kit
+FOLLOWER:FamiliarLVL=1	TYPE:Familiar	PRERACE:1,Companion ~ Fire Bat	KIT:1|Fire Bat Familiar
+
+# abilities that Familiars grant to master
+# MASTERBONUSRACE:Companion ~ Fire Bat	TYPE:Familiar

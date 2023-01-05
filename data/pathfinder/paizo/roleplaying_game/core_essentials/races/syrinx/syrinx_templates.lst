@@ -1,0 +1,17 @@
+# Tue Aug 24 13:40:19 2021 -- reformated by PCGen PrettyLST v6.08.00
+
+
+###Block: Racial Heritage
+# Template Name	Unique Key				Visible	Template		Type				FACT
+Syrinx		KEY:Racial Heritage ~ Syrinx	VISIBLE:NO	TEMPLATE:IsSyrinx	TYPE:Racial Heritage	FACT:IsSyrinx|True
+IsSyrinx							VISIBLE:NO
+
+
+###Block: Creature Subtypes
+# Template Name	Visible	Race Subtype
+Syrinx		VISIBLE:NO	RACESUBTYPE:Syrinx
+
+
+###Block: Race Builder Humanoid Subtypes
+# Template Name	Unique Key					Visible	Race Subtype		Type
+Syrinx		KEY:Race Builder Subtype ~ Syrinx	VISIBLE:NO	RACESUBTYPE:Syrinx	TYPE:Race Builder Subtype
