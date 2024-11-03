@@ -1,6 +1,0 @@
-# Fri Jun 16 18:38:57 2023 -- reformatted by PCGen TidyLst v1.04.00
-
-# Name	SORTKEY	Save bonus																Modify VAR				Define
-Fortitude	SORTKEY:1	BONUS:SAVE|Fortitude|FortitudeSave|TYPE=Ability	BONUS:SAVE|Fortitude|max(((TL-HD)-20)/2,0)|TYPE=Epic	BONUS:VAR|FortitudeSave|CON	DEFINE:FortitudeSave|0
-Reflex	SORTKEY:2	BONUS:SAVE|Reflex|ReflexSave|TYPE=Ability	BONUS:SAVE|Reflex|max(((TL-HD)-20)/2,0)|TYPE=Epic		BONUS:VAR|ReflexSave|DEX	DEFINE:ReflexSave|0
-Will		SORTKEY:3	BONUS:SAVE|Will|WillSave|TYPE=Ability	BONUS:SAVE|Will|max(((TL-HD)-20)/2,0)|TYPE=Epic			BONUS:VAR|WillSave|WIS		DEFINE:WillSave|0

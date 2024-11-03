@@ -1,6 +1,0 @@
-# CVS $Revision: $ $Author: $ -- Thu Jan 23 19:18:03 2014 -- reformated by prettylst.pl v1.51 (build 22988)
-SOURCELONG:Monster Compendium: Monsters of Faerun	SOURCESHORT:mon	SOURCEDATE:2001-02
-
-###Block: Familiar
-# Class of the Master	Type			Ability
-FOLLOWER:FamiliarLVL=1	TYPE:Familiar	ABILITY:Special Ability|AUTOMATIC|Spellray|PRERACE:1,Beholderkin (Eyeball)
